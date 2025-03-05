@@ -1,0 +1,35 @@
+/* index.html styling */
+
+#box1{
+    background-color: white;
+}
+
+#box2{
+    background-color: black;
+}
+
+#box3{
+background-color: white;
+}
+
+header{
+    background-color: black;
+}
+
+#sub_nav{
+    width: 960px;
+    height: 40px;
+    margin: 0 auto;
+    background: rgb(255,203,0);
+    background: linear-gradient(90deg, rgba(255,203,0,0) 0%, rgba(255,203,0,1) 50%, rgba(255,203,0,0) 100%, rgba(255,203,0,1) 4501%);
+}
+
+
+footer{
+    background-color: aqua;
+}
+
+#footer_container{
+    background-color: whitesmoke;
+    text-align: center;
+}

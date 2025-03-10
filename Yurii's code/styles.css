@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Links */
+a {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+/* Header */
+.top {
+    background-color: none;
+    color: #fff;
+    text-align: center;
+}
+
+.topbar {
+    background-color: #414533;
+    color: #fff;
+}
+
+.searchbar {
+    background-color: black;
+    opacity: 0.8;
+}
+
+.searchbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Main */
+main {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.links {
+    text-align: center;
+}
+

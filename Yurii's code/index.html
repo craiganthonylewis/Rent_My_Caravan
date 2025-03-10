@@ -1,6 +1,8 @@
+<!-- The "Rent My Caravan" website by Yurii Filin, Ezme Clark, Davide Lo Castro and Craig Lewis-->
 <!DOCTYPE html>
 <html lang="eng">
-<!-- Information about the website -->
+
+<!-- Information about the website and connections to other files-->
 <head>
     <title>RMC</title>
     <meta charset="UTF-8"/>
@@ -8,30 +10,30 @@
     <meta name="description" content="Rent My Caravan"/>
     <meta name="keywords" content="personal, homepage, HTML"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="960grid.css">
     <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
         <div id="top">
             <div id="topbar">
                 <a href="#home">RMC</a>
-                <p id="location">Location: United Kingdom</p>
+                <p id="loc">Location: United Kingdom</p>
+                <p id="lang">Language: English</p>
                 <button type="button">Sign Up</button>
                 <button type="button">Login</button>   
             </div>
             <div id="searchbar"> 
                 <ul>
-                    <div id="search_fiel">
+                    <li id="search_fiel">
                         <input type="text" placeholder="Search...">
-                    </div>
-                    <a href="#home">Home</a>
-                    <a href="#caravans">Caravans</a>
-                    <a href="#contact">Contact us</a>
-                    <a href="#about">About us</a>
+                    </li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#caravans">Caravans</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><a href="#about">About us</a></li>
                 </ul>
             </div>    
         </div>
@@ -66,8 +68,10 @@
                 </ul>
                 <!-- "&copy" is for a copyright symbol -->
             </div>
-            <div id="bottom">
-                <a href="#about"> &copy; TEAM, 2025 </a>
+        </div>
+        <div class = "container_960">
+            <div class="column_6" id="bottom">
+                <a href="#about"> &copy; TEAM, 2025. ALL RIGHTS RESERVED </a>
             </div>
         </div>
     </footer>

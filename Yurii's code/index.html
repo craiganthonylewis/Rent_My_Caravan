@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<!-- Information -->
 <html lang="eng">
+<!-- Information about the website -->
 <head>
     <title>RMC</title>
-    <meta charset="UTF-8" />
-    <meta name="authors" content="Yurii Filin, Ezme Clark, Davide Lo Castro, Craig Lewis" />
-    <meta name="description" content="Rent My Caravan" />
-    <meta name="keywords" content="personal, homepage, HTML" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="authors" content="Yurii Filin, Ezme Clark, Davide Lo Castro, Craig Lewis"/>
+    <meta name="description" content="Rent My Caravan"/>
+    <meta name="keywords" content="personal, homepage, HTML"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 </head>
 
 <body>
+
     <header>
-        <div class="top">
-            <div class="topbar">
+        <div id="top">
+            <div id="topbar">
                 <a href="#home">RMC</a>
-                <p class="location">Location</p>
+                <p id="location">Location: United Kingdom</p>
                 <button type="button">Sign Up</button>
                 <button type="button">Login</button>   
             </div>
-            <div class="searchbar"> 
+            <div id="searchbar"> 
                 <ul>
-                    <div class="search_fiel">
+                    <div id="search_fiel">
                         <input type="text" placeholder="Search...">
                     </div>
                     <a href="#home">Home</a>
@@ -33,32 +36,39 @@
             </div>    
         </div>
     </header>
+
     <main>
-        <div class="content">
+        <div id="content">
             <p>Main Frame is in development... Please, come back later...</p>
         </div>
     </main>
+
     <footer>
-        <div class="footer_links"></div>
-            <ul class="left">
-                <h3>Information</h3>
-                <a href="#terms">Terms</a>
-                <a href="#privacy">Privacy</a>
-                <a href="#copyrights">Copyrights</a>
-            </ul>
-            <ul class="center">
-                <h3>More</h3>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#sign_up">Sign up</a>
-            </ul>
-            <ul class="right">
-                <h3>Follow us</h3>
-                <a href="#x">X</a>
-                <a href="#facebook">Facebook</a>
-                <a href="#instagram">Instagram</a>
-            </ul>
-        <!-- "&copy" is for a copyright symbol -->
-        <a href="#about"> &copy; 2025 </a>
+        <div class = "container_960">
+            <div class = "column_12" id="footer_links">
+                <ul class = "column_4" id="left">
+                    <h3>Information</h3>
+                    <a href="#terms">Terms</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#copyrights">Copyrights</a>
+                </ul>
+                <ul class = "column_4" id="center">
+                    <h3>More</h3>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#sign_up">Sign up</a>
+                </ul>
+                <ul class = "column_4" id="right">
+                    <h3>Follow us</h3>
+                    <a href="#x">X</a>
+                    <a href="#facebook">Facebook</a>
+                    <a href="#instagram">Instagram</a>
+                </ul>
+                <!-- "&copy" is for a copyright symbol -->
+            </div>
+            <div id="bottom">
+                <a href="#about"> &copy; TEAM, 2025 </a>
+            </div>
+        </div>
     </footer>
 </body>

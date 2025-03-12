@@ -22,6 +22,10 @@ select {
 
 }
 
+select:hover {
+    color: dodgerblue;
+}
+
 #logo a {
     color: white;
     text-decoration: none;

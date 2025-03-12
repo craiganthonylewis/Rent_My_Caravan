@@ -8,6 +8,7 @@
         flex: 0 0 100%;
         padding-left: 0;
         padding-right: 0;
+        flex-flow: wrap;
     }
 }
 

@@ -132,3 +132,7 @@ footer {
     color: white;
     text-decoration: none;
 }
+
+#footer_list_1 a:hover, #footer_list_2 a:hover, #footer_list_3 a:hover {
+    color: dodgerblue;
+}

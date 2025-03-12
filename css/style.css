@@ -5,6 +5,23 @@ header{
     align-items: center;
 }
 
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 100px;
+    height: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0;
+    border: 1px solid #414533;
+    background-color: #414533;
+    cursor: pointer;
+    color: white;
+
+}
+
 #logo a {
     color: white;
     text-decoration: none;

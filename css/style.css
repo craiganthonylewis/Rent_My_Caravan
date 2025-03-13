@@ -99,10 +99,6 @@ footer {
     height: auto;
     color: white;
     text-align: center;
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*flex-wrap: wrap;*/
 }
 
 #footer_container {
@@ -122,16 +118,15 @@ footer {
     flex-wrap: wrap;
 }
 
-/*#footer_list_1 ul, #footer_list_2 ul, #footer_list_3 */
 #footer_container ul {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*gap: 20px;*/
-    /*align-items: center;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: black;
     gap: 20px;
 }
 

@@ -10,6 +10,12 @@
         padding-right: 0;
         flex-flow: wrap;
     }
+
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {

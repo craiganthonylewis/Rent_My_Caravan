@@ -16,6 +16,10 @@
         align-items: center;
         justify-content: center;
     }
+
+    #footer_container {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 480px) {

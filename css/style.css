@@ -42,8 +42,12 @@ select:hover {
     display: flex;
 }
 
+#account_image{
+    background-image: url("../images/account_circle.png");
+}
+
 .login_links_button {
-    background-color: black;
+    background-color: #636851;
     width: 100%;
     height: 70px;
     display: flex;

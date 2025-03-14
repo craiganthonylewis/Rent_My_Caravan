@@ -43,11 +43,13 @@ select:hover {
 }
 
 #account_image{
-    background-image: url("../images/account_circle.png");
-    height: 100%;
-    width: 100%;
+    background-image: url("../images/user.png");
+    height: 30px;
+    width: 30px;
+    background: white;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 10px;
 }
 
 .login_links_button {

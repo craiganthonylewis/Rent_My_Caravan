@@ -1,5 +1,4 @@
 /* Coded by Craig Lewis*/
-
 /* index.html styling */
 header{
     background-color: #414533;
@@ -46,10 +45,10 @@ select:hover {
 
 #account_image{
     background-image: url("../images/user.png");
-    height: 30px;
-    width: 30px;
-    background: white;
+    height: 40px;
+    width: 40px;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin: 10px;
 }
@@ -77,6 +76,11 @@ select:hover {
 
 #login_links_button a {
     color: white;
+    text-decoration: none;
+}
+
+#login_links_button a:hover {
+    color: dodgerblue;
     text-decoration: none;
 }
 

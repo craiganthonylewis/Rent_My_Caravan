@@ -1,0 +1,142 @@
+body {
+  font-family: Helvetica, sans-serif;
+  min-width: 320px;
+  padding: 0;
+  margin: 0 auto;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Links */
+a {
+  color: #ffffff; 
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* Text */
+p {
+  color:#ffffff;
+  opacity: 1;
+}
+
+h1 {
+  padding:0px;
+  margin:0;
+}
+
+/* Header */
+#top {
+  background: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+#topbar {
+  background-color: #414533;
+  color: #fff;
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+  gap: 20px;                  
+  padding: 10px;  
+  position: sticky;
+}
+
+#searchbar {
+  background-color: black;
+  opacity: 0.7;
+  padding: 10px 0;
+  display: flex;              
+  align-items: center;        
+  justify-content: center; 
+  border-radius: 0px 0px 30px 30px;
+  position: sticky;
+}
+
+#searchbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+}
+
+#searchbar li {
+  margin-right: 20px;
+}
+
+/* Main */
+main {
+  color: #333;
+  text-align: center;
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  opacity: 0.7;
+  height: auto;
+  position: sticky;
+}
+
+#footer_links {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+#left, #center, #right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#footer_links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  gap: 20px; 
+}
+
+.footer_links li {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Main Content Containers */
+
+#content_box {
+  background-color: #000000;
+  opacity: 0.7;
+  padding: 10px 0;
+  display: flex;              
+  align-items: center;        
+  justify-content: center; 
+  border-radius: 30px;
+}
+
+#content_content{
+  opacity: 1;
+  color: white;
+  
+}
+
+label{
+  color: white;
+  opacity: 1;
+  font-style: normal;
+}

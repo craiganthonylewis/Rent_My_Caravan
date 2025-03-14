@@ -17,6 +17,17 @@
         justify-content: center;
     }
 
+    .login_links_button {
+        background-color: #636851;
+        width: 50% !important;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 90px;
+        margin: 0 auto;
+    }
+
     #footer_container{
         display: flex;
         gap: 25px;

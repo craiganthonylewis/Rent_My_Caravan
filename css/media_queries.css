@@ -17,8 +17,9 @@
         justify-content: center;
     }
 
-    #footer_container {
-        margin-bottom: 5px;
+    #footer_container{
+        display: flex;
+        gap: 25px;
     }
 }
 

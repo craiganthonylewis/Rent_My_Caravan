@@ -22,15 +22,14 @@
 
                 <div class = "column_4" id = "title_column">
                     <ul>
-                        <li>><h2 id = "title_1"></h2></li>
-                        <li>><h1 id = "title_2"></h1></li>
+                        <li><h2 id = "title_1">Rent my Caravan</h2></li>
+                        <li><h1 id = "title_2">Holiday for less</h1></li>
                     </ul>
 
                 </div>
 
                     <div class = "column_4" id = "signup_button_column"></div>
-
-                    <div class = "column_4" id = "search_bar_column"></div>
+                <div class = "column_4" id = "search_bar_column"></div>
 
             </div>
         </div>

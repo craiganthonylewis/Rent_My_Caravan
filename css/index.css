@@ -8,6 +8,7 @@
     opacity: 70%;
     border-radius: 40px;
     margin: 40px 0 40px 0;
+    display: flex;
 }
 
  button{
@@ -15,6 +16,10 @@
      height: 40px;
      background-color: #333333;
      border-radius: 40px;
+ }
+
+ #title_column{
+background-color: #636851;
  }
 
  #title_1, #title_2, li{
@@ -37,13 +42,12 @@
     width: 40%;
 }
 
-#signup_button{
+#signup_button_column{
     background-color: #33333658;
 }
 
-#search_bar_container{
+#search_bar_column{
     background-color: #414533;
-    height: 40px;
 }
 
 #search_bar{

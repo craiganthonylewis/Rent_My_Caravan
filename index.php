@@ -20,19 +20,19 @@
         <div class = "container_960">
             <div class = "column_12" id = "background_search">
 
-                <div class = "column_4" id = "title"><ul>
-                        <li><h1 id ="title_1">Rent my Caravan</h1></li>
-                        <li><h1 id ="title_2">Holiday for less</h1></li></ul>
+                <div class = "column_4" id = "title_column">
+                    <ul>
+                        <li>><h2 id = "title_1"></h2></li>
+                        <li>><h1 id = "title_2"></h1></li>
+                    </ul>
 
-                <div class = "column_4" id = "signup_button">
-                    <button>Sign up here</button>
-                       </div>
+                </div>
 
-                    <div class = "column_4" id = "search_bar_container">
-                        <div id = "search_bar"></div>
-                    </div>
+                    <div class = "column_4" id = "signup_button_column"></div>
 
-            </div></div>
+                    <div class = "column_4" id = "search_bar_column"></div>
+
+            </div>
         </div>
 
     </section>

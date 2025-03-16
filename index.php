@@ -17,7 +17,16 @@
     <section>
 
         <div class = "container_960">
-            <div class = "column_12" id="background_search"></div></div>
+            <div class = "column_12" id="background_search">
+
+            <h1>Rent my Caravan</h1>
+                <h1>Holiday for less</h1>
+
+                <button>Sign Up</button>
+
+                <div id = "search_bar"></div>
+
+            </div></div>
 
     </section>
 </main>

@@ -10,15 +10,16 @@
   <meta charset="UTF-8">
   <title>Rent My Caravan</title>
 </head>
+
 <body>
-
+<?php include('footer.php');?>
 <main>
-  <section>
+    <section>
 
-    <div class = "container_960">
-      <div class = "column_12" id="background_search"></div></div>
+        <div class = "container_960">
+            <div class = "column_12" id="background_search"></div></div>
 
-  </section>
+    </section>
 </main>
 
 </body>

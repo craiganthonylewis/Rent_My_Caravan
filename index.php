@@ -29,7 +29,7 @@
                        </div>
 
                     <div class = "column_4" id = "search_bar_container">
-                        <div id = "search_bar">Search here...</div>
+                        <div id = "search_bar"></div>
                     </div>
 
             </div></div>

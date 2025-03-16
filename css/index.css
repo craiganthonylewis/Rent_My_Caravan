@@ -7,7 +7,7 @@
     background-color: #000000;
     opacity: 70%;
     border-radius: 40px;
-    margin-top: 80px;
+    margin: 40px 0 40px 0;
 }
 
  button{
@@ -22,13 +22,19 @@
  }
 
 #title_1{
+    height: auto;
+    width: 40%;
     font-family: Caveat, sans-serif;
     font-size: 35px;
+    background-color: white;
  }
 
 #title_2{
     font-family: "Noto Sans", sans-serif;
     font-size: 45px;
+    background-color: grey;
+    height: auto;
+    width: 40%;
 }
 
 #signup_button{
@@ -38,5 +44,12 @@
 #search_bar_container{
     background-color: #414533;
     height: 40px;
+}
+
+#search_bar{
+    background-color: #ffffff;
+    height: 40px;
+    width: 80%;
     border-radius: 90px;
+    margin: 0 auto;
 }

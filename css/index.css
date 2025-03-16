@@ -16,3 +16,27 @@
      background-color: #333333;
      border-radius: 40px;
  }
+
+ #title_1, #title_2, li{
+     list-style: none;
+ }
+
+#title_1{
+    font-family: Caveat, sans-serif;
+    font-size: 35px;
+ }
+
+#title_2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 45px;
+}
+
+#signup_button{
+    background-color: #33333658;
+}
+
+#search_bar_container{
+    background-color: #414533;
+    height: 40px;
+    border-radius: 90px;
+}

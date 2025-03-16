@@ -1,4 +1,5 @@
 /* Coded by Craig Lewis*/
+
 body {
     min-width: 320px;
     margin: 0 auto;
@@ -9,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: Helvetica, serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 /* container row and width 960px */

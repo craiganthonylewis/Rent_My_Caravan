@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/media_queries.css">
   <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/font.css">
+
 
 
   <meta charset="UTF-8">

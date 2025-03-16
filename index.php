@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/media_queries.css">
   <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font.css">
 
   <meta charset="UTF-8">
   <title>Rent My Caravan</title>
@@ -17,16 +18,22 @@
     <section>
 
         <div class = "container_960">
-            <div class = "column_12" id="background_search">
+            <div class = "column_12" id = "background_search">
 
-            <h1>Rent my Caravan</h1>
-                <h1>Holiday for less</h1>
+                <div class = "column_4" id = "title"><ul>
+                        <li><h1 id ="title_1">Rent my Caravan</h1></li>
+                        <li><h1 id ="title_2">Holiday for less</h1></li></ul>
 
-                <button>Sign Up</button>
+                <div class = "column_4" id = "signup_button">
+                    <button>Sign up here</button>
+                       </div>
 
-                <div id = "search_bar"></div>
+                    <div class = "column_4" id = "search_bar_container">
+                        <div id = "search_bar">Search here...</div>
+                    </div>
 
             </div></div>
+        </div>
 
     </section>
 </main>

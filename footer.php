@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/media_queries.css">
   <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/font.css">
 
   <meta charset="UTF-8">
   <title>Rent My Caravan</title>
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div id ="filler"></div>
+  <div id ="filler"><p></p></div>
 
 </footer>
 

@@ -1,0 +1,63 @@
+/* Coded by Craig Lewis*/
+/* footer.php styling */
+footer {
+    font-size: 16px;
+    background-color: #000000;
+    opacity: 70%;
+    height: auto;
+    color: white;
+    text-align: center;
+}
+
+#footer_container {
+    display: flex;
+    justify-content: space-around;
+    /*width: 100%;*/
+    padding: 20px;
+}
+
+#footer_container li {
+    list-style: none;
+}
+
+#footer_list_1, #footer_list_2, #footer_list_3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#footer_container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    gap: 20px;
+}
+
+#footer_list_1 h1, #footer_list_2 h1, #footer_list_3 h1 {
+    font-size: 16px;
+}
+
+#footer_list_1 li, #footer_list_2 li, #footer_list_3 li {
+    font-size: 12px;
+    font-style: normal;
+}
+
+#footer_list_1 a, #footer_list_2 a, #footer_list_3 a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer_list_1 a:hover, #footer_list_2 a:hover, #footer_list_3 a:hover {
+    color: dodgerblue;
+}
+
+#filler{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+}

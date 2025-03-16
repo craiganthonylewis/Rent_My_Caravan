@@ -5,7 +5,7 @@
 
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/media_queries.css">
-  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="css/footer.css">
 
 
   <meta charset="UTF-8">

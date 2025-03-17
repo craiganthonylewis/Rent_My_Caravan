@@ -20,7 +20,7 @@
         <div class = "container_960">
             <div class = "column_12" id = "background_search">
 
-                <div class = "column_4" id = "title_column">
+                <div class = "column_6" id = "title_column">
                     <ul>
                         <li><h2 id = "title_1">Rent my Caravan</h2></li>
                         <li><h1 id = "title_2">Holiday for less</h1></li>
@@ -28,8 +28,16 @@
 
                 </div>
 
-                    <div class = "column_4" id = "signup_button_column"></div>
-                <div class = "column_4" id = "search_bar_column"></div>
+                    <div class = "column_6" id = "signup_button_column">
+                        <button>Sign up here</button>
+                    </div>
+                <div class = "column_12" id = "search_bar_column">
+                    <div id = "search_bar">
+                        <label>
+                            <input type="search" placeholder="Search here...">
+                        </label>
+                    </div>
+                </div>
 
             </div>
         </div>

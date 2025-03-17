@@ -25,7 +25,7 @@
      width: 40px;
      height: 40px;
      background: url("images/arrow_right_button.svg");
-     display: inline-flex;
+     display: flex;
  }
 
  #title_column{

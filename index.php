@@ -14,6 +14,7 @@
 
 <body>
 <?php include('header.php');?>
+<?php include('navigation.php');?>
 <main>
     <section>
 

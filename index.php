@@ -37,7 +37,7 @@
 
                 <div class="column_12" id="search_bar_container">
                         <div id = "search_bar">
-                            <input type="search" placeholder="Search here...">
+                                <input type="search" placeholder="Search here...">
                         </div>
 
                     <button id = "search_button"></button>
@@ -47,9 +47,8 @@
 
             </div>
 
-                    </div><!-- end of background container -->
+                </div>
 
-                </div> <!-- end of 960 container -->
 
     </section>
 </main>

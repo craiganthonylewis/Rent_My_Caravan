@@ -49,3 +49,9 @@
     height: 80px;
     background-color: white;
 }
+
+#magnifying_glass{
+    background-image: url("/images/magnifying_glass.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

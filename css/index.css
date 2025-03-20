@@ -3,36 +3,23 @@
 
 #background_search{
     width: 100%;
-    height: 310px;
+    height: 400px;
+    min-height: auto;
     background-color: #000000;
     opacity: 70%;
     border-radius: 40px;
-    margin: 40px 0 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
- button{
-     width: 200px;
-     height: 100px;
-     background-color: #C67218;
-     border-radius: 20px;
-     font-size: 30px;
-     margin-top: 20px;
- }
- #search_button{
-     width: 40px;
-     height: 40px;
-     background: url("images/arrow_right_button.svg");
-     display: flex;
- }
-
- #title_column{
+ #title_container{
      height: auto;
  }
 
- #title_1, #title_2, li{
+ #title_1, #title_2 li{
      list-style: none;
  }
 
@@ -40,38 +27,57 @@
     height: auto;
     font-family: Caveat, sans-serif;
     font-size: 35px;
- }
+}
 
 #title_2{
     font-family: "Noto Sans", sans-serif;
     font-size: 45px;
     height: auto;
+    list-style: none;
 }
 
-#signup_button_column{
+#signup_button_container{
     height: auto;
 }
 
-#search_bar_column{
+#signup_button_container button{
+    width: 200px;
+    height: 100px;
+    background-color: #C67218;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    margin: 60px auto;
+}
+
+#search_bar_container{
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
 }
 
 #search_bar{
-    background-color: #ffffff;
+    background-color: white;
     height: 40px;
-    width: 80%;
+    width: 100%;
     border-radius: 90px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
 #search_bar input{
-    background-color: #ffffff;
-    opacity: 100%;
-    height: 40px;
-    width: 80%;
     border-radius: 90px;
-    margin: 0 auto;
     outline: none;
     border: none;
+    height: 40px;
+    width: 100%;
+}
+
+#search_button{
+    background-size: contain;
+    background: #C67218 url("../images/arrow_right_button_search.svg") no-repeat center;
+    border-radius: 90px;
+    height: 40px;
+    width: 40px;
 }

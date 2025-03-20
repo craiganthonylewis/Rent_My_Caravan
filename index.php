@@ -20,28 +20,35 @@
         <div class = "container_960">
             <div class = "column_12" id = "background_search">
 
-                <div class = "column_8" id = "title_column">
+
+
+                <div class="column_6" id="title_container">
+
                     <ul>
-                        <li><h2 id = "title_1">Rent my Caravan</h2></li>
-                        <li><h1 id = "title_2">Holiday for less</h1></li>
+                        <li id ="title_1">Rent my Caravan</li>
+                        <li id ="title_2">Holiday for less!</li>
                     </ul>
+                </div>
+
+                <div class="column_6" id="signup_button_container">
+                <button>Sign up for free</button>
+                </div>
+
+                <div class="column_12" id="search_bar_container">
+                        <div id = "search_bar">
+                            <input type="search" placeholder="Search here...">
+                        </div>
+
+                    <button id = "search_button"></button>
 
                 </div>
 
-                    <div class = "column_4" id = "signup_button_column">
-                        <button>Sign up for free</button>
-                    </div>
-                <div class = "column_12" id = "search_bar_column">
-                    <div id = "search_bar">
-                        <label>
-                            <input type="search" placeholder="Search for Caravans...">
-                            <button id = search_button></button>
-                        </label>
-                    </div>
-                </div>
 
             </div>
-        </div>
+
+                    </div><!-- end of background container -->
+
+                </div> <!-- end of 960 container -->
 
     </section>
 </main>

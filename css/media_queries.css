@@ -11,6 +11,13 @@
         flex-flow: wrap;
     }
 
+    #body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("images/background.jpg");
+    }
+
     #logo {
         display: flex;
         align-items: center;

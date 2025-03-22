@@ -75,6 +75,10 @@
     padding: 0 25px;
 }
 
+#search_bar input::-webkit-search-cancel-button {
+    opacity: 0;
+}
+
 #search_button{
     background-size: contain;
     background: #C67218 url("../images/arrow_right_button_search.svg") no-repeat center;

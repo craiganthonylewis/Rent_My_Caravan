@@ -13,7 +13,8 @@
 #Verifies connection
 if($conn){ #Check if connection failed
     echo("Connection failed: " . mysqli_connect_error()); #Display the error message
-} else {
+}
+else{
     echo "Connection successful";
 }
 

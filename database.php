@@ -4,7 +4,7 @@
 <?php
 
  $db_host = "localhost"; #Holds names of the server
- $db_user = "root";
+ $db_user = "root"; #MySQL database user //root = default and a security risk
  $db_pass = ""; #Password
  $db_name = "rent_my_caravan"; #Name of database
 

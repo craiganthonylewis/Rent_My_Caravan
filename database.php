@@ -13,8 +13,8 @@
 #Verifies connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-    } else {
-    echo "<p>Connection successful</p>";
- }
+} else {
+    echo "Connection successful";
+}
 
 

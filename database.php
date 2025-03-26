@@ -10,7 +10,7 @@
 
 #Verifies connection
 if (!$conn->connect_error) {
-
+    echo "<p>Connection successful</p>";
  }
 
 

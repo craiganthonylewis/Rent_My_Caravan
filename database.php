@@ -1,4 +1,6 @@
+<!-- Database connection -->
 <!-- Coded by Craig Lewis -->
+
 <?php
 
  $db_host = "localhost"; #Holds names of the server

@@ -11,8 +11,8 @@
  $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name); #Declares connection variables
 
 #Verifies connection
-if (!$conn) {
-    die("Connection failed" . mysqli_connect_error());
+if (!$conn) { #Check if connection failed
+    die("Connection failed: " . mysqli_connect_error()); #Display the error message
 } else {
     echo "Connection successful";
 }

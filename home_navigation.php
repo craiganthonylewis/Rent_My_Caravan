@@ -5,7 +5,7 @@
 
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/media_queries.css">
-    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/home_navigation.css">
     <link rel="stylesheet" href="css/font.css">
 
 
@@ -17,7 +17,7 @@
 
     <nav>
         <div class = "container_960">
-            <div class = "column_12" id = "navigation_container"></div>
+            <div class = "column_12" id = "navigation_container">
 
             <div class = "column_12" id = "nav_links">
                 <ul>
@@ -25,7 +25,7 @@
                     <li class = "nav_link" id = "about_link"><a href="index.php">caravans</a></li>
                     <li class = "nav_link" id = "contact_link"><a href="index.php">about</a></li>
                     <li class = "nav_link" id = "services_link"><a href="index.php">contact us</a></li>
-                </ul>
+                </ul></div>
             </div> <!-- end of nav_links-->
 
             </div> <!--end of navigation_container-->

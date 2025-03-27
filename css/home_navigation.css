@@ -16,17 +16,17 @@
     text-decoration: none;
     list-style: none;
     gap: 40px;
+    justify-content: right;
+    margin-right: 25px;
 }
 
 #nav_links a{
-    display: flex;
     text-decoration: none;
     list-style: none;
     color: white;
 }
 
 #nav_links a:hover{
-    display: flex;
     text-decoration: none;
     list-style: none;
     color: deepskyblue;

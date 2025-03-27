@@ -1,0 +1,81 @@
+/* Coded by Craig Lewis*/
+
+body {
+    min-width: 320px;
+    margin: 0 auto;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* container row and width 960px */
+.container_960 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+    overflow: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_1, .column_2, .column_3, .column_4, .column_5, .column_6,
+.column_7, .column_8, .column_9, .column_10, .column_11, .column_12 {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Declares number of columns in container_960 row */
+.container_960 .column_1 { flex: 0 0 8.33%; }
+.container_960 .column_2 { flex: 0 0 16.66%; }
+.container_960 .column_3 { flex: 0 0 25%; }
+.container_960 .column_4 { flex: 0 0 33.33%; }
+.container_960 .column_5 { flex: 0 0 41.66%; }
+.container_960 .column_6 { flex: 0 0 50%; }
+.container_960 .column_7 { flex: 0 0 58.33%; }
+.container_960 .column_8 { flex: 0 0 66.66%; }
+.container_960 .column_9 { flex: 0 0 75%; }
+.container_960 .column_10 { flex: 0 0 83.33%; }
+.container_960 .column_11 { flex: 0 0 91.66%; }
+.container_960 .column_12 { flex: 0 0 100%; }
+
+/* Places element x number of column spaces to the right */
+.right_1 { left: 8.33%; }
+.right_2 { left: 16.66%; }
+.right_3 { left: 25%; }
+.right_4 { left: 33.33%; }
+.right_5 { left: 41.66%; }
+.right_6 { left: 50%; }
+.right_7 { left: 58.33%; }
+.right_8 { left: 66.66%; }
+.right_9 { left: 75%; }
+.right_10 { left: 83.33%; }
+.right_11 { left: 91.66%; }
+.right_12 { left: 100%; }
+
+/* Places element X number of column spaces to the left */
+.left_1 { left: -8.33%; }
+.left_2 { left: -16.66%; }
+.left_3 { left: -25%; }
+.left_4 { left: -33.33%; }
+.left_5 { left: -41.66%; }
+.left_6 { left: -50%; }
+.left_7 { left: -58.33%; }
+.left_8 { left: -66.66%; }
+.left_9 { left: -75%; }
+.left_10 { left: -83.33%; }
+.left_11 { left: -91.66%; }
+.left_12 { left: -100%; }
+
+/* Declares margin space left or right */
+.margin_left { margin-left: 0; }
+.margin_right { margin-right: 0; }

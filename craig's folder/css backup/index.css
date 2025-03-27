@@ -1,0 +1,88 @@
+/* Coded by Craig Lewis*/
+/* index.php styling */
+
+#background_search{
+    width: 100%;
+    height: 400px;
+    min-height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+ #title_container{
+     height: auto;
+ }
+
+ #title_1, #title_2 li{
+     list-style: none;
+ }
+
+#title_1{
+    height: auto;
+    font-family: Caveat, sans-serif;
+    font-size: 35px;
+    margin-top: 60px;
+}
+
+#title_2{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 45px;
+    height: auto;
+    list-style: none;
+}
+
+#signup_button_container{
+    height: auto;
+}
+
+#signup_button_container button{
+    width: 200px;
+    height: 100px;
+    background-color: #C67218;
+    border-radius: 20px;
+    font-size: 30px;
+    display: flex;
+    margin: 60px auto;
+}
+
+#search_bar_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+#search_bar{
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+}
+
+#search_bar input{
+    border-radius: 90px;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 100%;
+    padding: 0 25px;
+}
+
+#search_bar input::-webkit-search-cancel-button {
+    opacity: 0;
+}
+
+#search_button{
+    background-size: contain;
+    background: #C67218 url("../images/arrow_right_button_search.svg") no-repeat center;
+    border-radius: 90px;
+    height: 40px;
+    width: 40px;
+}

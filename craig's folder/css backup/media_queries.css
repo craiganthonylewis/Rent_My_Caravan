@@ -1,0 +1,75 @@
+/* Coded by Craig Lewis*/
+/* Mobile and Tablet Friendly */
+@media (max-width: 768px) {
+    .container_960 .column_1, .container_960 .column_2, .container_960 .column_3,
+    .container_960 .column_4, .container_960 .column_5, .container_960 .column_6,
+    .container_960 .column_7, .container_960 .column_8, .container_960 .column_9,
+    .container_960 .column_10, .container_960 .column_11, .container_960 .column_12 {
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-right: 0;
+        flex-flow: wrap;
+    }
+
+    #body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("images/background.jpg");
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login_links_button {
+        background-color: #636851;
+        width: 50% !important;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 90px;
+        margin: 0 auto;
+    }
+
+    #footer_container{
+        display: flex;
+        gap: 25px;
+    }
+
+
+    #nav_links ul{
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+    }
+
+    #nav_links ul li{
+        margin-bottom: 25px;
+    }
+
+    #navigation_container {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container_960 .column_1, .container_960 .column_2, .container_960 .column_3,
+    .container_960 .column_4, .container_960 .column_5, .container_960 .column_6,
+    .container_960 .column_7, .container_960 .column_8, .container_960 .column_9,
+    .container_960 .column_10, .container_960 .column_11, .container_960 .column_12 {
+        flex: 0 0 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

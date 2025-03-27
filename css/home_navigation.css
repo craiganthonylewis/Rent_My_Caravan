@@ -15,9 +15,9 @@
     display: flex;
     text-decoration: none;
     list-style: none;
-    gap: 40px;
-    justify-content: right;
-    margin-right: 25px;
+    gap: 80px;
+    justify-content: center;
+    margin-right: 60px;
 }
 
 #nav_links a{

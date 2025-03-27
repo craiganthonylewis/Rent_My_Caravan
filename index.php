@@ -38,7 +38,9 @@
 
                 <div class="column_12" id="search_bar_container">
                         <div id = "search_bar">
+                            <label>
                                 <input type="search" placeholder="Search here...">
+                            </label>
                         </div>
 
                     <button id = "search_button"></button>

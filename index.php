@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!-- Coded by Craig Lewis -->
 <html lang="en">
+
+<?php include_once 'database.php'; ?>
+
 <head>
 
   <link rel="stylesheet" href="css/grid.css">

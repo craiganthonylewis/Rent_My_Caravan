@@ -1,4 +1,4 @@
-<!-- Database connection -->
+<!-- Database connection to rentmycar-->
 <!-- Coded by Craig Lewis -->
 
 <?php

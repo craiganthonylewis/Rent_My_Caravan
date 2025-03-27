@@ -39,6 +39,15 @@
         display: flex;
         gap: 25px;
     }
+
+
+    #nav_links ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        gap: 40px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {

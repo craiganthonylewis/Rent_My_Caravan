@@ -4,6 +4,9 @@ header{
     background-color: #414533;
     color: white;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 select {

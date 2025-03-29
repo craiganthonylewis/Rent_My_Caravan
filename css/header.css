@@ -1,7 +1,13 @@
 /* Coded by Craig Lewis*/
 /* header.php styling */
-header{
+
+#header_bg_container{
     background-color: #414533;
+    width: 100%;
+    height: auto;
+}
+
+header{
     color: white;
     align-items: center;
     position: sticky;

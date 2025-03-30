@@ -39,6 +39,7 @@
 
                 <div class="column_12" id="search_bar_container">
                         <div id = "search_bar">
+                            <div id = "search_bar_icon"></div>
                             <label>
                                 <input type="search" placeholder="Search here...">
                             </label>

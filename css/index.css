@@ -74,18 +74,32 @@
     border: none;
     height: 40px;
     width: 100%;
-    padding: 0 25px;
+    margin: 0 20px 0 20px;
 }
 
 #search_bar input::-webkit-search-cancel-button {
-    opacity: 0;
+    opacity: 1;
 }
 
 #search_button{
     background-size: contain;
-    background: #C67218 url("../images/arrow_right_button_search.svg") no-repeat center;
+    background: white url("../images/arrow_right_button_search.svg") no-repeat center;
     border-radius: 90px;
     height: 40px;
     width: 40px;
-    margin: 0 0 40px 40px;
+    margin: 0 40px 40px 40px;
 }
+
+#search_bar_icon{
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/magnifying_glass.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 0 0 15px;
+}
+
+#search_bar label {
+    display: contents;
+}
+

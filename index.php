@@ -21,8 +21,6 @@
         <div class = "container_960">
             <div class = "column_12" id = "background_search">
 
-
-
                 <div class="column_6" id="title_container">
 
                     <ul>
@@ -35,7 +33,7 @@
                 <button>Sign up for free</button>
                 </div>
 
-                <div class="column_12" id="search_bar_container">
+                <div class="column_6" id="search_bar_container">
                         <div id = "search_bar">
                             <label>
                                 <input type="search" placeholder="Search here...">

@@ -3,7 +3,7 @@
 
 #background_search{
     width: 100%;
-    height: 400px;
+    height: auto;
     min-height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 40px;

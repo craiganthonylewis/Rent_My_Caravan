@@ -1,4 +1,4 @@
-/* Coded by Craig Lewis*/
+/* Coded by Craig Lewis ST20317192*/
 /* index.php styling */
 
 #background_search{
@@ -33,6 +33,7 @@
 #title_2{
     font-family: "Noto Sans", sans-serif;
     font-size: 45px;
+    font-weight: bold;
     height: auto;
     list-style: none;
 }
@@ -49,6 +50,8 @@
     font-size: 30px;
     display: flex;
     margin: 60px auto;
+    font-family: "Noto Sans", sans-serif;
+    justify-content: center;
     align-items: center;
 }
 
@@ -57,7 +60,6 @@
     height: auto;
     display: flex;
     align-items: center;
-    background-color: slategray;
     opacity: 85%;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -85,11 +87,11 @@
 #search_button{
     background-size: contain;
     background: url("../images/arrow_right_button_search.svg") no-repeat center;
-
     border-radius: 90px;
     height: 40px;
     width: 40px;
     margin: 0 20px 0 20px;
+    background-color: white;
 }
 
 #search_bar_icon{

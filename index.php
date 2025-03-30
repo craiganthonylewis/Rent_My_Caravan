@@ -4,10 +4,14 @@
 
 <head>
 
+    <!-- CSS -->
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/media_queries.css">
   <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/font.css">
+
+    <!-- Javascript -->
+    <script src="js/title_animation.js"></script>
 
   <meta charset="UTF-8">
   <title>Rent My Caravan</title>

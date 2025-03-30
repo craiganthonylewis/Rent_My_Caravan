@@ -81,6 +81,41 @@
         margin-bottom: 80px;
     }
 
+    #search_bar{
+        background-color: white;
+        height: 40px;
+        width: 70%;
+        border-radius: 90px;
+        display: flex;
+        align-items: center;
+        margin: 40px 0 40px 40px;
+    }
+
+    #search_bar_icon{
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/magnifying_glass.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 5px 0 0 15px;
+    }
+
+    #signup_button_container button{
+        width: 200px;
+        height: 100px;
+        background-color: #C67218;
+        border-radius: 20px;
+        font-size: 30px;
+        display: flex;
+        font-family: "Noto Sans", sans-serif;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
 }
 
 @media (max-width: 480px) {

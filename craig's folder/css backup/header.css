@@ -1,9 +1,18 @@
-/* Coded by Craig Lewis*/
+/* Coded by Craig Lewis ST20317192*/
 /* header.php styling */
-header{
+
+#header_bg_container{
     background-color: #414533;
+    width: 100%;
+    height: auto;
+}
+
+header{
     color: white;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 select {

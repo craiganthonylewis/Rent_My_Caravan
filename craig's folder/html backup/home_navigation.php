@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Coded by Craig Lewis -->
+<!-- Coded by Craig Lewis ST20317192-->
 <html lang="en">
 <head>
 
@@ -25,7 +25,7 @@
                     <li class = "nav_link" id = "about_link"><a href="index.php">caravans</a></li>
                     <li class = "nav_link" id = "contact_link"><a href="index.php">about</a></li>
                     <li class = "nav_link" id = "services_link"><a href="index.php">contact us</a></li>
-                </ul></div>
+                </ul>
             </div> <!-- end of nav_links-->
 
             </div> <!--end of navigation_container-->

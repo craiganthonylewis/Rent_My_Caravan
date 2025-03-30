@@ -1,5 +1,5 @@
+<!-- Coded by Craig Lewis ST20317192-->
 <!-- Database connection to rentmycar-->
-<!-- Coded by Craig Lewis -->
 
 <?php
 

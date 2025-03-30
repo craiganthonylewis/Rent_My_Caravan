@@ -1,4 +1,4 @@
-/* Coded by Craig Lewis*/
+/* Coded by Craig Lewis ST20317192*/
 /* Navigation*/
 
 #navigation_container {
@@ -9,6 +9,9 @@
     border-bottom-right-radius: 30px;
     display: flex;
     align-items: center;
+    top:0;
+    z-index: 1;
+    position: fixed
 }
 
 #nav_links ul{

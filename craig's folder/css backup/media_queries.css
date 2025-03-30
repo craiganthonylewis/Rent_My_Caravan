@@ -1,4 +1,4 @@
-/* Coded by Craig Lewis*/
+/* Coded by Craig Lewis ST20317192*/
 /* Mobile and Tablet Friendly */
 @media (max-width: 768px) {
     .container_960 .column_1, .container_960 .column_2, .container_960 .column_3,
@@ -16,6 +16,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("images/background.jpg");
+    }
+
+    header{
+        width: 100%;
+        height: auto;
+        position: static;
     }
 
     #logo {
@@ -61,6 +67,20 @@
         display: flex;
         align-items: center;
     }
+
+    #background_search{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
 }
 
 @media (max-width: 480px) {

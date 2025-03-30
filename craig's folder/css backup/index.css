@@ -1,9 +1,9 @@
-/* Coded by Craig Lewis*/
+/* Coded by Craig Lewis ST20317192*/
 /* index.php styling */
 
 #background_search{
     width: 100%;
-    height: 400px;
+    height: auto;
     min-height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 40px;
@@ -12,6 +12,7 @@
     justify-content: space-between;
     margin-top: 80px;
     margin-bottom: 80px;
+    padding: 0;
 }
 
  #title_container{
@@ -32,6 +33,7 @@
 #title_2{
     font-family: "Noto Sans", sans-serif;
     font-size: 45px;
+    font-weight: bold;
     height: auto;
     list-style: none;
 }
@@ -48,6 +50,9 @@
     font-size: 30px;
     display: flex;
     margin: 60px auto;
+    font-family: "Noto Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 #search_bar_container{
@@ -55,6 +60,9 @@
     height: auto;
     display: flex;
     align-items: center;
+    opacity: 85%;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 
 #search_bar{
@@ -64,6 +72,7 @@
     border-radius: 90px;
     display: flex;
     align-items: center;
+    margin: 40px 0 40px 40px;
 }
 
 #search_bar input{
@@ -72,17 +81,29 @@
     border: none;
     height: 40px;
     width: 100%;
-    padding: 0 25px;
-}
-
-#search_bar input::-webkit-search-cancel-button {
-    opacity: 0;
+    margin: 0 20px 0 20px;
 }
 
 #search_button{
     background-size: contain;
-    background: #C67218 url("../images/arrow_right_button_search.svg") no-repeat center;
+    background: url("../images/arrow_right_button_search.svg") no-repeat center;
     border-radius: 90px;
     height: 40px;
     width: 40px;
+    margin: 0 20px 0 20px;
+    background-color: white;
 }
+
+#search_bar_icon{
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/magnifying_glass.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 0 0 15px;
+}
+
+#search_bar label {
+    display: contents;
+}
+

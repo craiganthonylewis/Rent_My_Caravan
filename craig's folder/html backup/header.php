@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Coded by Craig Lewis -->
+<!-- Coded by Craig Lewis ST20317192-->
 <html lang="en">
 <head>
 
@@ -16,6 +16,7 @@
 <body>
 
 <header>
+    <div id ="header_bg_container">
   <nav>
   <div class = "container_960">
 
@@ -49,11 +50,12 @@
           <div id="account_image"></div>
         </a>
 
-      </div>
+      </div> </div>
 
       </div>
   </div>
     </nav>
+    <?php include('home_navigation.php');?>
   </header>
 </body>
 </html>

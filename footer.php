@@ -36,9 +36,8 @@
         <li><a href="https://www.instagram.com">Instagram</a></li></ul></div>
 
     </div>
+      <div id ="filler"></div>
   </div>
-
-  <div id ="filler"><p></p></div>
 
 </footer>
 

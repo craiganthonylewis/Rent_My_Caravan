@@ -34,5 +34,8 @@
     color: deepskyblue;
 }
 
-#nav_links li{
+#nav_links button{
+    width: 120px;
+    height: 80px;
+    background-color: #333333;
 }

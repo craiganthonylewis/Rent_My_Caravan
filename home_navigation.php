@@ -21,10 +21,10 @@
 
             <div class = "column_12" id = "nav_links">
                 <ul>
-                    <li class = "nav_link" id = "home_link"><a href="index.php">home</a></li>
-                    <li class = "nav_link" id = "about_link"><a href="index.php">caravans</a></li>
-                    <li class = "nav_link" id = "contact_link"><a href="index.php">about</a></li>
-                    <li class = "nav_link" id = "services_link"><a href="index.php">contact us</a></li>
+                    <li class = "nav_link" id = "home_link"><a href="index.php"><button>home</button></a></li>
+                    <li class = "nav_link" id = "about_link"><a href="index.php"><button>caravans</button></a></li>
+                    <li class = "nav_link" id = "contact_link"><a href="index.php"><button>about</button></a></li>
+                    <li class = "nav_link" id = "services_link"><a href="index.php"><button>contact us</button></a></li>
                 </ul>
             </div> <!-- end of nav_links-->
 

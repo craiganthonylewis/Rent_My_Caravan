@@ -125,6 +125,16 @@
         color: white;
     }
 
+    #nav_links button:active{
+        background-color: grey;
+        font-size: 10px;
+        color: white;
+    }
+
+    #nav_links button:hover{
+    color: dodgerblue;
+}
+
 }
 
 @media (max-width: 480px) {

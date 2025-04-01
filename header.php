@@ -55,7 +55,7 @@
       </div>
   </div>
     </nav>
-    <?php include('home_navigation.php');?>
+    <?php include('navigation.php');?>
   </header>
 </body>
 </html>

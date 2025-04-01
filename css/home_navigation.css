@@ -38,4 +38,6 @@
     width: 120px;
     height: 80px;
     background-color: #333333;
+    border: none;
+    border-radius: 10px;
 }

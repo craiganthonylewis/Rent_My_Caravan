@@ -50,13 +50,13 @@
           <div id="account_image"></div>
         </a>
 
-      </div> </div>
+      </div>
 
       </div>
   </div>
     </nav>
-    <?php include('navigation.php');?>
   </header>
+<?php include('navigation.php');?>
 </body>
 </html>
 

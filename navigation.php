@@ -18,7 +18,7 @@
             <div class = "column_12" id = "navigation_container">
 
                 <div class = "column_6" id = "search_bar_nav">
-                    <div id = "magnifying_glass"></div>
+                    <div id = "search_bar_nav_icon"></div>
                 <label><input type="search" placeholder="Search here..."></label>
             </div>
 

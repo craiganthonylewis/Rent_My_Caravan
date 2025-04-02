@@ -17,7 +17,7 @@
     display: flex;
     text-decoration: none;
     list-style: none;
-    gap: 0px;
+    gap: 25px;
     justify-content: center;
     margin-right: 60px;
 }
@@ -69,7 +69,7 @@
     border-bottom-left-radius: 40px;
 }
 
-#search_bar{
+#search_bar_nav{
     background-color: white;
     height: 40px;
     width: 100%;
@@ -79,7 +79,7 @@
     margin: 40px 0 40px 40px;
 }
 
-#search_bar input{
+#search_bar_nav input{
     border-radius: 90px;
     outline: none;
     border: none;
@@ -88,7 +88,7 @@
     margin: 0 20px 0 20px;
 }
 
-#search_button{
+#search_nav_button{
     background: url("../images/arrow_right.svg") no-repeat center;
     background-size: 60px;
     border-radius: 90px;
@@ -98,7 +98,7 @@
     border: 2px solid #ffffff;
 }
 
-#search_button:active {
+#search_nav_button:active {
     background: url("../images/arrow_right.svg") no-repeat center;
     background-size: 40px;
     border-radius: 90px;
@@ -110,7 +110,7 @@
     border: none;
 }
 
-#search_bar_icon{
+#search_bar_nav_icon{
     width: 30px;
     height: 30px;
     background-image: url("../images/magnifying_glass.svg");
@@ -119,6 +119,6 @@
     margin: 0 0 0 15px;
 }
 
-#search_bar label {
+#search_bar_nav label {
     display: contents;
 }

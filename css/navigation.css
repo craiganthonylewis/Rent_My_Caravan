@@ -117,6 +117,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin: 15px 10px 10px 10px;
+    background-color: #333333;
 }
 
 #search_bar_nav label {

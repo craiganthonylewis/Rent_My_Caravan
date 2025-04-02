@@ -70,7 +70,7 @@
 }
 
 #search_bar_nav{
-    background-color: white;
+    background-color: blue;
     height: 40px;
     width: 100%;
     border-radius: 90px;
@@ -116,7 +116,7 @@
     background-image: url("../images/magnifying_glass.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 0 0 0 15px;
+    margin: 15px 10px 10px 10px;
 }
 
 #search_bar_nav label {

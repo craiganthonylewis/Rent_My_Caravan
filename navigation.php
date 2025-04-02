@@ -31,6 +31,8 @@
                 </ul>
             </div> <!-- end of nav_links-->
 
+                <button id = "search_nav_button"></button>
+
             </div> <!--end of navigation_container-->
         </div> <!-- end of 960 container -->
     </nav>

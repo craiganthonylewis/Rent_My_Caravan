@@ -17,12 +17,14 @@
         <div class = "container_960">
             <div class = "column_12" id = "navigation_container">
 
-                <div class = "column_6" id = "search_bar_nav">
+                <div class = "column_6" id = "search_nav_bar">
                     <div id = "search_bar_nav_icon"></div>
                 <label><input type="search" placeholder="Search here..."></label>
             </div>
+                <button id = "search_nav_button"></button>
 
-            <div class = "column_6" id = "nav_links">
+
+                <div class = "column_6" id = "nav_links">
                 <ul>
                     <li class = "nav_link" id = "home_link"><a href="index.php">home</a></li>
                     <li class = "nav_link" id = "about_link"><a href="index.php">caravans</a></li>
@@ -30,8 +32,6 @@
                     <li class = "nav_link" id = "services_link"><a href="index.php">contact us</a></li>
                 </ul>
             </div> <!-- end of nav_links-->
-
-                <button id = "search_nav_button"></button>
 
             </div> <!--end of navigation_container-->
         </div> <!-- end of 960 container -->

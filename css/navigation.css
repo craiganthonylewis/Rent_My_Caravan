@@ -17,7 +17,7 @@
     display: flex;
     text-decoration: none;
     list-style: none;
-    gap: 15px;
+    gap: 20px;
 }
 
 #nav_links a{

@@ -43,6 +43,7 @@
 
         <ul>
         <li><a href="index.php">Sign up</a></li>
+            <li>|</li>
         <li><a href="index.php">Log in</a></li>
       </ul>
 

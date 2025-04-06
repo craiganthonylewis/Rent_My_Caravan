@@ -49,10 +49,10 @@
 
 
     #nav_links ul{
-        display: block;
-        text-decoration: none;
+        flex-direction: column;
         list-style: none;
-        text-align: center;
+        align-items: center;
+        margin-right: 45px;
     }
 
     #nav_links ul li{
@@ -123,6 +123,33 @@
         border-radius: 0px;
         background-color: #333333;
         color: white;
+    }
+
+    #search_bar_nav{
+        background-color: blue;
+        height: 40px;
+        width: 100%;
+        border-radius: 90px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #search_bar_nav input{
+        background-color: white;
+        height: 40px;
+        width: 58%;
+        border-radius: 90px;
+        display: flex;
+        align-items: center;
+    }
+
+    #search_bar_nav_icon{
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/magnifying_glass.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 5px 0 0 15px;
     }
 
 }

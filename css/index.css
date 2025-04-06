@@ -52,8 +52,7 @@
     font-family: "Noto Sans", sans-serif;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: 60px;
+    margin: 60px auto auto;
 }
 
 #search_bar_container{

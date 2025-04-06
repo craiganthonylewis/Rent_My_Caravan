@@ -59,7 +59,7 @@
         margin-bottom: 25px;
     }
 
-    #navigation_container {
+    #home_navigation_container {
         width: 100%;
         height: auto;
         background-color: rgba(0, 0, 0, 0.7);
@@ -125,10 +125,20 @@
         color: white;
     }
 
+    #navigation_container {
+        max-width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        align-items: center;
+        display: flex;
+    }
+
     #search_bar_nav{
-        background-color: blue;
+        background-color: white;
         height: 40px;
-        width: 100%;
+        max-width: 70%;
         border-radius: 90px;
         align-items: center;
         flex-direction: column;
@@ -137,9 +147,8 @@
     #search_bar_nav input{
         background-color: white;
         height: 40px;
-        width: 58%;
+        max-width: 80%;
         border-radius: 90px;
-        display: flex;
         align-items: center;
     }
 

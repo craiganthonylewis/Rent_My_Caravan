@@ -17,7 +17,7 @@
 
     <nav>
         <div class = "container_960">
-            <div class = "column_12" id = "navigation_container">
+            <div class = "column_12" id = "home_navigation_container">
 
             <div class = "column_12" id = "nav_links">
                 <ul>

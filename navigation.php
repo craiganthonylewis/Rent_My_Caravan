@@ -16,21 +16,21 @@
     <nav>
         <div class="container_960">
             <div class="column_12" id="navigation_container">
-                <div class="column_5" id="search_bar_nav">
+                <div class="column_4" id="search_bar_nav">
                     <div id="search_bar_nav_icon"></div>
                     <label>
                         <input type="search" placeholder="Search here...">
                     </label>
                 </div>
 
-                <button id="search_button"></button>
+                <button id="search_button_nav"></button>
 
-                <div class = "column_5" id = "nav_links">
+                <div class = "column_6" id = "nav_links">
                     <ul>
-                        <li class = "home_nav_link" id = "home_link"><a href="index.php"><button>home</button></a></li>
-                        <li class = "home_nav_link" id = "about_link"><a href="index.php"><button>caravans</button></a></li>
-                        <li class = "home_nav_link" id = "contact_link"><a href="index.php"><button>about</button></a></li>
-                        <li class = "home_nav_link" id = "services_link"><a href="index.php"><button>contact us</button></a></li>
+                        <li class = "nav_link" id = "home_link"><a href="index.php"><button>home</button></a></li>
+                        <li class = "nav_link" id = "about_link"><a href="index.php"><button>caravans</button></a></li>
+                        <li class = "nav_link" id = "contact_link"><a href="index.php"><button>about</button></a></li>
+                        <li class = "nav_link" id = "services_link"><a href="index.php"><button>contact us</button></a></li>
                     </ul>
                 </div>
 

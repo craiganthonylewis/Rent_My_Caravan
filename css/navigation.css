@@ -15,9 +15,9 @@
 
 #nav_links ul{
     display: flex;
-    text-decoration: none;
     list-style: none;
-    gap: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 #nav_links a{
@@ -30,11 +30,9 @@
 }
 
 #nav_links button{
-    width: 120px;
+    width: 100px;
     height: 80px;
-    background-color: transparent;
-    border: none;
-    color: white;
+    background-color: inherit;
 }
 
 #nav_links button:hover{

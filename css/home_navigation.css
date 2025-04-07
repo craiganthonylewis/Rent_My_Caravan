@@ -13,7 +13,7 @@
     position: sticky;
 }
 
-#nav_links ul{
+#home_nav_links ul{
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -22,19 +22,19 @@
     margin-right: 60px;
 }
 
-#nav_links a{
+#home_nav_links a{
     text-decoration: none;
     list-style: none;
     color: white;
 }
 
-#nav_links a:hover{
+#home_nav_links a:hover{
     text-decoration: none;
     list-style: none;
     color: deepskyblue;
 }
 
-#nav_links button{
+#home_nav_links button{
     width: 120px;
     height: 80px;
     background-color: inherit;
@@ -43,7 +43,7 @@
     color: white;
 }
 
-#nav_links button:hover{
+#home_nav_links button:hover{
     width: 120px;
     height: 80px;
     border: none;
@@ -52,7 +52,7 @@
     color: dodgerblue;
 }
 
-#nav_links button:active{
+#home_nav_links button:active{
     cursor: pointer;
     color: cornflowerblue;
 }

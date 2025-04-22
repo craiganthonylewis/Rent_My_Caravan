@@ -3,7 +3,7 @@
 
 #background_login{
     width: 100%;
-    height: auto;
+    height: 300px;
     min-height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 40px;

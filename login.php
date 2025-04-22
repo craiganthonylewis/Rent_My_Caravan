@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Coded by Craig Lewis ST20317192-->
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -28,10 +28,9 @@
     <section>
 
         <div class = "container_960">
-            <div class = "column_6" id = "background_login">
-
-            </div>
-        </div>
+            <div class = "column_6" id = "login_background">
+                <div class = "column_12" id = "login_title"</div>
+                <div class = "column_12" id = "input_title_1"</div></div>
 
     </section>
 </main>

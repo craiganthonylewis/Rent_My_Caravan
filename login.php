@@ -28,10 +28,7 @@
     <section>
 
         <div class = "container_960">
-            <div class = "column_12" id = "background_search">
-
-
-            </div>
+            <div class = "column_12" id = "background_login"></div>
         </div>
 
     </section>

@@ -28,7 +28,7 @@
     <section>
 
         <div class = "container_960">
-            <div class = "column_12" id = "background_login">
+            <div class = "column_6" id = "background_login">
 
             </div>
         </div>

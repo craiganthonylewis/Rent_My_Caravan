@@ -23,10 +23,16 @@
 
 <body>
 <?php include('header.php');?>
+<?php include('navigation.php');?>
 <main>
     <section>
 
+        <div class = "container_960">
+            <div class = "column_12" id = "background_search">
 
+
+            </div>
+        </div>
 
     </section>
 </main>

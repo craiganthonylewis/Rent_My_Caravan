@@ -23,6 +23,7 @@
 
 <body>
 <?php include('header.php');?>
+<?php include('home_navigation.php');?>
 <main>
     <section>
 

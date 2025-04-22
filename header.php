@@ -58,8 +58,6 @@
     </nav>
   </header>
 
-<?php include('home_navigation.php');?>
-
 </body>
 </html>
 

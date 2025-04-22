@@ -6,8 +6,7 @@ $(document).ready(function () {
     $("#title_1").fadeIn("slow");
 
     $("#title_1").animate({
-        height: '60px',
-        opacity: '0.4',
+        height: '54px',
     });
 
     $("#title_2").fadeOut("slow");

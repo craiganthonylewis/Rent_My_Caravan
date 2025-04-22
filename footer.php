@@ -25,7 +25,7 @@
 
       <div class = "column_4" id = "footer_list_2"><ul>
         <li><h1>More</h1></li>
-        <li><a href="index.php">Login</a></li>
+        <li><a href="login.php">Login</a></li>
         <li><a href="index.php">Sign Up</a></li>
         <li><a href="index.php">Home</a></li></ul></div>
 

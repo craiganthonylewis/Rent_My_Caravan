@@ -26,10 +26,36 @@
     text-align: center;
 }
 
+#input_title_1 input{
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    border-radius: 90px;
+    border: none;
+}
+
+#input_title_1 input::placeholder{
+    text-align: left;
+    padding: 20px;
+}
+
 #input_title_2{
     width: 100%;
     height: auto;
     text-align: center;
+}
+
+#input_title_2 input{
+    width: 50%;
+    height: 20px;
+    text-align: center;
+    border-radius: 90px;
+    border: none;
+}
+
+#input_title_2 input::placeholder{
+    text-align: left;
+    padding: 20px;
 }
 
 #login_button{

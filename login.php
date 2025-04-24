@@ -52,9 +52,14 @@
 
             </div>
 
-            <div class = "column_12" id = "login_button">l</div>
-            <div class = "column_12" id = "misc_1">l</div>
-            <div class = "column_12" id = "misc_2">l</div>
+            <div class = "column_3" id = "login_button">
+
+                <button type = "submit" id = "login_button">login</button>
+
+            </div>
+
+            <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
+            <div class = "column_12" id = "misc_2"><a>Sign up</a></div>
 
             </div>
         </div>

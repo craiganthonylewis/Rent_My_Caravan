@@ -35,15 +35,19 @@
 #login_button{
     width: 100%;
     height: auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #misc_1{
     width: 100%;
     height: auto;
+    text-align: center;
 }
 #misc_2{
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 

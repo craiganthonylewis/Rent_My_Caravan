@@ -31,8 +31,27 @@
             <div class = "column_6" id = "login_background">
 
                 <div class = "column_12" id = "login_title"><h1>Welcome</h1></div>
-            <div class = "column_12" id = "input_title_1"><p>Enter your Email Address</p></div>
-            <div class = "column_12" id = "input_title_2">l</div>
+            <div class = "column_12" id = "input_title_1"><p>Enter your Email Address:</p>
+
+                <div id ="input_bar_email">
+
+                <label><input type="email" placeholder="Email Address"></label>
+
+                </div>
+
+            </div>
+
+
+            <div class = "column_12" id = "input_title_2"><p>Enter your Password:</p>
+
+                <div id ="input_bar_password">
+
+                    <label><input type="password" placeholder="Password"></label>
+
+                </div>
+
+            </div>
+
             <div class = "column_12" id = "login_button">l</div>
             <div class = "column_12" id = "misc_1">l</div>
             <div class = "column_12" id = "misc_2">l</div>

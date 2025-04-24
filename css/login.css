@@ -17,37 +17,33 @@
 #login_title{
     width: 100%;
     height: auto;
-    background-color: #414533;
-    justify-items: center;
+    text-align: center;
 }
 
 #input_title_1{
     width: 100%;
     height: auto;
-    background-color: grey;
+    text-align: center;
 }
 
 #input_title_2{
     width: 100%;
     height: auto;
-    background-color: red;
+    text-align: center;
 }
 
 #login_button{
     width: 100%;
     height: auto;
-    background-color: blue;
 }
 
 #misc_1{
     width: 100%;
     height: auto;
-    background-color: white;
 }
 #misc_2{
     width: 100%;
     height: auto;
-    background-color: green;
 }
 
 

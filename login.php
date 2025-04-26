@@ -54,12 +54,12 @@
 
             <div class = "column_3" id = "login_button">
 
-                <button type = "submit" id = "login_button">login</button>
+                <button type = "submit" id = "login_button">Log in</button>
 
             </div>
 
             <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
-            <div class = "column_12" id = "misc_2"><a>Sign up</a></div>
+            <div class = "column_12" id = "misc_2"><a href="index.php">Sign up</a></div>
 
             </div>
         </div>

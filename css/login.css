@@ -18,12 +18,14 @@
     width: 100%;
     height: auto;
     text-align: center;
+    align-content: center;
+    margin-top: 20px;
 }
 
 #input_title_1{
     width: 100%;
     height: auto;
-    text-align: center;
+    font-size: 12px;
 }
 
 #input_title_1 input{
@@ -32,6 +34,7 @@
     text-align: center;
     border-radius: 90px;
     border: none;
+    margin: 0 auto;
 }
 
 #input_title_1 input::placeholder{
@@ -42,7 +45,7 @@
 #input_title_2{
     width: 100%;
     height: auto;
-    text-align: center;
+    font-size: 12px;
 }
 
 #input_title_2 input{
@@ -62,7 +65,7 @@
     width: 100%;
     height: auto;
     text-align: center;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 
 #login_button button{

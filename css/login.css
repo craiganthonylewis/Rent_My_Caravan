@@ -108,8 +108,8 @@
     text-decoration: none;
 }
 
-#misc_2 a:active{
-    color: cornflowerblue;
+#misc_2 a:hover{
+    color: deepskyblue;
     text-decoration: none;
 }
 

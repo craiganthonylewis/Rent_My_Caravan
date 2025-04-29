@@ -1,0 +1,116 @@
+/* Originally coded by Craig Lewis ST20317192*/
+/* Repetitions removed/ general cleanup/ rewriting by Ezme Clark ST20261632 */
+/* signup.php styling */
+/* general styling to be used for all pages*/
+
+#container_background{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 80px auto;
+    padding: 0;
+}
+
+#container_title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+#input_title_container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+
+#input_bar input{
+    width: 50%;
+    height: 25px;
+    border-radius: 90px;
+    border: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#input_title {
+    font-size: 12px;
+}
+
+#input_title_container input::placeholder{
+    text-align: left;
+}
+
+
+
+#red_button{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
+    border: none;
+    border-radius: 90px;
+    color: white;
+    height: 35px;
+}
+
+#red_button button{
+    background-color: red;
+}
+
+#red_button button:active {
+    background-color: darkred;
+}
+
+#green_button{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
+    border: none;
+    border-radius: 90px;
+    color: white;
+    height: 35px;
+}
+
+#green_button button{
+    background-color: green;
+}
+
+#green_button button:active {
+    background-color: darkgreen;
+}
+
+#misc_1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+#misc_2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+#misc_2 a{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+#misc_2 a:hover{
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+
+

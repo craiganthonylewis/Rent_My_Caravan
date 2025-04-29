@@ -43,16 +43,16 @@
                         <label><input type="username" placeholder="Username"></label>
                     </div>
                     <div id = "input_title">
-                        <p>Enter your password:</p><br>
+                        <p>Enter your Password:</p><br>
                     </div>
                     <div id = "input_bar">
                         <label><input type="password" placeholder="Password"></label>
                     </div>
                     <div id = "input_title">
-                        <p>Re-Enter your password:</p><br>
+                        <p>Re-Enter your Password:</p><br>
                     </div>
                     <div id = "input_bar">
-                        <label><input type="password" placeholder="Re-Enter"></label>
+                        <label><input type="password" placeholder="Password"></label>
                     </div>
                     <div class = "column_3" id = "red_button">
                         <button type = "submit" id = "red_button">Log in</button>
@@ -61,7 +61,7 @@
                         <p>Not a member?</p>
                     </div>
                     <div class = "column_12" id = "misc_2">
-                        <a href="index.php">Sign up</a>
+                        <a href="login.php">Sign in</a>
                     </div>
                 </div>
             </div>

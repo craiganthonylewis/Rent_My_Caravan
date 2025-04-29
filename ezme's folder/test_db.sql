@@ -7,6 +7,12 @@
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
+-- **
+-- Temporary test database for checking connectivity to the servers and 
+-- ensuring the php works as expected.
+-- If all goes well, this will be committed as the main db.
+-- **
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";

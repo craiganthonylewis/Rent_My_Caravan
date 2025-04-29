@@ -55,10 +55,10 @@
                         <label><input type="password" placeholder="Password"></label>
                     </div>
                     <div class = "column_3" id = "red_button">
-                        <button type = "submit" id = "red_button">Log in</button>
+                        <button type = "submit" id = "red_button">Sign up</button>
                     </div>
                     <div class = "column_12" id = "misc_1">
-                        <p>Not a member?</p>
+                        <p>Already a member?</p>
                     </div>
                     <div class = "column_12" id = "misc_2">
                         <a href="login.php">Sign in</a>

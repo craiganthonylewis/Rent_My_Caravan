@@ -60,7 +60,7 @@
             </div>
 
             <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
-            <div class = "column_12" id = "misc_2"><a href="index.php">Sign up</a></div>
+            <div class = "column_12" id = "misc_2"><a href="signup.php">Sign up</a></div> <!-- href adjusted by Ezme Clark -->
 
             </div>
         </div>

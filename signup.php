@@ -65,8 +65,8 @@
 
             </div>
 
-            <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
-            <div class = "column_12" id = "misc_2"><a href="index.php">Sign up</a></div>
+            <div class = "column_12" id = "misc_1"><p>Already a member?</p></div>
+            <div class = "column_12" id = "misc_2"><a href="login.php">Sign in</a></div>
 
             </div>
         </div>

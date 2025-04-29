@@ -35,7 +35,7 @@ CREATE TABLE `caravans` (
   `price` float NOT NULL,
   `location` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `image_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -54,7 +54,7 @@ CREATE TABLE `filters` (
   `wifi` tinyint(1) NOT NULL,
   `tv` tinyint(1) NOT NULL,
   `scenery` varchar(8) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,7 @@ CREATE TABLE `users` (
   `password` varchar(16) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `pfp_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Indexes for dumped tables

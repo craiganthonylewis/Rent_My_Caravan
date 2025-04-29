@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- Coded by Craig Lewis ST20317192-->
+<!-- Link capitalisation by Ezme Clark ST20261632-->
 <html lang="en">
 <head>
 
@@ -21,10 +22,10 @@
 
             <div class = "column_12" id = "home_nav_links">
                 <ul>
-                    <li class = "home_nav_link" id = "home_link"><a href="index.php"><button>home</button></a></li>
-                    <li class = "home_nav_link" id = "about_link"><a href="index.php"><button>caravans</button></a></li>
-                    <li class = "home_nav_link" id = "contact_link"><a href="index.php"><button>about</button></a></li>
-                    <li class = "home_nav_link" id = "services_link"><a href="index.php"><button>contact us</button></a></li>
+                    <li class = "home_nav_link" id = "home_link"><a href="index.php"><button>Home</button></a></li>
+                    <li class = "home_nav_link" id = "about_link"><a href="index.php"><button>Caravans</button></a></li>
+                    <li class = "home_nav_link" id = "contact_link"><a href="index.php"><button>About</button></a></li>
+                    <li class = "home_nav_link" id = "services_link"><a href="index.php"><button>Contact Us</button></a></li>
                 </ul>
             </div> <!-- end of nav_links-->
 

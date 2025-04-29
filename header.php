@@ -42,7 +42,7 @@
       <div class = "login_links_button">
 
         <ul>
-        <li><a href="index.php">Sign up</a></li>
+        <li><a href="signup.php">Sign up</a></li>
             <li>|</li>
         <li><a href="login.php">Log in</a></li>
       </ul>

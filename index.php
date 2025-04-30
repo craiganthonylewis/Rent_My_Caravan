@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="column_6" id="signup_button_container">
-                <button onclick="location.hre='signup.php'">Sign up <br> for free</button>
+                <button onclick="location.href='signup.php'">Sign up <br> for free</button>
                 </div>
 
                 <div class="column_12" id="search_bar_container">

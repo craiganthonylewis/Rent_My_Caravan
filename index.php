@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="column_6" id="signup_button_container">
-                <button href="signup.php">Sign up <br> for free</button>
+                <button><a href="signup.php">Sign up <br> for free</button>
                 </div>
 
                 <div class="column_12" id="search_bar_container">

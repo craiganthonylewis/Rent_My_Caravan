@@ -5,9 +5,9 @@
 <head>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/media_queries.css">
-    <link rel="stylesheet" href="css/signup.css"> <!-- will rename to general.css when more testing is done -Ezme -->
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/media_queries.css">
+  <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/font.css">
 
 
@@ -31,8 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo $email_Entry . " " . $password_Entry;
 
-    $conn = new mysqli("localhost", "root", "", "users");
-    $statement = $conn->prepare("SELECT `user_id`, `username`, `password` FROM users WHERE username=?");
+    $conn = new mysqli("localhost", "root", "", "test");
+    $statement = $conn->prepare("SELECT `user_id`, `username`, `PASSWORD` FROM users WHERE username=?");
     $statement->bind_param("s", $email_Entry);
     $statement->execute();
     $statement->store_result();
@@ -57,36 +57,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
             <!--login form -->
-            <div class="column_6" id="container_background">
+            <div class="column_6" id="login_background">
 
-                <div class="column_12" id="container_title"><h1>Welcome</h1></div>
-
-                <div class="column_12" id="input_title_container"> <!-- added to center contents - Ezme -->
+                <div class="column_12" id="login_title"><h1>Welcome</h1></div>
 
                 <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
 
-                    <div class="column_12" id="input_title_container">
-                        <div id="input_title"><p>Enter your Email Address:</p><br></div>
-                        <div id="input_bar">
+                    <div class="column_12" id="input_title_container_1">
+                        <div id="input_title_1"><p>Enter your Email Address:</p><br></div>
+                        <div id="input_bar_email">
                             <label><input type="text" name="email" placeholder="Email Address" required></label>
                         </div>
                     </div>
 
-                    <div class="column_12" id="input_title_container">
-                        <div id="input_title"><p>Enter your Password:</p><br></div>
-                        <div id="input_bar">
+                    <div class="column_12" id="input_title_container_2">
+                        <div id="input_title_2"><p>Enter your Password:</p><br></div>
+                        <div id="input_bar_password">
                             <label><input type="password" name="password" placeholder="Password" required></label>
                         </div>
                     </div>
 
                     <!-- Submit button -->
-                    <div class="column_3" id="red_button">
-                        <button type="submit" id="red_button">Log in</button>
+                    <div class="column_3" id="login_button">
+                        <button type="submit" id="login_button">Log in</button>
                     </div>
 
                 </form>
                 <!--login form end -->
-                </div> 
             <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
             <div class = "column_12" id = "misc_2"><a href="signup.php">Sign up</a></div> <!-- href adjusted by Ezme Clark -->
 

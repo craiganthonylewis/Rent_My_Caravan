@@ -8,6 +8,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $password = trim($_POST['passwd']);
     $confirm_password = trim($_POST["conf_passwd"]);
     $password_hash = password_hash($password, PASSWORD_BCRYPT);
+    if($query = $db->prepare("SELECT * FROM users WHERE email = ?")) {
+        $error = '';
+        // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
+	$query->bind_param('s', $email);
+	$query->execute();
+	// Store the result so we can check if the account exists in the database.
+	$query->store_result();
+        if ($query->num_rows > 0) {
+            $error .= "echo '<script>alert("The email address is already registered")</script>'";   
+            if (empty($error) ) {
+                $insertQuery = $db->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?);");
+                $insertQuery->bind_param("sss", $fullname, $email, $password_hash);
+                $result = $insertQuery->execute();
+                if ($result) {
+                    $error .= "echo '<script>alert("Your registration was successful!")</script>'";  
+                } else {
+                    $error .= "echo '<script>alert("Something went wrong!")</script>'";
+                }
+            }
+        }
+    }
+    $query->close();
+    $insertQuery->close();
+    // Close DB connection
+    mysqli_close($db);
 
 
 }

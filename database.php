@@ -6,7 +6,7 @@
  $db_server = "localhost"; #Holds names of the server
  $db_user = "root"; #MySQL database user //root = default and a security risk
  $db_pass = ""; #Password
- $db_name = "test"; #Database name
+ $db_name = "rentmycaravan_db"; #Database name
 
  $conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name); #Declares connection variables
 

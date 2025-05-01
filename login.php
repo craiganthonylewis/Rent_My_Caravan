@@ -41,7 +41,7 @@
 
                 </div>
 
-                    <form class = "column_12" id = "input_title_container_2">
+                    <div class = "column_12" id = "input_title_container_2">
 
                         <div id = "input_title_2"><p>Enter your Password:</p><br></div>
 
@@ -50,6 +50,7 @@
 
                         </div>
             </div>
+
 
             <div class = "column_3" id = "login_button">
 

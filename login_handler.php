@@ -1,9 +1,6 @@
 <!-- Coded by Craig Lewis ST20317192-->
 <!-- Database connection to rentmycar-->
 
-
-
-
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

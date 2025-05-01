@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo $email_Entry . " " . $password_Entry;
 
     $conn = new mysqli("localhost", "root", "", "test");
-    $statement = $conn->prepare("SELECT `user_id`, `username`, `PASSWORD` FROM users WHERE username=?");
+    $statement = $conn->prepare("SELECT `user_id`, `username`, `password` FROM users WHERE username=?");
     $statement->bind_param("s", $email_Entry);
     $statement->execute();
     $statement->store_result();

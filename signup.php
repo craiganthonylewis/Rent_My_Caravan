@@ -2,7 +2,15 @@
 require_once "database.php";
 require_once "user_session.php";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+    $password = trim($_POST['passwd']);
+    $confirm_password = trim($_POST["conf_passwd"]);
+    $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
+
+}
 ?>
 
 
@@ -10,8 +18,7 @@ require_once "user_session.php";
 
 
 <!DOCTYPE html>
-<!-- Coded by Craig Lewis ST20317192-->
-<!-- Modified from login to signup by Ezme Clark ST20261632, Yurii Filin ST20302767, Davide Lo Castro ST 20304605-->
+<!-- Created by Ezme Clark ST20261632, Yurii Filin ST20302767, Davide Lo Castro ST 20304605-->
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
@@ -46,25 +53,25 @@ require_once "user_session.php";
                             <p>Enter your Email Address:</p><br>
                         </div>
                         <div id = "input_bar">
-                            <label><input type="email" placeholder="Email Address" required></label>
+                            <label><input type="email" name="email" placeholder="Email Address" required></label>
                         </div>
                         <div id = "input_title">
                             <p>Enter your Username:</p><br>
                         </div>
                         <div id = "input_bar">
-                            <label><input type="username" placeholder="Username" required></label>
+                            <label><input type="text" name="username" placeholder="Username" required></label>
                         </div>
                         <div id = "input_title">
                             <p>Enter your Password:</p><br>
                         </div>
                         <div id = "input_bar">
-                            <label><input type="password" placeholder="Password" required></label>
+                            <label><input type="password" name="passwd" placeholder="Enter Password" required></label>
                         </div>
                         <div id = "input_title">
                             <p>Re-Enter your Password:</p><br>
                         </div>
                         <div id = "input_bar">
-                            <label><input type="password" placeholder="Password" required></label>
+                            <label><input type="password" name="conf_passwd" placeholder="Re-Enter Password" required></label>
                         </div>
                         <div class = "column_3" id = "red_button">
                             <button type = "submit" id = "red_button">Sign up</button>

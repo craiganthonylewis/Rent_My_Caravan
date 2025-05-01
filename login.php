@@ -24,6 +24,8 @@
 <body>
 <?php
 
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email_Entry = $_POST["email"];
@@ -42,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $statement->fetch();
         $_SESSION["user_id"] = $id;
         $_SESSION["username"] = $username;
-        header("location: index_active.php");
+        header("location: index_logged_in.php");
     }
 
 }

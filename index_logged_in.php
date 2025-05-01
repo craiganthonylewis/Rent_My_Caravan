@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<?php include('header_active.php');?>
+<?php include('header_logged_in.php');?>
 <?php include('home_navigation.php');?>
 <main>
     <section>

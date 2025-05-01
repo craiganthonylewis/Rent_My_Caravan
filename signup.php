@@ -30,35 +30,37 @@
                     <h1>Welcome</h1>
                 </div>
                 <div class = "column_12" id = "input_title_container">
-                    <div id = "input_title">
-                        <p>Enter your Email Address:</p><br>
-                    </div>
-                    <div id = "input_bar">
-                        <label><input type="email" placeholder="Email Address"></label>
-                    </div>
-                    <div id = "input_title">
-                        <p>Enter your Username:</p><br>
-                    </div>
-                    <div id = "input_bar">
-                        <label><input type="username" placeholder="Username"></label>
-                    </div>
-                    <div id = "input_title">
-                        <p>Enter your Password:</p><br>
-                    </div>
-                    <div id = "input_bar">
-                        <label><input type="password" placeholder="Password"></label>
-                    </div>
-                    <div id = "input_title">
-                        <p>Re-Enter your Password:</p><br>
-                    </div>
-                    <div id = "input_bar">
-                        <label><input type="password" placeholder="Password"></label>
-                    </div>
-                    <div class = "column_3" id = "red_button">
-                        <button type = "submit" id = "red_button">Sign up</button>
-                    </div>
+                    <form action="">
+                        <div id = "input_title">
+                            <p>Enter your Email Address:</p><br>
+                        </div>
+                        <div id = "input_bar">
+                            <label><input id = ""type="email" placeholder="Email Address"></label>
+                        </div>
+                        <div id = "input_title">
+                            <p>Enter your Username:</p><br>
+                        </div>
+                        <div id = "input_bar">
+                            <label><input type="username" placeholder="Username"></label>
+                        </div>
+                        <div id = "input_title">
+                            <p>Enter your Password:</p><br>
+                        </div>
+                        <div id = "input_bar">
+                            <label><input type="password" placeholder="Password"></label>
+                        </div>
+                        <div id = "input_title">
+                            <p>Re-Enter your Password:</p><br>
+                        </div>
+                        <div id = "input_bar">
+                            <label><input type="password" placeholder="Password"></label>
+                        </div>
+                        <div class = "column_3" id = "red_button">
+                            <button type = "submit" id = "red_button">Sign up</button>
+                        </div>
+                    </form>
                     <div class = "column_12" id = "misc_1">
-                        <p>Already a member?</p>
+                        <br><p>Already a member?</p>
                     </div>
                     <div class = "column_12" id = "misc_2">
                         <a href="login.php">Sign in</a>

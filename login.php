@@ -24,6 +24,7 @@
 <body>
 <?php include('header.php');?>
 <?php include('navigation.php');?>
+<?php include('database.php');?>
 <main>
     <section>
 

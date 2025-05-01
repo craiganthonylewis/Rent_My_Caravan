@@ -30,10 +30,8 @@
         <div class = "container_960">
             <div class = "column_6" id = "login_background">
 
-
                 <div class = "column_12" id = "login_title"><h1>Welcome</h1></div>
 
-                <form>
                 <div class = "column_12" id = "input_title_container_1">
 
                 <div id = "input_title_1"><p>Enter your Email Address:</p><br></div>
@@ -51,7 +49,6 @@
                             <label><input type="password" placeholder="Password"></label>
 
                         </div>
-                    </form>
             </div>
 
             <div class = "column_3" id = "login_button">

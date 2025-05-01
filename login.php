@@ -30,6 +30,7 @@
         <div class = "container_960">
             <div class = "column_6" id = "login_background">
 
+                <form>
                 <div class = "column_12" id = "login_title"><h1>Welcome</h1></div>
 
                 <div class = "column_12" id = "input_title_container_1">
@@ -49,6 +50,7 @@
                             <label><input type="password" placeholder="Password"></label>
 
                         </div>
+                </form>
             </div>
 
 

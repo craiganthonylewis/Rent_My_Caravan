@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Coded by Craig Lewis ST20317192-->
-<!-- Modified from login to signup by Ezme Clark ST20261632, Yurii Filin ST20302767, Davide Lo Castro ST -->
+<!-- Modified from login to signup by Ezme Clark ST20261632, Yurii Filin ST20302767, Davide Lo Castro ST 20304605-->
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
@@ -71,5 +71,3 @@
 <?php include('footer.php');?>
 </body>
 </html>
-
-<!-- update-->

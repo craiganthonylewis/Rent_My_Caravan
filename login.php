@@ -5,9 +5,9 @@
 <head>
 
     <!-- CSS -->
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/media_queries.css">
-  <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="stylesheet" href="css/signup.css"> <!-- will rename to general.css when more testing is done -Ezme -->
     <link rel="stylesheet" href="css/font.css">
 
 
@@ -61,6 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="column_12" id="login_title"><h1>Welcome</h1></div>
 
+                <div class="column_12" id="input_title_container"> <!-- added to center contents - Ezme -->
+
                 <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
 
                     <div class="column_12" id="input_title_container_1">
@@ -84,6 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 </form>
                 <!--login form end -->
+                </div> 
             <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
             <div class = "column_12" id = "misc_2"><a href="signup.php">Sign up</a></div> <!-- href adjusted by Ezme Clark -->
 

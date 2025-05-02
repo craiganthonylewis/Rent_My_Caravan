@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-<!-- Coded by Craig Lewis ST20317192-->
+<!-- Coded by Craig Lewis ST20317192 and Ezme Clark ST20261632-->
 <html lang="en">
 <head>
-
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/media_queries.css">
   <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/font.css">
-
-
+  <link rel="stylesheet" href="css/font.css">
 
   <meta charset="UTF-8">
   <title>Rent My Caravan</title>
 </head>
+
+
+
 <body>
-
 <header>
-    <div id ="header_bg_container">
-  <nav>
-  <div class = "container_960">
+  <div id ="header_bg_container">
+    <nav>
+      <div class = "container_960">
+        <div class = "column_2" id = "logo"><a href="index.php"><h1>RMC</h1></a></div>
 
-    <div class = "column_2" id = "logo"><a href="index.php"><h1>RMC</h1></a></div>
-    <div class = "column_7" id = "accessibility_links">
+        <div class = "column_7" id = "accessibility_links">
+          <ul>
+            <li><a href="index.php">Location: Cardiff, Wales</a></li>
+          </ul>
 
-      <ul>
-        <li><a href="index.php">Location: Cardiff, Wales</a></li>
-      </ul>
+          <label for="dropdown">Language:</label>
+            <select id="dropdown">
+            <option value="English">English</option>
+            <option value="Welsh">Welsh</option>
+            <option value="Ukrainian">Ukrainian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+          </select>
+        </div>
 
-      <label for="dropdown">Language:</label>
-        <select id="dropdown">
-        <option value="English">English</option>
-        <option value="Welsh">Welsh</option>
-        <option value="Ukrainian">Ukrainian</option>
-        <option value="Italian">Italian</option>
-        <option value="Japanese">Japanese</option>
-      </select>
+        <div class = "column_3" id = "login_links_button">
+          <div class = "login_links_button">
+            <ul>
+              
+                <li><a href="dashboard.php"id="user"><script>
+                      var username = (<?php echo json_encode($_SESSION['username']) ?>);  
+    
+                      if (username){
+                          document.getElementById('user').innerText = username;
+                      } else {
+                          document.getElementById('user').innerText = 'User'; // Catch blank username
+                      }
+                  </script></a></li>
+                <li>|</li>
+            <li><a href="session_delete.php">Log out</a></li>
+            </ul>
 
-    </div>
-
-    <div class = "column_3" id = "login_links_button">
-      <div class = "login_links_button">
-
-        <ul>
-            <li><a href="dashboard.php">Craig</a></li>
-            <li>|</li>
-        <li><a href="login.php">Log out</a></li>
-      </ul>
-
-        <a href="index.php">
-          <div id="account_image"></div>
-        </a>
-
+            <a href="index.php">
+              <div id="account_image"></div>
+            </a>
+          </div>
+        </div>
       </div>
-
-      </div>
-  </div>
     </nav>
-  </header>
+  </div>
+</header>
 
 </body>
 </html>

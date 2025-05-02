@@ -34,7 +34,8 @@
           </div>
 
           <div class = "column_3" id = "login_links_button">
-            <div class = "login_links_button">
+
+            <div class = "login_links_button" id="logged_out">
               <ul>
                 <li><a href="signup.php">Sign up</a></li>
                     <li>|</li>

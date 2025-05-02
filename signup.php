@@ -16,15 +16,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
 	// Store the result so we can check if the account exists in the database.
 	$query->store_result();
         if ($query->num_rows > 0) {
-            $error .= "echo '<script>alert("The email address is already registered")</script>'";   
+            echo'email found';
+            //$error .= '<script>alert("AAAA")</script>';   
             if (empty($error) ) {
                 $insertQuery = $db->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?);");
                 $insertQuery->bind_param("sss", $fullname, $email, $password_hash);
                 $result = $insertQuery->execute();
                 if ($result) {
-                    $error .= "echo '<script>alert("Your registration was successful!")</script>'";  
+                    echo'everything went well';
+                    //$error .= '<script>alert("AAAA")</script>';  
                 } else {
-                    $error .= "echo '<script>alert("Something went wrong!")</script>'";
+                    //$error .= '<script>alert("AAAA")</script>';
                 }
             }
         }
@@ -73,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                     <h1>Welcome</h1>
                 </div>
                 <div class = "column_12" id = "input_title_container">
-                    <form action="action" method="post">
+                    <form action="signup_handler.php" method="post">
                         <div id = "input_title">
                             <p>Enter your Email Address:</p><br>
                         </div>
@@ -90,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                             <p>Enter your Password:</p><br>
                         </div>
                         <div id = "input_bar">
-                            <label><input type="password" name="passwd" placeholder="Enter Password" required></label>
+                            <label><input type="password" name="password" placeholder="Enter Password" required></label>
                         </div>
                         <div id = "input_title">
                             <p>Re-Enter your Password:</p><br>

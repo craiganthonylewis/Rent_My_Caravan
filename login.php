@@ -50,6 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         #redirect to logged in page
         header("location: index_logged_in.php");
+        exit();
     }
 
 }

@@ -2,8 +2,10 @@
 <!-- Database login connection-->
 
 <?php
-session_start();
 
+// prevent user from accessing this page if already
+// logged in. Also starts session
+require_once "user_session.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

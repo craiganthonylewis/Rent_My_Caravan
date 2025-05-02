@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                             <p>Enter your Password:</p><br>
                         </div>
                         <div id = "input_bar">
-                            <label><input type="password" name="passwd" placeholder="Enter Password" required></label>
+                            <label><input type="password" name="password" placeholder="Enter Password" required></label>
                         </div>
                         <div id = "input_title">
                             <p>Re-Enter your Password:</p><br>

@@ -1,8 +1,7 @@
-<!-- Coded by Ezme Clark ST 20261632 and Yurii Filin ST20302767-->
+<!-- Coded by Ezme Clark ST 20261632 ans Yurii Filin ST20302767-->
 <!-- Database login connection-->
 
 <?php 
-session_start();
 require_once "database_connection.php";
 
 // prevent user from accessing this page if already
@@ -51,16 +50,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($result) {
                     echo'  everything went well  ';
                     // create session cookie with user id
-                    $getIdQuery = $conn->prepare("SELECT user_id, username FROM users WHERE email = ?;");
+                    $getIdQuery = $conn->prepare("SELECT user_id FROM users WHERE email = ?;");
                     $getIdQuery->bind_param("s", $email);
                     $getIdQuery->execute();
 
                     $getIdQuery->store_result();
-                    $getIdQuery->bind_result($id, $username);
+                    $getIdQuery->bind_result($id);
                     $getIdQuery->fetch();
 
                     $_SESSION["user_id"] = $id;
-                    $_SESSION["username"] = $username;
 
                     // Redirect to front page
                     header('location: index.php');

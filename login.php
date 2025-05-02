@@ -36,7 +36,7 @@
 
                 <div class = "column_12" id = "input_title_container"> <!-- Fixed by Ezme -->
 
-                    <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
+                    <form method = "POST" action = "login_handler.php">
 
                         <div class="column_12" id="input_title_container">
                             <div id="input_title"><p>Enter your Email Address:</p><br></div>

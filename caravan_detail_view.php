@@ -46,7 +46,7 @@ include('navigation.php');
     <section>
         <div class = "container_960">
             <div class = "column_12" id="container_background">
-                hello
+                detail view
             </div>
         </div>
     </section>

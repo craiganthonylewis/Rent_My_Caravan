@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_Entry = $_POST["email"];
     $password_Entry = $_POST["password"];
 
-    #debugs if succesfully found username and password
+    #debugs if successfully found username and password
     echo $email_Entry . " " . $password_Entry;
 
     $conn = new mysqli("localhost", "root", "", "rentmycaravan_db");

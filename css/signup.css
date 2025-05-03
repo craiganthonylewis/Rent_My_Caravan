@@ -15,6 +15,18 @@
     padding: 0;
 }
 
+#text_container{
+    width: 100%;
+    height: auto;
+    background-color: rgba(200, 200, 200, 0.7);
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    padding: 30px;
+    text-align:center;
+}
+
 #container_title{
     width: 100%;
     height: auto;
@@ -112,5 +124,9 @@
     text-decoration: none;
 }
 
-
-
+p{
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin: 30 auto;
+}

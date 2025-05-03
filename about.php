@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/media_queries.css">
@@ -21,27 +20,26 @@
   <title>Rent My Caravan</title>
 </head>
 
-
 <body>
-<?php 
-session_start();
-include('header_handler.php'); // variable header
-include('navigation.php');// always show same nav
-?>
+    <?php 
+    session_start();
+    include('header_handler.php'); // variable header
+    include('navigation.php');// always show same nav
+    ?>
+
+    <main>
+        <section>
+            <div class = "container_960">
+                <div class = "column_12" id="container_background">
+                <div class="column_12" id="container_title"><h1>About</h1></div>
 
 
-<main>
-    <section>
-        <div class = "container_960">
-            <div class = "column_12" id="container_background">
-                add
+                </div>
             </div>
-        </div>
-    </section>
-</main>
-
-<?php include('footer.php');?>
+        </section>
+    </main>
 
 </body>
-</html>
 
+
+</html>

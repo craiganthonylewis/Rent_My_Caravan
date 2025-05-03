@@ -23,9 +23,9 @@
             <div class = "column_12" id = "home_nav_links">
                 <ul>
                     <li class = "home_nav_link" id = "home_link"><a href="index.php"><button>Home</button></a></li>
-                    <li class = "home_nav_link" id = "about_link"><a href="caravan_view.php"><button>Caravans</button></a></li>
-                    <li class = "home_nav_link" id = "contact_link"><a href="index.php"><button>About</button></a></li>
-                    <li class = "home_nav_link" id = "services_link"><a href="index.php"><button>Contact Us</button></a></li>
+                    <li class = "home_nav_link" id = "caravan_link"><a href="caravan_list_view.php"><button>Caravans</button></a></li>
+                    <li class = "home_nav_link" id = "about_link"><a href="about.php"><button>About</button></a></li>
+                    <li class = "home_nav_link" id = "contact_link"><a href="index.php"><button>Contact Us</button></a></li>
                 </ul>
             </div> <!-- end of nav_links-->
 

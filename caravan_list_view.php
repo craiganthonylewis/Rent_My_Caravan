@@ -33,7 +33,22 @@ include('navigation.php');// always show same nav
     <section>
         <div class = "container_960">
             <div class = "column_12" id="container_background">
-                list view
+                <!-- fix centering-->
+                <div class="column_2" id="container_title">
+                    <select id="green_button" name="filters"></select>
+                </div>
+                <div class="column_2" id="container_title">
+                    <select id="green_button" name="order"></select>
+                </div>
+                <div class="column_2" id="container_title"><h1>Caravans</h1></div>
+                <div class="column_4" id="container_title"></div>
+
+                <div class="column_12"></div>
+                <!-- Create internally scrollable div that fills with items from database
+                 made it a text_container type so its visible for now.-->
+                <div class="column_10" id="text_container">
+
+                </div>
             </div>
         </div>
     </section>

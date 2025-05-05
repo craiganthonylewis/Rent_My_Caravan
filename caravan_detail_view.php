@@ -25,31 +25,53 @@
 <body>
 <?php 
 session_start();
+require_once ('database_connection.php');
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
-?>
 
+//Retrieve caravan details from db
+// I might make the list page do the sql query then put the
+//results into a session variable.
+// or just pass the caravan id thorugh a session variable
+
+//for now, ill do it all here with a hardcoded id = 1
+
+$caravan_id = 1; // testing temp
+$detail_query = $conn->prepare("SELECT title, description, price, location FROM caravans WHERE caravan_ID = ?");
+$detail_query->bind_param("i", $caravan_id);
+$detail_query->execute();
+$detail_query->bind_result($title, $description, $price, $location);
+$detail_query->fetch();
+$detail_query->close();
+?>
 
 <main>
     <section>
         <div class = "container_960">
             <div class = "column_12" id = "container_background">
-                <div class = "column_12" id = "container_title"><h1>Caravans</h1></div>
-
-                <div class = "column_4" id = "text_container">
-                    <p>Image placeholder</p>
+                <div class = "column_12" id = "container_title"><h1>Detail View</h1></div>
+                
+                <div class = "column_4" style="margin-left:auto;">
+                    <div class = "column_4" id = "text_container"> 
+                        <p>Image placeholder</p>
+                    </div>
                 </div>
 
-                <div class = "column_6">
-                    <div class = "column_6" id = "container_title"><h1>Caravan Title</h1></div>
-                    <div class = "column_6" id = "text_container">
-                        <p>Caravan description placeholder</p>
-                    </div>
-                    <div class = "column_6">
-                        <div class = "column_2" id = "text_container">
-                            <p>Price</p>
+                <div class = "column_8" style="margin-right:auto;">
+                    <div class = "column_8">
+                        <div id = "container_title" style=" margin:0;"><h1>
+                            <?php echo $title ?>
+                        </h1></div>
+                    </div> 
+                    <div class = "column_8" >
+                        <div class = "column_8" id = "text_container">
+                            <p><?php echo $description ?></p>
                         </div>
-                        <div class = "column_4"></div>
+                    </div>
+                    <div class = "column_8">
+                        <div class = "column_3" id = "text_container" style="text-align: center;">
+                            <p><?php echo '£ ' . $price ?></p>
+                        </div>
                     </div>
                 </div>
             </div>

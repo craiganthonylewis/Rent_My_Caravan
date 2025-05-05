@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     $password = trim($_POST['passwd']);
     $confirm_password = trim($_POST["conf_passwd"]);
     $password_hash = password_hash($password, PASSWORD_BCRYPT);
-    if($query = $db->prepare("SELECT * FROM users WHERE email = ?")) {
+    if($query = $conn->prepare("SELECT * FROM users WHERE email = ?")) {
         $error = '';
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
 	$query->bind_param('s', $email);
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             echo'email found';
             //$error .= '<script>alert("AAAA")</script>';   
             if (empty($error) ) {
-                $insertQuery = $db->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?);");
+                $insertQuery = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?);");
                 $insertQuery->bind_param("sss", $fullname, $email, $password_hash);
                 $result = $insertQuery->execute();
                 if ($result) {

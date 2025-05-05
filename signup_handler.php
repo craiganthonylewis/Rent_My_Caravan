@@ -59,6 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $getIdQuery->fetch();
 
                     $_SESSION["user_id"] = $id;
+                    $_SESSION["username"] = $username;
 
                     // Redirect to front page
                     header('location: index.php');

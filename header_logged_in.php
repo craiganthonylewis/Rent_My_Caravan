@@ -39,15 +39,12 @@
           <div class = "login_links_button">
             <ul>
               
-                <li><a href="dashboard.php"id="user"><script>
-                      var username = (<?php echo json_encode($_SESSION['username']) ?>);  
-    
-                      if (username){
-                          document.getElementById('user').innerText = username;
-                      } else {
-                          document.getElementById('user').innerText = 'User'; // Catch blank username
-                      }
-                  </script></a></li>
+                <li><a href="dashboard.php"id="user">
+                  <?php 
+                    $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
+                    echo $username;                
+                  ?>
+                </a></li>
                 <li>|</li>
             <li><a href="session_delete.php">Log out</a></li>
             </ul>

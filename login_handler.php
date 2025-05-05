@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo $email_Entry . " " . $password_Entry;
 
     $conn = new mysqli("localhost", "root", "", "rentmycaravan_db");
-    $statement = $conn->prepare("SELECT 'user_id', 'username', 'password' FROM users WHERE email= ?");
+    $statement = $conn->prepare("SELECT user_ID, username, password FROM users WHERE email= ?");
     echo 'found account';
     $statement->bind_param("s", $email_Entry);
     $statement->execute();
@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($statement->num_rows == 1) {
         echo "one user found";
-        $statement->bind_result($id, $username, $password);
+        $statement->bind_result($user_ID, $username, $password);
         $statement->fetch();
 
         #cookies
-        $_SESSION["user_id"] = $id;
+        $_SESSION["user_id"] = $user_ID;
         $_SESSION["username"] = $username;
 
         echo isset($_SESSION["user_id"]);

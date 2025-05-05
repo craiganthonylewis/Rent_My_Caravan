@@ -30,7 +30,7 @@
                         <li class = "nav_link" id = "home_link"><a href="index.php"><button>Home</button></a></li>
                         <li class = "nav_link" id = "caravan_link"><a href="caravan_list_view.php"><button>Caravans</button></a></li>
                         <li class = "nav_link" id = "about_link"><a href="about.php"><button>About</button></a></li>
-                        <li class = "nav_link" id = "contact_link"><a href="index.php"><button>Contact us</button></a></li>
+                        <li class = "nav_link" id = "contact_link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Contact us</button></a></li>
                     </ul>
                 </div>
 

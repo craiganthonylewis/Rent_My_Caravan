@@ -17,7 +17,7 @@
     <script src="js/title_animation.js"></script>
 
   <meta charset="UTF-8">
-  <title>Rent My Caravan</title>
+  <title>About | RMC</title>
 </head>
 
 <body>

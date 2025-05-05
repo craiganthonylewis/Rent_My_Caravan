@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/font.css">
 
   <meta charset="UTF-8">
-  <title>Rent My Caravan</title>
 </head>
 
 
@@ -39,7 +38,7 @@
           <div class = "login_links_button">
             <ul>
               
-                <li><a href="dashboard.php"id="user">
+                <li><a href="dashboard.php" id="user">
                   <?php 
                     $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
                     echo $username;                

@@ -12,7 +12,6 @@
 
 
     <meta charset="UTF-8">
-    <title>Rent My Caravan</title>
 </head>
 <body>
 

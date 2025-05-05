@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     <!-- Javascript -->
     <script src="js/title_animation.js"></script>
     <meta charset="UTF-8">
-    <title>Rent My Caravan</title>
+    <title>Sign Up | RMC</title>
 </head>
 
 <body>

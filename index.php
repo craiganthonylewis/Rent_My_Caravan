@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Coded by Craig Lewis ST20317192-->
+<!-- Coded by Craig Lewis ST20317192 and Ezme Clark ST20261632-->
 <html lang="en">
 
 <head>
@@ -22,19 +22,10 @@
 <body>
 
 <?php 
+// by Ezme Clark ST20261632
 session_start();
-
-//testing
-$temp = (strlen(isset($_SESSION["user_id"]))) ;
-echo $temp;
-echo "username:  " . isset($_SESSION["username"]) . "<br>";
-
 //required. shoes different header if logged in
-if (strlen(isset($_SESSION["user_id"])) >= 1 ){
-include('header_logged_in.php');
-}else{
-    include('header.php');
-}
+include('header_handler.php');
 // always show same nav
 include('home_navigation.php');
 ?>
@@ -50,7 +41,9 @@ include('home_navigation.php');
                     </ul>
                 </div>
 
-                <?php 
+                <?php // by Ezme Clark ST20261632
+                // Check if session cookie 'user_id' is assigned therefore user logged in
+                // if not, show sign up button.
                     if (strlen(isset($_SESSION["user_id"])) == 0 ){
                         echo ("<div class='column_6' id='signup_button_container'>
                 <button onclick='location.href='signup.php''>Sign up <br> for free</button>

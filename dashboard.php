@@ -42,7 +42,7 @@ include('home_navigation.php');
                 </div>
                 <div class = "column_12" id = "input_title_container"> 
                     <div class = "column_6" id = "red_button">
-                        <button id= "red_button" onclick="session_delete.php">Log out</button>
+                        <a href = "session_delete.php"><button id= "red_button">Log out</button></a>
                     </div>
                     <br>
                 </div>

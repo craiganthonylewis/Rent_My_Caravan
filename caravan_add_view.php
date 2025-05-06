@@ -1,8 +1,3 @@
-<?php 
-require_once "database_connection.php";
-require_once "user_session.php";
-?>
-
 <!DOCTYPE html>
 <!-- Coded by Ezme Clark ST20261632-->
 <html lang="en">
@@ -32,6 +27,12 @@ require_once "user_session.php";
 session_start();
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
+require_once "database_connection.php";
+
+if (isset($_SESSION["user_id"]) === false) {
+    header("location: login.php");
+    exit;
+}
 ?>
 
 

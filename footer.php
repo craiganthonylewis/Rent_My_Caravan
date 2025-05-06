@@ -41,6 +41,8 @@
     </div>
   </div>
 
+  <div>© team 1 BALD 3 NOT,  2025. ALL RIGHTS RESERVED</div>
+
 </footer>
 
 

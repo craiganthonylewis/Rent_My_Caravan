@@ -34,7 +34,33 @@ include('navigation.php');// always show same nav
     <section>
         <div class = "container_960">
             <div class = "column_12" id="container_background">
-                add
+                <div class = "column_12" id = "container_title"><h1>Add Caravan</h1></div>
+
+                <form class= "column_12" id = "input_title_container" action = "caravan_add_handler.php" method = "post">
+                    <div class = "column_12">
+                        <label id = "input_bar"><input type = "text" name = "title" placeholder = "Caravan Title" required></label>
+
+                        <div class = "column_4" id = "text_container"> 
+                            <p>Image placeholder</p>
+                            <label><input type = "file" name = "image" multiple></label>
+                        </div>
+
+                        <div class = "column_8" id = "text_container">
+                            <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" placeholder="Caravan Description" required></textarea></label>
+                            <label id = "input_bar"><input type = "text" name = "location" placeholder = "Location" required></label>
+                        </div>
+
+                        <div class = "column_8">
+                            <div class = "column_3" id = "text_container">
+                                    <label><input name = "price" type = "number" placeholder = "0"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "column_3" id = "red_button">
+                            <button type = "submit" id = "red_button">Add Caravan</button>
+                    </div><br><br>
+                </form>
             </div>
         </div>
     </section>

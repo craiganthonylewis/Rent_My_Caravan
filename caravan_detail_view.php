@@ -36,7 +36,7 @@ include('navigation.php');// always show same nav
 
 //for now, ill do it all here with a hardcoded id = 1
 
-$caravan_id = 1; // testing temp
+$caravan_id = $_SESSION['caravan_id'] ?? 1; // Default to 1 if not set
 $detail_query = $conn->prepare("SELECT title, description, price, location FROM caravans WHERE caravan_ID = ?");
 $detail_query->bind_param("i", $caravan_id);
 $detail_query->execute();
@@ -66,6 +66,9 @@ $detail_query->close();
                     <div class = "column_8" >
                         <div class = "column_8" id = "text_container">
                             <p><?php echo $description ?></p>
+                        </div>
+                        <div class = "column_8" id = "text_container">
+                            <p><?php echo $location ?></p>
                         </div>
                     </div>
                     <div class = "column_8">

@@ -40,6 +40,7 @@
               
                 <li><a href="dashboard.php" id="user">
                   <?php 
+                    // if session cookie 'username' is set, save to variable. else, set variable to 'User'
                     $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
                     echo $username;                
                   ?>

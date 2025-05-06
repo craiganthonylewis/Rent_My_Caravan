@@ -24,6 +24,7 @@
 <?php 
 // by Ezme Clark ST20261632
 session_start();
+include('user_session.php'); // prevent user from accessing this page if already logged in
 //required. shoes different header if logged in
 include('header_handler.php');
 // always show same nav

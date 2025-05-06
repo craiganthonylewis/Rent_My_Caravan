@@ -1,3 +1,8 @@
+<?php 
+require_once "database_connection.php";
+require_once "user_session.php";
+?>
+
 <!DOCTYPE html>
 <!-- Coded by Ezme Clark ST20261632-->
 <html lang="en">
@@ -27,7 +32,6 @@
 session_start();
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
-include('user_session.php'); // check if user is logged in and redirect if not
 ?>
 
 

@@ -41,10 +41,14 @@ include('home_navigation.php');
                     <h1>Hello, <?php echo $username ?></h1>
                 </div>
                 <div class = "column_12" id = "input_title_container"> 
+                    <div class = column_6 id = "green_button">
+                        <a href = "caravan_add_view.php"><button id= "green_button">Add a caravan</button></a>
+                    </div>
+                    <br>
                     <div class = "column_6" id = "red_button">
                         <a href = "session_delete.php"><button id= "red_button">Log out</button></a>
                     </div>
-                    <br>
+                    <br><br>
                 </div>
             </div>
         </div>

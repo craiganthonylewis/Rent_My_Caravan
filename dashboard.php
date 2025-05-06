@@ -49,6 +49,7 @@ include('home_navigation.php');
             </div>
         </div>
     </section>
+</main>
+<?php include('footer.php') ?>
 </body>
 
-<?php include('footer.php') ?>

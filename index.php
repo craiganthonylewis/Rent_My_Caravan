@@ -44,7 +44,7 @@ include('home_navigation.php');
                 <?php // by Ezme Clark ST20261632
                 // Check if session cookie 'user_id' is assigned therefore user logged in
                 // if not, show sign up button.
-                    if (strlen(isset($_SESSION["user_id"])) == 0 ){
+                    if (isset($_SESSION["user_id"]) == false ){
                         echo ("<div class='column_6' id='signup_button_container'>
                 <button onclick='location.href='signup.php''>Sign up <br> for free</button>
                 </div>");

@@ -4,7 +4,7 @@
 //testing
 $temp = (strlen(isset($_SESSION["user_id"]))) ;
 echo $temp;
-$username = isset($_SESSION['username'])?$_SESSION['username'] : 'User';
+$username = isset($_SESSION['username'])?$_SESSION['username'] : 'NULL';
 echo "username:  " . $username . "<br>";
 
 //required. shows different header if logged in

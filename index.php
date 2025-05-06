@@ -50,9 +50,13 @@ include('home_navigation.php');
                     </ul>
                 </div>
 
-                <div class="column_6" id="signup_button_container">
-                <button onclick="location.href='signup.php'">Sign up <br> for free</button>
-                </div>
+                <?php 
+                    if (strlen(isset($_SESSION["user_id"])) == 0 ){
+                        echo ("<div class='column_6' id='signup_button_container'>
+                <button onclick='location.href='signup.php''>Sign up <br> for free</button>
+                </div>");
+                        }
+                ?>
 
                 <div class="column_12" id="search_bar_container">
                         <div id = "search_bar">

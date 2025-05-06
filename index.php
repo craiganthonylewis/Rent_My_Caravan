@@ -24,7 +24,7 @@
 <?php 
 // by Ezme Clark ST20261632
 session_start();
-//required. shoes different header if logged in
+//required. shows different header if logged in
 include('header_handler.php');
 // always show same nav
 include('home_navigation.php');

@@ -8,7 +8,7 @@ $username = isset($_SESSION['username'])?$_SESSION['username'] : 'NULL';
 echo "username:  " . $username . "<br>";
 
 //required. shows different header if logged in
-if (strlen(isset($_SESSION["user_id"])) >= 1 ){
+if (isset($_SESSION["user_id"])){
 include('header_logged_in.php');
 }else{
     include('header.php');

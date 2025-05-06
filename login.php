@@ -4,6 +4,7 @@
 // logged in. Also starts session - Ezme
 //require_once "user_session.php"
 session_start();
+require_once "user_session.php";
 ?>
 
 <!DOCTYPE html>

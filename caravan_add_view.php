@@ -27,6 +27,7 @@
 session_start();
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
+include('user_session.php'); // check if user is logged in and redirect if not
 ?>
 
 

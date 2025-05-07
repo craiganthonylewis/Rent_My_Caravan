@@ -28,8 +28,9 @@ include('home_navigation.php');
     <!-- Put username in tab title -->
     <title><?php 
     $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
+    $user_id = $_SESSION['user_id'];
     echo $username;  
-    ?> | RMC</title>
+    ?>'s Account | RMC</title>
 </head>
 
 <body>
@@ -38,15 +39,20 @@ include('home_navigation.php');
         <div class = "container_960">
             <div class = "column_6" id = "container_background">
                 <div class = "column_12" id = "container_title">
-                    <h1>Hello, <?php echo $username ?></h1>
+                    <h1>Welcome, <?php echo $username ?> !</h1>
                 </div>
                 <div class = "column_12" id = "input_title_container"> 
                     <div class = column_6 id = "green_button">
-                        <a href = "caravan_add_view.php"><button id= "green_button">Add a caravan</button></a>
+                        <a href = "caravan_add_view.php"><button id = "green_button">Edit profile</button></a>
                     </div>
-                    <br>
-                    <div class = "column_6" id = "red_button">
-                        <a href = "session_delete.php"><button id= "red_button">Log out</button></a>
+                    <div class = column_6>
+                        <div id = "green_button">
+                            <a href = "caravan_list_view.php?user_id=<?php echo $user_id ?>"><button id = "green_button">Show my caravans</button></a>
+                        </div>
+                        <br>
+                        <div id = "red_button">
+                            <a href = "session_delete.php"><button id = "red_button">Log out</button></a>
+                        </div>
                     </div>
                     <br><br>
                 </div>

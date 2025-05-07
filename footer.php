@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div>© team 1 BALD 3 NOT,  2025. ALL RIGHTS RESERVED</div>
+  <div>© CST TEAM,  2025. ALL RIGHTS RESERVED</div>
 
 </footer>
 

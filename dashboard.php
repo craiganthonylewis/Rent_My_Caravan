@@ -28,7 +28,7 @@ include('home_navigation.php');
     <!-- Put username in tab title -->
     <title><?php 
     $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
-    $user_id = $_SESSION['user_id'];
+    $user_id = $_SESSION['user_id']; // Catch blank user_id
     echo $username;  
     ?>'s Account | RMC</title>
 </head>

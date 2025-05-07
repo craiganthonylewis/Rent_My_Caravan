@@ -61,7 +61,13 @@ include('navigation.php');// always show same nav
                 <?php
                     // retrieve caravan details from db
                     $order = $_GET['order'] ?? 'price ASC'; // Default to price ascending if not set
-                    $caravans = $conn->prepare ("SELECT * FROM caravans ORDER BY $order");
+                    if (isset($_GET['user_id'])){
+                        $user_id = $_GET['user_id'];
+                        $caravans = $conn->prepare ("SELECT * FROM caravans WHERE user_ID = $user_id ORDER BY $order");
+
+                    } else {
+                        $caravans = $conn->prepare ("SELECT * FROM caravans ORDER BY $order");
+                    }
                     $caravans->execute();
                     $items = $caravans -> get_result()->fetch_all(MYSQLI_ASSOC);
                     $caravans->close();

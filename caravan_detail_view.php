@@ -37,10 +37,10 @@ include('navigation.php');// always show same nav
 //for now, ill do it all here with a hardcoded id = 1
 
 $caravan_id = $_GET['caravan_id'] ?? 1; // Default to 1 if not set
-$detail_query = $conn->prepare("SELECT title, description, price, location FROM caravans WHERE caravan_ID = ?");
+$detail_query = $conn->prepare("SELECT title, user_ID, description, price, location FROM caravans WHERE caravan_ID = ?");
 $detail_query->bind_param("i", $caravan_id);
 $detail_query->execute();
-$detail_query->bind_result($title, $description, $price, $location);
+$detail_query->bind_result($title, $user_id, $description, $price, $location);
 $detail_query->fetch();
 $detail_query->close();
 ?>
@@ -76,6 +76,16 @@ $detail_query->close();
                             <p><?php echo '£ ' . $price ?></p>
                         </div>
                     </div>
+
+                    <?php // creates an edit button if the current user owns the caravan
+                    if ($_SESSION["user_id"] == $user_id) {
+                        echo '<div class = "column_3" id = "red_button">
+                        <a href = "caravan_edit_view.php?caravan_id='.$caravan_id.'"><button  id = "red_button">Edit</button></a>
+                        </div>';
+                    } 
+                    ?>
+                <br>
+                    
                 </div>
             </div>
         </div>

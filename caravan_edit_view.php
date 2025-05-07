@@ -27,6 +27,14 @@
 session_start();
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
+include('database_connection.php'); // database connection
+$caravan_id = $_GET['caravan_id'] ?? 1; // Default to 1 if not set
+$detail_query = $conn->prepare("SELECT title, description, price, location FROM caravans WHERE caravan_ID = ?");
+$detail_query->bind_param("i", $caravan_id);
+$detail_query->execute();
+$detail_query->bind_result($title, $description, $price, $location);
+$detail_query->fetch();
+$detail_query->close();
 ?>
 
 
@@ -34,7 +42,33 @@ include('navigation.php');// always show same nav
     <section>
         <div class = "container_960">
             <div class = "column_12" id="container_background">
-                edit
+            <div class = "column_12" id = "container_title"><h1>Edit Caravan</h1></div>
+
+            <form class= "column_12" id = "input_title_container" action = "caravan_edit_handler.php?caravan_id=<?php echo $caravan_id ?>" method = "post">
+                <div class = "column_12">
+                    <label id = "input_bar"><input type = "text" name = "title" value = "<?php echo $title ?>" required></label>
+
+                    <div class = "column_4" id = "text_container"> 
+                        <p>Image placeholder</p>
+                        <label><input type = "file" value = "image.png" multiple></label>
+                    </div>
+
+                    <div class = "column_8" id = "text_container">
+                        <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" value = "<?php echo $description ?>" required></textarea></label>
+                        <label id = "input_bar"><input type = "text" name = "location" value = "<?php echo $location ?>" required></label>
+                    </div>
+
+                    <div class = "column_8">
+                        <div class = "column_3" id = "text_container">
+                                <label><input name = "price" type = "number" value = "<?php echo $price ?>"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "column_3" id = "red_button">
+                        <button type = "submit" id = "red_button">Save Caravan</button>
+                </div><br><br>
+            </form>
             </div>
         </div>
     </section>

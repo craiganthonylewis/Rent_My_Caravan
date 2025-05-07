@@ -30,12 +30,6 @@ include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
 
 //Retrieve caravan details from db
-// I might make the list page do the sql query then put the
-//results into a session variable.
-// or just pass the caravan id thorugh a session variable
-
-//for now, ill do it all here with a hardcoded id = 1
-
 $caravan_id = $_GET['caravan_id'] ?? 1; // Default to 1 if not set
 $detail_query = $conn->prepare("SELECT title, user_ID, description, price, location FROM caravans WHERE caravan_ID = ?");
 $detail_query->bind_param("i", $caravan_id);

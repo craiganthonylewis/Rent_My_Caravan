@@ -27,12 +27,12 @@
 session_start();
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
-require_once "database_connection.php";
+require_once "database_connection.php"; //database connection
 
 // if user not logged in, redirect to login page
 if (isset($_SESSION["user_id"]) === false) {
-    header("location: login.php");
-    exit;
+    header("location: login.php?error=not_logged_in");
+    exit();
 }
 ?>
 

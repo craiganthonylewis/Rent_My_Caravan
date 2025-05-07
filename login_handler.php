@@ -39,7 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("location: index.php");
         exit();
     }else{
-        echo'something went wrong';
+        header("location: login.php?error=login_failed");
+        exit();
     }
 
 }

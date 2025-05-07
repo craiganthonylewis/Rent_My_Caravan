@@ -2,8 +2,6 @@
 <?php 
 // prevent user from accessing this page if already
 // logged in. Also starts session - Ezme
-//require_once "user_session.php"
-session_start();
 require_once "user_session.php";
 ?>
 
@@ -33,6 +31,16 @@ require_once "user_session.php";
 <body>
 <?php include('header.php');?>
 <?php include('navigation.php');?>
+
+<?php
+    $error = $_GET['error'] ?? null; // Get error message from URL if it exists
+    if ($error == "not_logged_in") {
+        echo "<script>alert('You must be logged in to access this page/ feature.');</script>";
+    } elseif ($error == "login_failed") {
+        echo "<script>alert('Login failed. Please check your email and password or create an account.');</script>";
+    }
+?>
+
 <main>
     <section>
         <div class = "container_960">

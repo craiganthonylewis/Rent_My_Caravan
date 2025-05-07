@@ -50,11 +50,15 @@ include('navigation.php');// always show same nav
                 
                  
                 <?php
+                    // retrieve caravan details from db
                     $caravans = $conn->prepare ("SELECT * FROM caravans");
                     $caravans->execute();
                     $items = $caravans -> get_result()->fetch_all(MYSQLI_ASSOC);
                     $caravans->close();
 
+                    // for each item retrieved, set variables and create an item card
+                    // with the filled in details.
+                    // if no items are found, show error message
                     if ($items != NULL){
                         foreach ($items as $item) {
                             $title = $item['title'];
@@ -64,9 +68,12 @@ include('navigation.php');// always show same nav
                             $caravan_id = $item['caravan_ID'];
                             $image = $item['image_url'];
 
+                            // echo html for each item card, with 
+                            // details filled from the db
                             echo "
                                 <div class='column_10' id='text_container'>
                                 <div class = 'column_12' id = 'content_container'>
+                                
                                 <div class = 'column_4' id = 'text_container'> 
                                     <p>Image placeholder</p>
                                 </div>

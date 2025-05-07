@@ -29,7 +29,8 @@ include('database_connection.php'); // database connection
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
 ?>
-<script>
+
+<script> // updates page when order is changed
     function refreshSort (order){
         window.location.replace("caravan_list_view.php?order=" + order);
     }
@@ -40,20 +41,20 @@ include('navigation.php');// always show same nav
         <div class = "container_960">
             <div class = "column_12" id="container_background">
                 <!-- fix centering-->
-                <div class="column_2" id="container_title">
+                <div class="column_5" id="container_title">
                     <select id="green_button" name="filters"></select>
-                </div>
-                <!-- create dropdown with default set as price ascending -->
-                <div class="column_2" id="container_title">
                     <select id="green_button" name="order" onChange ="refreshSort(this.value)">
-                        <option value = "price ASC" selected="selected">Price: Low to High</option>
+                        <option value = "price ASC" >Price: Low to High</option>
                         <option value = "price DESC">Price: High to Low</option>
                         <option value = "title">Alphabetical: A-Z</option>
                         <option value = "title DESC">Alphabetical: Z-A</option>
+                        <option value = "" hidden = "hidden" selected = "selected">Order by...</option>
                     </select>
                 </div>
+                <!-- create dropdown with default set as price ascending -->
+                
                 <div class="column_2" id="container_title"><h1>Caravans</h1></div>
-                <div class="column_4" id="container_title"></div>
+                <div class="column_5" id="container_title"></div>
 
                 <div class="column_12"></div>
                 

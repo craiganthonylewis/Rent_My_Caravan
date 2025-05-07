@@ -29,6 +29,11 @@ include('database_connection.php'); // database connection
 include('header_handler.php'); // variable header
 include('navigation.php');// always show same nav
 ?>
+<script>
+    function refreshSort (order){
+        window.location.replace("caravan_list_view.php?order=" + order);
+    }
+</script>
 
 <main>
     <section>
@@ -38,8 +43,14 @@ include('navigation.php');// always show same nav
                 <div class="column_2" id="container_title">
                     <select id="green_button" name="filters"></select>
                 </div>
+                <!-- create dropdown with default set as price ascending -->
                 <div class="column_2" id="container_title">
-                    <select id="green_button" name="order"></select>
+                    <select id="green_button" name="order" onChange ="refreshSort(this.value)">
+                        <option value = "price ASC" selected="selected">Price: Low to High</option>
+                        <option value = "price DESC">Price: High to Low</option>
+                        <option value = "title">Alphabetical: A-Z</option>
+                        <option value = "title DESC">Alphabetical: Z-A</option>
+                    </select>
                 </div>
                 <div class="column_2" id="container_title"><h1>Caravans</h1></div>
                 <div class="column_4" id="container_title"></div>
@@ -48,7 +59,8 @@ include('navigation.php');// always show same nav
                 
                 <?php
                     // retrieve caravan details from db
-                    $caravans = $conn->prepare ("SELECT * FROM caravans");
+                    $order = $_GET['order'] ?? 'price ASC'; // Default to price ascending if not set
+                    $caravans = $conn->prepare ("SELECT * FROM caravans ORDER BY $order");
                     $caravans->execute();
                     $items = $caravans -> get_result()->fetch_all(MYSQLI_ASSOC);
                     $caravans->close();

@@ -67,11 +67,11 @@ $detail_query->close();
 
                 <div class = "column_3" id = "green_button">
                         <button type = "submit" id = "green_button">Save Caravan</button>
+                </div><br>
+                <div class = "column_3" id = "red_button">
+                    <a href = "<?php echo 'caravan_delete_handler.php?caravan_id='.$caravan_id ?>"><button type = "button" id = "red_button">Delete Caravan</button></a>
                 </div><br><br>
             </form>
-            <div class = "column_3" id = "red_button">
-                <a href = "<?php echo 'caravan_delete_handler.php?caravan_id='.$caravan_id ?>"><button type = "button" id = "red_button">Delete Caravan</button></a>
-            </div>
         </div>
     </section>
 </main>

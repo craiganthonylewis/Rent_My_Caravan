@@ -48,59 +48,53 @@ include('navigation.php');// always show same nav
                 <!-- Create internally scrollable div that fills with items from database
                  made it a text_container type so its visible for now.-->
                 
-                 <div class="column_10" id="text_container">
-                    <?php
-                        $caravans = $conn->prepare ("SELECT * FROM caravans");
-                        $caravans->execute();
-                        $items = $caravans -> get_result()->fetch_all(MYSQLI_ASSOC);
-                        $caravans->close();
+                 
+                <?php
+                    $caravans = $conn->prepare ("SELECT * FROM caravans");
+                    $caravans->execute();
+                    $items = $caravans -> get_result()->fetch_all(MYSQLI_ASSOC);
+                    $caravans->close();
 
-                        if ($items != NULL){
-                            foreach ($items as $item) {
-                                $title = $item['title'];
-                                $description = $item['description'];
-                                $price = $item['price'];
-                                $location = $item['location'];
-                                $caravan_id = $item['caravan_ID'];
-                                $image = $item['image_url'];
+                    if ($items != NULL){
+                        foreach ($items as $item) {
+                            $title = $item['title'];
+                            $description = $item['description'];
+                            $price = $item['price'];
+                            $location = $item['location'];
+                            $caravan_id = $item['caravan_ID'];
+                            $image = $item['image_url'];
 
-                                echo "
-                                <div class = 'column_10' id = 'content_container'>
-                                    <div class = 'column_4' id = 'text_container'> 
-                                        <p>Image placeholder</p>
-                                    </div>
-                                    
-                                    <div class = 'column_8' style='margin-right:auto;'>
-                                        <div class = 'column_8'>
-                                            <div id = 'container_title'><h1>
-                                                $title
-                                            </h1></div>
-                                        </div> 
-                                        <div class = 'column_8' >
-                                            <div class = 'column_8' id = 'text_container'>
-                                                <p>$description</p>
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                    
-                                    <a href='caravan_detail_view.php?caravan_id=$caravan_id' id='green_button'>
-                                        <button type='button' id='green_button'>View</button>
-                                    </a>
+                            echo "
+                                <div class='column_10' id='text_container'>
+                                <div class = 'column_12' id = 'content_container'>
+                                <div class = 'column_4' id = 'text_container'> 
+                                    <p>Image placeholder</p>
                                 </div>
-                                <br>
-                                ";
-                            }
-                        } else {
-                            echo "<p> No caravans found </p>";
+                                
+                                <div class = 'column_8' style='margin-right:auto;'>
+                                    <div class = 'column_8'>
+                                        <div id = 'container_title'><h1>
+                                            $title
+                                        </h1></div>
+                                    </div> 
+                                    <div class = 'column_8' >
+                                        <div class = 'column_8' id = 'text_container'>
+                                            <p>$description</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                                    
+                                <a href='caravan_detail_view.php?caravan_id=$caravan_id' id='green_button'>
+                                    <button type='button' id='green_button'>View</button>
+                                </a>
+                            </div>
+                            <br></div>
+                            ";
                         }
-
-
-
-                    ?>
-
-
-
-                </div>
+                    } else {
+                        echo "<p> No caravans found </p>";
+                    }
+                ?>
             </div>
         </div>
     </section>

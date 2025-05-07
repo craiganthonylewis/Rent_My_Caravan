@@ -45,10 +45,7 @@ include('navigation.php');// always show same nav
                 <div class="column_4" id="container_title"></div>
 
                 <div class="column_12"></div>
-                <!-- Create internally scrollable div that fills with items from database
-                 made it a text_container type so its visible for now.-->
                 
-                 
                 <?php
                     // retrieve caravan details from db
                     $caravans = $conn->prepare ("SELECT * FROM caravans");
@@ -71,9 +68,9 @@ include('navigation.php');// always show same nav
                             // echo html for each item card, with 
                             // details filled from the db
                             echo "
-                                <div class='column_10' id='text_container'>
-                                <div class = 'column_12' id = 'content_container'>
-                                
+                                <div class='column_12' id='container_title' style = 'display:flex;flex-wrap: wrap;'>
+                                <div class = 'column_12' id = 'container_background'>
+
                                 <div class = 'column_4' id = 'text_container'> 
                                     <p>Image placeholder</p>
                                 </div>
@@ -88,14 +85,18 @@ include('navigation.php');// always show same nav
                                         <div class = 'column_8' id = 'text_container'>
                                             <p>$description</p>
                                         </div>
+                                        <div class = 'column_4' id = 'text_container'>
+                                            <p>£ $price per night</p>
+                                        </div>
                                     </div> 
                                 </div> 
                                     
-                                <a href='caravan_detail_view.php?caravan_id=$caravan_id' id='green_button'>
+                                <a class = 'column_12' href='caravan_detail_view.php?caravan_id=$caravan_id' id='green_button'>
                                     <button type='button' id='green_button'>View</button>
                                 </a>
-                            </div>
-                            <br></div>
+                                
+                                </div>
+                                </div>
                             ";
                         }
                     } else {

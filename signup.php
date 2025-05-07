@@ -15,7 +15,7 @@ require_once "user_session.php";
     <!-- CSS -->
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/media_queries.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/font.css">
     
     <!--JQuery -->

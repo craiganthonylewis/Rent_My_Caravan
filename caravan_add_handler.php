@@ -24,15 +24,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result) {
             echo '  everything went well  ';
-            // Redirect to the caravan view page or any other page
+            // Redirect to the caravan view page
             // Get caravan ID of the last inserted record
             $last_id = $conn->insert_id;
-            $_SESSION["caravan_id"] = $last_id;
-
-            header('Location: caravan_detail_view.php');
+            
+            header('Location: caravan_detail_view.php?caravan_id='.$last_id);
             exit();
         } else {
             echo '  error occurred  ';
+            header('Location: caravan_add_view.php');
+            exit();
         }
 
         //        

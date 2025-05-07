@@ -72,7 +72,7 @@ include('navigation.php');// always show same nav
                                     
                                     <div class = 'column_8' style='margin-right:auto;'>
                                         <div class = 'column_8'>
-                                            <div id = 'container_title' style=' margin:0;'><h1>
+                                            <div id = 'container_title'><h1>
                                                 $title
                                             </h1></div>
                                         </div> 

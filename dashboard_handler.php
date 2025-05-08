@@ -6,28 +6,30 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get values from form
-    $images = $_POST["image"] ?? "temp.png";
+    $images = $_FILES["image"]["name"] ?? "default_pfp.jpg";
+    $temp_name = $_FILES["image"]["tmp_name"] ?? "default_pfp.jpg";
+    $folder = "uploaded_images/".$images;
+    $user_id = $_SESSION["user_id"];
+
     
     if ($user_id == null) {
         // create error message later
         header ('Location: login.php');
         die();
     } else {
-        $add_query = $conn->prepare("INSERT INTO users (pfp_url) VALUES (?);");
-        $add_query -> bind_param("s", $images);
+        $add_query = $conn->prepare("UPDATE users SET pfp_url = ? WHERE user_ID = ?;");
+        $add_query -> bind_param("si", $images, $user_id);
         $result = $add_query->execute();
 
         if ($result) {
             echo '  everything went well  ';
-            // Redirect to the caravan view page
-            // Get caravan ID of the last inserted record
-            $last_id = $conn->insert_id;
+            move_uploaded_file($temp_name, $folder);
             
-            header('Location: caravan_detail_view.php?caravan_id='.$last_id);
+            header('Location: dashboard.php');
             exit();
         } else {
             echo '  error occurred  ';
-            header('Location: caravan_add_view.php');
+            header('Location: dashboard.php');
             exit();
         }
 

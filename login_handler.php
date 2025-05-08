@@ -9,8 +9,9 @@ require_once "user_session.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $email_Entry = $_POST["email"];
-    $password_Entry = $_POST["password"];
+    $email_Entry = trim($_POST["email"]);
+    $password_Entry = trim($_POST["password"]);
+    $password_hash = md5($password_Entry);
 
     #debugs if successfully found username and password
     echo $email_Entry . " " . $password_Entry;
@@ -28,19 +29,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $statement->bind_result($user_ID, $username, $password);
         $statement->fetch();
 
-        #cookies
-        $_SESSION["user_id"] = $user_ID;
-        $_SESSION["username"] = $username;
+        if ($password == $password_hash){
+            #cookies
+            $_SESSION["user_id"] = $user_ID;
+            $_SESSION["username"] = $username;
 
-        echo isset($_SESSION["user_id"]);
-        echo isset($_SESSION["username"]);  
+            echo isset($_SESSION["user_id"]);
+            echo isset($_SESSION["username"]);  
 
-        #redirect to index
-        header("location: index.php");
-        exit();
-    }else{
+            #redirect to index
+            header("location: index.php");
+            exit();
+        }else{
         header("location: login.php?error=login_failed");
-        exit();
+        exit();}
     }
 
 }

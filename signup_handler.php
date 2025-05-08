@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
     $confirm_password = trim($_POST["conf_passwd"]);
-    $password_hash = password_hash($password, PASSWORD_BCRYPT);
+    $password_hash = md5($password);
 
     // Prepare query to check email
     $query = $conn->prepare("SELECT * FROM users WHERE email = ?");
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo '  adding to db  ';
 
                 $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email) VALUES (?, ?, ?);");
-                $insertQuery->bind_param("sss", $username, $password, $email);
+                $insertQuery->bind_param("sss", $username, $password_hash, $email);
                 
                 var_dump($username, $password, $email, $pfp_url);//check values 
 

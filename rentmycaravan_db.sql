@@ -65,7 +65,7 @@ CREATE TABLE `filters` (
 CREATE TABLE `users` (
   `user_ID` int(12) NOT NULL,
   `username` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `password` varchar(16) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `password` varchar(32) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `pfp_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;

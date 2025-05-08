@@ -78,8 +78,8 @@ require_once "user_session.php";
                     </form>
                 <!--login form end -->
                 </div>
-                <div class = "column_12" id = "misc_1"><p>Not a member?</p></div>
-                <div class = "column_12" id = "misc_2"><a href="signup.php">Sign up</a></div> <!-- href adjusted by Ezme Clark -->
+                <div class = "column_12" id = "misc_1"><p>Not a member?</p><br></div>
+                <div class = "column_12" id = "misc_2"><a href="signup.php">Sign up</a><br><br></div> <!-- href adjusted by Ezme Clark -->
             </div>
         </div>
     </section>

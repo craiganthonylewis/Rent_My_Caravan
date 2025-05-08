@@ -17,6 +17,8 @@
 
     <meta charset="UTF-8">
     <title>Home | RMC</title>
+    <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 <body>

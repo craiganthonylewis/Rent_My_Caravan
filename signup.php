@@ -25,6 +25,8 @@ require_once "user_session.php";
     <script src="js/title_animation.js"></script>
     <meta charset="UTF-8">
     <title>Sign Up | RMC</title>
+    <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 <body>

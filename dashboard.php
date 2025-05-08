@@ -32,6 +32,9 @@
     $user_id = $_SESSION['user_id']; // Catch blank user_id
     echo $username;  
     ?>'s Account | RMC</title>
+
+    <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 <?php

@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Prepare query to check email
     $query = $conn->prepare("SELECT * FROM users WHERE email = ?");
 
-    // Bind parameters (s = string, i = int, b = blob, etc)
+    // bind parameters (s = string, i = int, b = blob, etc)
 	$query->bind_param('s', $email);
 	$query->execute();
     echo'  checking email  ';
@@ -30,19 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($query->num_rows > 0) {
             //If the input email adress already exists
             //in the database, redirect to login
-            echo'email found already';
             header('Location: login.php');
-            die();
+            exit();
         }else{
             
             if (empty($error) ) {
-                echo '  adding to db  ';
-
                 $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email) VALUES (?, ?, ?);");
                 $insertQuery->bind_param("sss", $username, $password_hash, $email);
-                
-                var_dump($username, $password, $email, $pfp_url);//check values 
-
 
                 $result = $insertQuery->execute();
                 if ($result) {
@@ -61,15 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     // Redirect to front page
                     header('location: index.php');
+                    exit();
                 } else {
-                    echo '  something went wrong  ';
                     // Refresh page if error
                     header ('location: signup.php');
+                    exit();
                 }
             }
         }
-        
-    
     $query->close();
     $insertQuery->close();
 }

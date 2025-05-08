@@ -22,6 +22,7 @@ require_once "user_session.php";
     <meta charset="UTF-8">
     <title>Sign Up | RMC</title>
     <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 <body>

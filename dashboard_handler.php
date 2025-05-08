@@ -11,6 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $folder = "uploaded_images/".$images;
     $user_id = $_SESSION["user_id"];
 
+    $pfp_url_query = $conn->prepare("SELECT pfp_url FROM users WHERE user_ID = ?");
+    $pfp_url_query->bind_param("i", $user_id);
+    $pfp_url_query->execute();
+    $pfp_url_query->bind_result($old_pfp_url);
+    $pfp_url_query->fetch();
+    $pfp_url_query->close();
+    $old_pfp = 'uploaded_images/'.$old_pfp_url;
+
     
     if ($user_id == null) {
         // create error message later
@@ -23,8 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result) {
             echo '  everything went well  ';
-            move_uploaded_file($temp_name, $folder);
-            
+            unlink($old_pfp);
+            move_uploaded_file($temp_name, $folder);            
             header('Location: dashboard.php');
             exit();
         } else {

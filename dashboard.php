@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<!-- Coded by Ezme Clark ST20261632-->
+<!-- Coded by Ezme Clark ST20261632 and Yurii Filin ST20302767-->
 <html lang="en">
 
 <?php 
-// by Ezme Clark ST20261632
-session_start();
-//required. shoes different header if logged in
-include('header_handler.php');
-// always show same nav
-include('home_navigation.php');
+
+    session_start();
+    //required. It shows a different header if logged in
+    require_once "database_connection.php";
+    // connect a header handler
+    include('header_handler.php');
+    // always show same nav
+    include('home_navigation.php');
+
+    // upload image
+
 ?>
 
 <head>

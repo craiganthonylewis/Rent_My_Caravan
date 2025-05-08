@@ -35,9 +35,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }else{
             
             if (empty($error) ) {
-                $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email) VALUES (?, ?, ?);");
-                $insertQuery->bind_param("sss", $username, $password_hash, $email);
-
+                $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email, pfp_url) VALUES (?, ?, ?, ?);");
+                $pfp_url = 'default_pfp.jpg'; 
+                $insertQuery->bind_param("ssss", $username, $password, $email, $pfp_url);
                 $result = $insertQuery->execute();
                 if ($result) {
                     echo'  everything went well  ';

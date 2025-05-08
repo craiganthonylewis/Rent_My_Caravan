@@ -39,9 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (empty($error) ) {
                 echo '  adding to db  ';
 
-                $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email, pfp_url) VALUES (?, ?, ?, ?);");
-                $pfp_url = 'temp.png'; 
-                $insertQuery->bind_param("ssss", $username, $password, $email, $pfp_url);
+                $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email) VALUES (?, ?, ?);");
+                $insertQuery->bind_param("ssss", $username, $password, $email);
                 
                 var_dump($username, $password, $email, $pfp_url);//check values 
 

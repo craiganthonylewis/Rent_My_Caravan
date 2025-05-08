@@ -38,6 +38,11 @@
 </head>
 
 <?php
+    if ($user_id == null) {
+        header("Location: login.php?error=not_logged_in");
+        exit();
+    }
+
     $pfp_url_query = $conn->prepare("SELECT pfp_url FROM users WHERE user_ID = ?");
     $pfp_url_query->bind_param("i", $user_id);
     $pfp_url_query->execute();

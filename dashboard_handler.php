@@ -1,12 +1,14 @@
 <?php
 require_once "database_connection.php";
 session_start();
+setlocale(LC_ALL, 'en_GB.UTF-8'); //apparently needed for basename()
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get values from form
-    $images = $_FILES["image"]["name"] ?? "default_pfp.jpg";
+    // basename() might help for alternate os 
+    $images = basename($_FILES["image"]["name"]) ?? "default_pfp.jpg";
     $temp_name = $_FILES["image"]["tmp_name"] ?? "default_pfp.jpg";
     $folder = "uploaded_images". DIRECTORY_SEPARATOR .$images;
     $user_id = $_SESSION["user_id"];
@@ -21,23 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
     if ($user_id == null) {
-        // create error message later
-        header ('Location: login.php');
+        header ('Location: login.php?error=not_logged_in');
         exit();
     } else {
-
         if (move_uploaded_file($temp_name, $folder)){
-            unlink($old_pfp);
+            unlink($old_pfp); // deletes old profile picture from folder
 
             $add_query = $conn->prepare("UPDATE users SET pfp_url = ? WHERE user_ID = ?;");
             $add_query -> bind_param("si", $images, $user_id);
             $result = $add_query->execute();
 
-
             header('Location: dashboard.php');
             exit();
         }   else {
-            echo '  error occurred  ';
             header('Location: dashboard.php');
             exit();
         }
@@ -47,8 +45,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $query->close();
         $insertQuery->close();
     }
-
-    
 }
 
 

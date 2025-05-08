@@ -47,7 +47,7 @@ include('home_navigation.php');
                 // if not, show sign up button.
                     if (isset($_SESSION["user_id"]) == false ){
                         echo ("<div class='column_6' id='signup_button_container'>
-                <button onclick='location.href='signup.php''>Sign up <br> for free</button>
+                <a style = 'text-decoration : none;' href='signup.php'><button><p>Sign up <br> for free</p></button></a>
                 </div>");
                         }
                 ?>

@@ -131,3 +131,7 @@ p{
     text-align: center;
     margin: 30 auto;
 }
+
+img{
+    border-radius : 50%;
+}

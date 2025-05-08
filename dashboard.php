@@ -80,7 +80,7 @@
                     <div class = "column_6" id = "input_title_container">
                         <?php
                         if ($pfp_url == null) {
-                            echo '<img src="images/default_pfp.jpg" alt="Avatar"  style = "border-radius : 50%; width: 200px; height: 200px;">';
+                            echo '<img src="images/default_pfp.jpg" alt="Avatar"  style = "width: 200px; height: 200px;">';
                         } else {
                             $full_url = 'uploaded_images/'.$pfp_url;
                             echo $full_url;

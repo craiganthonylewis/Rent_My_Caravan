@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if ($result) {
                     echo'  everything went well  ';
                     // create session cookie with user id
-                    $getIdQuery = $conn->prepare("SELECT user_id FROM users WHERE email = ?;");
+                    $getIdQuery = $conn->prepare("SELECT user_ID FROM users WHERE email = ?;");
                     $getIdQuery->bind_param("s", $email);
                     $getIdQuery->execute();
 

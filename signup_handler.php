@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo '  adding to db  ';
 
                 $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email) VALUES (?, ?, ?);");
-                $insertQuery->bind_param("ssss", $username, $password, $email);
+                $insertQuery->bind_param("sss", $username, $password, $email);
                 
                 var_dump($username, $password, $email, $pfp_url);//check values 
 

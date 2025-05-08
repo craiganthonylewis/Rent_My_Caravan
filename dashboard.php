@@ -82,7 +82,6 @@
                         if ($pfp_url == null) {
                             echo '<img src="images/default_pfp.jpg" alt="Avatar"  style = "border-radius : 50%; width: 200px; height: 200px;">';
                         } else {
-                            echo $pfp_url;
                             $full_url = 'uploaded_images/'.$pfp_url;
                             echo $full_url;
                             echo '<img src="uploaded_images/'.$pfp_url.'" alt="Avatar"  style = "border-radius : 50%; width: 200px; height: 200px;">';

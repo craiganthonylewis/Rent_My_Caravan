@@ -47,6 +47,7 @@ $detail_query->close();
             <div class = "column_12" id = "container_background">
                 <div class = "column_12" id = "container_title"><h1>Detail View</h1></div>
                 
+                <!-- Caravan image/ carousel -->
                 <div class = "column_4" style="margin-left:auto;">
                     <div class = "column_4" id = "text_container"> 
                         <p>Image placeholder</p>
@@ -54,11 +55,14 @@ $detail_query->close();
                 </div>
 
                 <div class = "column_8" style="margin-right:auto;">
+                    <!-- Caravan details -->
+                    <!-- Listing title -->
                     <div class = "column_8">
                         <div id = "container_title" style=" margin:0;"><h1>
                             <?php echo $title ?>
                         </h1></div>
                     </div> 
+                    <!-- Listing description + location -->
                     <div class = "column_8" >
                         <div class = "column_8" id = "text_container">
                             <p><?php echo $description ?></p>
@@ -67,6 +71,7 @@ $detail_query->close();
                             <p><?php echo $location ?></p>
                         </div>
                     </div>
+                    <!-- Listing price -->
                     <div class = "column_8">
                         <div class = "column_3" id = "text_container" style="text-align: center;">
                             <p><?php echo '£ ' . $price ?></p>
@@ -81,7 +86,6 @@ $detail_query->close();
                     } 
                     ?>
                 <br>
-                    
                 </div>
             </div>
         </div>

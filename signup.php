@@ -1,5 +1,7 @@
 <?php 
+// connect to database
 require_once "database_connection.php";
+// start session, prevent user access if logged in already
 require_once "user_session.php";
 ?>
 
@@ -37,34 +39,40 @@ require_once "user_session.php";
                 </div>
                 <div class = "column_12" id = "input_title_container">
                     <form action="signup_handler.php" method="post">
+                        <!-- Input email -->
                         <div id = "input_title">
                             <p>Enter your Email Address:</p><br>
                         </div>
                         <div id = "input_bar">
                             <label><input type="email" name="email" placeholder="Email Address" required></label>
                         </div>
+                        <!-- Input username -->
                         <div id = "input_title">
                             <p>Enter your Username:</p><br>
                         </div>
                         <div id = "input_bar">
                             <label><input type="text" name="username" placeholder="Username" required></label>
                         </div>
+                        <!-- Input password -->
                         <div id = "input_title">
                             <p>Enter your Password:</p><br>
                         </div>
                         <div id = "input_bar">
                             <label><input type="password" name="password" placeholder="Enter Password" required></label>
                         </div>
+                        <!-- Re-enter password -->
                         <div id = "input_title">
                             <p>Re-Enter your Password:</p><br>
                         </div>
                         <div id = "input_bar">
                             <label><input type="password" name="conf_passwd" placeholder="Re-Enter Password" required></label>
                         </div>
+                        <!-- Submit button -->
                         <div class = "column_3" id = "red_button">
                             <button type = "submit" id = "red_button">Sign up</button>
                         </div>
                     </form>
+                    <!-- Link to login page -->
                     <div class = "column_12" id = "misc_1">
                         <br><p>Already a member?</p>
                     </div>

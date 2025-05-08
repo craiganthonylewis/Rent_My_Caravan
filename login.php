@@ -1,4 +1,3 @@
-
 <?php 
 // prevent user from accessing this page if already
 // logged in. Also starts session - Ezme
@@ -16,7 +15,6 @@ require_once "user_session.php";
     <link rel="stylesheet" href="css/media_queries.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/font.css">
-
 
     <!--JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -53,9 +51,8 @@ require_once "user_session.php";
                 <div class="column_12" id="container_title"><h1>Welcome</h1></div>
 
                 <div class = "column_12" id = "input_title_container"> <!-- Fixed by Ezme -->
-
                     <form method = "POST" action = "login_handler.php">
-
+                        <!-- Email input -->
                         <div class="column_12" id="input_title_container">
                             <div id="input_title"><p>Enter your Email Address:</p><br></div>
                             <div id="input_bar">
@@ -63,6 +60,7 @@ require_once "user_session.php";
                             </div>
                         </div>
 
+                        <!-- Password input -->
                         <div class="column_12" id="input_title_container">
                             <div id="input_title"><p>Enter your Password:</p><br></div>
                             <div id="input_bar">
@@ -74,7 +72,6 @@ require_once "user_session.php";
                         <div class="column_3" id="red_button">
                             <button type="submit" id="red_button">Log in</button>
                         </div>
-
                     </form>
                 <!--login form end -->
                 </div>
@@ -87,4 +84,3 @@ require_once "user_session.php";
 <?php include('footer.php');?>
 </body>
 </html>
-

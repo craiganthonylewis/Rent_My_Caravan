@@ -3,7 +3,6 @@
 <html lang="en">
 
 <?php 
-
     session_start();
     //required. It shows a different header if logged in
     require_once "database_connection.php";
@@ -11,9 +10,6 @@
     include('header_handler.php');
     // always show same nav
     include('home_navigation.php');
-
-    // upload image
-
 ?>
 
 <head>
@@ -44,22 +40,41 @@
         <div class = "container_960">
             <div class = "column_6" id = "container_background">
                 <div class = "column_12" id = "container_title">
-                    <h1>Welcome, <?php echo $username ?> !</h1>
+                    <h1>Account</h1>
                 </div>
+                
                 <div class = "column_12" id = "input_title_container"> 
-                    <div class = column_6 id = "green_button">
-                        <a href = "caravan_add_view.php"><button id = "green_button">Edit profile</button></a>
+                    <!-- Picture -->
+                    <div class = "column_6" id = "pfp_url">
+                        <?php
+                        if (isset($_SESSION["user_id"]) == true ){
+                            echo ("<div class='column_6' id='signup_button_container'>
+                    <button onclick='location.href='signup.php''>Sign up <br> for free</button>
+                    </div>");
+                            } else {
+
+                            }
+                        ?>
                     </div>
-                    <div class = column_6>
-                        <div id = "green_button">
-                            <a href = "caravan_list_view.php?user_id=<?php echo $user_id ?>"><button id = "green_button">Show my caravans</button></a>
-                        </div>
-                        <br>
-                        <div id = "red_button">
-                            <a href = "session_delete.php"><button id = "red_button">Log out</button></a>
-                        </div>
+                    <div class = "column_6">
+                        <label for="avatar">Update a profile picture:</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
                     </div>
-                    <br><br>
+                    <!-- Display the username -->
+                    <div class = "column_6" id = "username">
+                        <h3><?php echo $username ?></h3>
+                    </div>
+                    <div class = "column_6" id = "green_button">
+                        <a href = "caravan_list_view.php?user_id=<?php echo $user_id ?>"><button id = "green_button">Show my caravans</button></a>
+                    </div>
+                    <br>
+                    <div class = "column_6" id = "green_button">
+                        <a href = "caravan_add_view.php"><button id = "green_button">Add a new caravan</button></a>
+                    </div>
+                    <br>
+                    <div class = "column_6" id = "red_button">
+                        <a href = "session_delete.php"><button id = "red_button">Log out</button></a>
+                    </div>
                 </div>
             </div>
         </div>

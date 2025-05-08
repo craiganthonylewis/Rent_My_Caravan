@@ -47,8 +47,6 @@ require_once "user_session.php";
 <main>
     <section>
         <div class = "container_960">
-
-
             <!--login form -->
             <div class="column_6" id="container_background">
 
@@ -84,7 +82,6 @@ require_once "user_session.php";
                 <div class = "column_12" id = "misc_2"><a href="signup.php">Sign up</a></div> <!-- href adjusted by Ezme Clark -->
             </div>
         </div>
-
     </section>
 </main>
 <?php include('footer.php');?>

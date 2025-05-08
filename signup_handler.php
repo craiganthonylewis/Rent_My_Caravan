@@ -9,7 +9,6 @@ require_once "database_connection.php";
 require_once "user_session.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     // Get values from form
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);

@@ -36,10 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
 
-        //        
-        
-        $query->close();
-        $insertQuery->close();
+        $add_query->close();
     }
 
     

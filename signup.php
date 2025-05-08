@@ -3,10 +3,6 @@ require_once "database_connection.php";
 require_once "user_session.php";
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <!-- Created by Ezme Clark ST20261632, Yurii Filin ST20302767, Davide Lo Castro ST 20304605-->
 <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -26,7 +22,6 @@ require_once "user_session.php";
     <meta charset="UTF-8">
     <title>Sign Up | RMC</title>
     <link rel="icon" type="image/png" href="images/rmc_logo.png">
-
 </head>
 
 <body>

@@ -2,7 +2,6 @@
 <!-- Database login connection-->
 
 <?php
-
 // prevent user from accessing this page if already
 // logged in. Also starts session
 require_once "user_session.php";

@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like 
     // basename() might help for alternate os, idk im desperate
     $images = basename($_FILES["image"]["name"]) ?? "default_pfp.jpg";
     $temp_name = $_FILES["image"]["tmp_name"] ?? "default_pfp.jpg";
-    $folder = "uploadedimages". DIRECTORY_SEPARATOR .$images;
+    $folder = "uploaded_images". DIRECTORY_SEPARATOR .$images;
     $user_id = $_SESSION["user_id"];
 
     $pfp_url_query = $conn->prepare("SELECT pfp_url FROM users WHERE user_ID = ?");
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like 
     $pfp_url_query->bind_result($old_pfp_url);
     $pfp_url_query->fetch();
     $pfp_url_query->close();
-    $old_pfp = 'uploadedimages'. DIRECTORY_SEPARATOR .$old_pfp_url;
+    $old_pfp = 'uploaded_images'. DIRECTORY_SEPARATOR .$old_pfp_url;
 
     
     if ($user_id == null) {

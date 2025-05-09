@@ -7,7 +7,7 @@ setlocale(LC_ALL, 'en_GB.UTF-8'); //apparently needed for basename()
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get values from form
-    // basename() might help for alternate os 
+    // basename() might help for alternate os, idk im desperate
     $images = basename($_FILES["image"]["name"]) ?? "default_pfp.jpg";
     $temp_name = $_FILES["image"]["tmp_name"] ?? "default_pfp.jpg";
     $folder = "uploaded_images". DIRECTORY_SEPARATOR .$images;

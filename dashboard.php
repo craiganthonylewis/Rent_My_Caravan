@@ -62,7 +62,7 @@
                 </div>
                 
                 <div class = "column_12" id = "input_title_container"> 
-                    <!-- Picture -->
+                    <!-- Display the picture -->
                     <div class = "column_6" id = "input_title_container">
                         <?php
                         if ($pfp_url == null) {
@@ -78,16 +78,12 @@
                     </div>
 
 
-                    <form action="dashboard_handler.php" method="post" enctype="multipart/form-data">
-                    <div class="row">
-                        <input type="file" name="image" accept="image/*" value="">
-                        <input type="submit" value="Upload">
-                    </div>
+                    <form action="dashboard_handler.php" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <input type="file" name="image" accept="image/*" value="">
+                            <input type="submit" value="Upload">
+                        </div>
                     </form>
-                    <!-- <div class = "column_6">
-                        <label for="avatar">Update a profile picture:</label>
-                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
-                    </div> -->
                     <!-- Display the username -->
                     <div class = "column_6" id = "username">
                         <h3><?php echo $username ?></h3>

@@ -66,10 +66,10 @@
                     <div class = "column_6" id = "input_title_container">
                         <?php
                         if ($pfp_url == null) {
+                            // display default profile picture
                             echo '<img src="images/default_pfp.jpg" alt="Avatar"  style = "width: 200px; height: 200px;">';
                         } else {
-                            $full_url = 'uploaded_images/'.$pfp_url;
-                            echo $full_url;
+                            // display uploaded profile picture
                             echo '<img src="uploaded_images/'.$pfp_url.'" alt="Avatar"  style = "border-radius : 50%; width: 200px; height: 200px;">';
                         }
                         ?>

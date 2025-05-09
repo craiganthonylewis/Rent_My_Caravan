@@ -42,7 +42,7 @@
                 <li><a href="login.php">Log in</a></li>
               </ul>
 
-              <a href="index.php">
+              <a href="dashboard.php">
                 <div id="account_image"></div>
               </a>
             </div>

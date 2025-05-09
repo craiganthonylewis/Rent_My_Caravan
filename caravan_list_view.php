@@ -88,12 +88,17 @@ include('navigation.php');// always show same nav
 
                             // echo html for each item card, with 
                             // details filled from the db
-                            echo "
+                            if ($image == "") {
+                                $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/default_caravan.png' alt = 'No Caravan Image'>";
+                                } else {
+                                    $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/$image' alt = 'Caravan Image'>";
+                                }
+                            echo ("
                                 <div class='column_12' id='container_title' style = 'display:flex;flex-wrap: wrap;'>
                                 <div class = 'column_12' id = 'container_background'>
 
                                 <div class = 'column_4' id = 'text_container'> 
-                                    <p>Image placeholder</p>
+                                    ". $img_html."
                                 </div>
                                 
                                 <div class = 'column_8' style='margin-right:auto;'>
@@ -118,7 +123,7 @@ include('navigation.php');// always show same nav
                                 
                                 </div>
                                 </div>
-                            ";
+                            ");
                         }
                     } else {
                         echo "<p> No caravans found </p>";

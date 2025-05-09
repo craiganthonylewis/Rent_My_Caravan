@@ -33,10 +33,10 @@ include('navigation.php');// always show same nav
 
 //Retrieve caravan details from db
 $caravan_id = $_GET['caravan_id'] ?? 1; // Default to 1 if not set
-$detail_query = $conn->prepare("SELECT title, user_ID, description, price, location FROM caravans WHERE caravan_ID = ?");
+$detail_query = $conn->prepare("SELECT title, user_ID, description, price, location, image_url FROM caravans WHERE caravan_ID = ?");
 $detail_query->bind_param("i", $caravan_id);
 $detail_query->execute();
-$detail_query->bind_result($title, $user_id, $description, $price, $location);
+$detail_query->bind_result($title, $user_id, $description, $price, $location, $image_url);
 $detail_query->fetch();
 $detail_query->close();
 ?>
@@ -50,7 +50,13 @@ $detail_query->close();
                 <!-- Caravan image/ carousel -->
                 <div class = "column_4" style="margin-left:auto;">
                     <div class = "column_4" id = "text_container"> 
-                        <p>Image placeholder</p>
+                        <?php
+                        if ($image_url == "") {
+                        echo "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/default_caravan.png' alt = 'No Caravan Image'>";
+                        } else {
+                            echo "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/$image_url' alt = 'Caravan Image'>";
+                        }
+                        ?>
                     </div>
                 </div>
 

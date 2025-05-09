@@ -21,7 +21,7 @@
                     </label>
                 </div>
 
-                <button id="search_button_nav"></button>
+                <a href = "caravan_list_view.php"><button id="search_button_nav"></button></a>
 
                 <div class = "column_6" id = "nav_links">
                     <ul>

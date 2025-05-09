@@ -59,7 +59,7 @@ include('home_navigation.php');
                                 <input type="search" placeholder="Search here...">
                             </label>
                         </div>
-                    <button id = "search_button"></button>
+                        <a href = "caravan_list_view.php"><button id = "search_button"></button></a>
                 </div>
             </div>
         </div>

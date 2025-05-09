@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like 
     if ($user_id == null) {
         header ('Location: login.php?error=not_logged_in');
         exit();
-    } else {
+    } else { // this is the CORE problem on Unix systems for some reason /-_-/
         if (move_uploaded_file($temp_name, $folder)){
             unlink($old_pfp); // deletes old profile picture from folder
 

@@ -42,6 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }else{
         header("location: login.php?error=login_failed");
         exit();}
+    } else {
+        #if no user found, redirect to login page
+        header("location: login.php?error=login_failed");
+        exit();
     }
 
 }

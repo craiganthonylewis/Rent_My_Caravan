@@ -10,8 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like 
     // basename() might help for alternate os, idk im desperate
     $images = basename($_FILES["image"]["name"]) ?? "default_pfp.jpg";
     $temp_name = $_FILES["image"]["tmp_name"] ?? "default_pfp.jpg";
-    $folder = "uploaded_images". DIRECTORY_SEPARATOR .$images;
     $user_id = $_SESSION["user_id"];
+    $new_img_name = $user_id . "pfp." . (pathinfo($images, PATHINFO_EXTENSION));
+    $folder = "uploaded_images". DIRECTORY_SEPARATOR . $new_img_name;
 
     $pfp_url_query = $conn->prepare("SELECT pfp_url FROM users WHERE user_ID = ?");
     $pfp_url_query->bind_param("i", $user_id);
@@ -31,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like 
                 unlink($old_pfp); // deletes old profile picture from folder
             }
             $add_query = $conn->prepare("UPDATE users SET pfp_url = ? WHERE user_ID = ?;");
-            $add_query -> bind_param("si", $images, $user_id);
+            $add_query -> bind_param("si", $new_img_name, $user_id);
             $result = $add_query->execute();
 
             header('Location: dashboard.php');

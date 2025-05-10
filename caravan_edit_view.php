@@ -56,7 +56,7 @@ $detail_query->close();
                     </div>
 
                     <div class = "column_8" id = "text_container">
-                        <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" value = "<?php echo $description ?>" required></textarea></label>
+                        <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" required><?php echo $description ?></textarea></label>
                         <label id = "input_bar"><input type = "text" name = "location" value = "<?php echo $location ?>" required></label>
                     </div>
 

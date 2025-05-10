@@ -10,12 +10,13 @@
 
  $conn = mysqli_connect($db_server, $db_user, $db_pass, $db_name); #Declares connection variables
 
-#Verifies connection
-if ($conn) {
-    echo("You are connected to the database!" . mysqli_connect_error());
-} else {
-    echo "Could not connect to database!";
-}
+ // remove echos for final version
+// #Verifies connection
+// if ($conn) {
+//     echo("You are connected to the database!" . mysqli_connect_error());
+// } else {
+//     echo "Could not connect to database!";
+// }
 
 ?>
 

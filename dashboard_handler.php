@@ -1,7 +1,6 @@
 <?php
 require_once "database_connection.php";
 session_start();
-setlocale(LC_ALL, 'en_GB.UTF-8'); //needed for basename()
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like Systems for some reason /-_-/

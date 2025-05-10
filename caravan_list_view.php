@@ -44,7 +44,6 @@ include('navigation.php');// always show same nav
             <div class = "column_12" id="container_background">
                 <!-- fix centering-->
                 <div class="column_5" id="container_title">
-                    <select id="green_button" name="filters"></select>
                     <select id="green_button" name="order" onChange ="refreshSort(this.value)">
                         <option value = "price ASC" >Price: Low to High</option>
                         <option value = "price DESC">Price: High to Low</option>

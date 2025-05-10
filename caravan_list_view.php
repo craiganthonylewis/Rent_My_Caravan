@@ -88,9 +88,9 @@ include('navigation.php');// always show same nav
                             // echo html for each item card, with 
                             // details filled from the db
                             if ($image == "") {
-                                $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/default_caravan.png' alt = 'No Caravan Image'>";
+                                $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px; mad-height: 300px' src = 'caravan_images/default_caravan.png' alt = 'No Caravan Image'>";
                                 } else {
-                                    $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/$image' alt = 'Caravan Image'>";
+                                    $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px; max-height: 300px' src = 'caravan_images/$image' alt = 'Caravan Image'>";
                                 }
                             echo ("
                                 <div class='column_12' id='container_title' style = 'display:flex;flex-wrap: wrap;'>

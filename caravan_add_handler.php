@@ -22,10 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if ($user_id == null) {
-        // create error message later
-        header ('Location: login.php');
-        die();
+        header ('Location: login.php?error=not_logged_in');
+        exit();
     } else {
+        // put default image into record temporarily
         $add_query = $conn->prepare("INSERT INTO caravans (title, description, price, image_url, user_ID, location) VALUES (?, ?, ?, ?, ?, ?);");
         $add_query -> bind_param("ssisis", $title, $description, $price, $images, $user_id, $location);
         $result = $add_query->execute();

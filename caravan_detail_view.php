@@ -33,12 +33,22 @@ include('navigation.php');// always show same nav
 
 //Retrieve caravan details from db
 $caravan_id = $_GET['caravan_id'] ?? 1; // Default to 1 if not set
-$detail_query = $conn->prepare("SELECT title, user_ID, description, price, location, image_url FROM caravans WHERE caravan_ID = ?");
-$detail_query->bind_param("i", $caravan_id);
-$detail_query->execute();
-$detail_query->bind_result($title, $user_id, $description, $price, $location, $image_url);
-$detail_query->fetch();
-$detail_query->close();
+$detail_query = $conn->prepare ("SELECT title, user_ID, description, price, location, image_url FROM caravans WHERE caravan_ID = ?");
+$detail_query -> bind_param ("i", $caravan_id);
+$detail_query -> execute();
+$detail_query -> bind_result ($title, $uploader_user_id, $description, $price, $location, $image_url);
+$detail_query -> fetch();
+$detail_query -> close();
+
+//Retrieve seller contact details from db
+$contact_query = $conn -> prepare("SELECT email FROM users WHERE user_ID = ?");
+$contact_query -> bind_param ("i", $uploader_user_id);
+$contact_query -> execute();
+$contact_query -> bind_result ($uploader_email);
+$contact_query -> fetch();
+$contact_query -> close();
+
+$user_id = $_SESSION['user_id']?? 'none';
 ?>
 
 <main>
@@ -57,6 +67,11 @@ $detail_query->close();
                             echo "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px;' src = 'caravan_images/$image_url' alt = 'Caravan Image'>";
                         }
                         ?>
+                    </div>
+                    <div class = "column_4" id = "text_container">
+                        <p>Contact Owner:
+                            <?php echo $uploader_email?>
+                        </p>
                     </div>
                 </div>
 
@@ -85,7 +100,7 @@ $detail_query->close();
                     </div>
 
                     <?php // creates an edit button if the current user owns the caravan
-                    if ($_SESSION["user_id"] == $user_id) {
+                    if ($user_id == $uploader_user_id) {
                         echo '<div class = "column_3" id = "red_button">
                         <a href = "caravan_edit_view.php?caravan_id='.$caravan_id.'"><button  id = "red_button">Edit</button></a>
                         </div>';

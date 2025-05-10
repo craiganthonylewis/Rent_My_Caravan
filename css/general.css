@@ -25,6 +25,7 @@
     margin: 40px auto;
     padding: 30px;
     text-align:center;
+    overflow-y: auto;
 }
 
 #container_title{
@@ -33,6 +34,7 @@
     text-align: center;
     align-content: center;
     margin-top: 20px;
+    overflow-y: auto;
 }
 
 #input_title_container {

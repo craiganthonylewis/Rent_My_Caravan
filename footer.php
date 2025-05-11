@@ -19,7 +19,7 @@
         <li><h1>Information</h1></li>
         <li><a href="about.php">About</a></li>
         <li><a href="caravan_list_view.php">Caravans</a></li>
-        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Contact Us</a></li></ul> <!-- :)))))  -->
+        <li><a href="mailto:complaints@cardiffmet.ac.uk">Contact Us</a></li></ul> <!-- :)))))  -->
       </div>
 
       <div class = "column_4" id = "footer_list_2"><ul>

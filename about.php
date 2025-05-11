@@ -42,9 +42,8 @@
                             This was the beginning of our friendship, and then of course is the birth of our website. 
                         </p>
                         <p>
-                            We are pleased to welcome you on RentMyCaravanLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            We are pleased to welcome you on RentMyCaravan, a website built for travellers, by travellers!
+                             
                         </p>
                     </div>
 

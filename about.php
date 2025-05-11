@@ -36,13 +36,13 @@
                     
                     <div class = "column_10" id = "text_container">
                         <p>
-                            Italy,Wales,Englang and Ukraine. Four countries, four minds, different hobbies and cultures, but one shared passion: travel the world on the road.
+                            Italy, Wales, Englang and Ukraine. Four countries, four minds, different hobbies and cultures, but one shared passion: travel the world on the road.
                             Our first met happened in a coastal town somewhere next to France. 
                             We just needed few conversations (and a couple of drinks lol) to realise that we had the same vision and objective: to make travel more accessible, immersive and unforgettable for everyone.
-                            
+                            This was the beginning of our friendship, and then of course is the birth of our website. 
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            We are pleased to welcome you on RentMyCaravanLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
@@ -53,10 +53,10 @@
 
                     <div class="column_2" id="text_container" style = "overflow-x: hidden;">
                         <div id = "input_title_container">
-                            <p>Davide Castro</p>
+                            <p>Davide Lo Castro</p>
                             <img style ="width : 100px; height : 100px; " src = "images/davidepic.jpg">
-                            <p> Hi, I am Davide, full time tech nerd and professional spaghetti lover (Italian of course).
-                                I hope you like this website, but mostly my profile picture (sorry for the absence of pineapple lol).</p>
+                            <p> Hi, I am Davide,part-time casino inspector, full time tech nerd and professional spaghetti lover (Italian of course).
+                                I hope you will like our website, but mostly my profile picture (sorry for the absence of pineapple lol).</p>
                             <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>
                         </div>
                     </div>

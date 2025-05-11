@@ -27,6 +27,13 @@ require_once "user_session.php";
 
 </head>
 
+<?php
+    $error = $_GET['error'] ?? null; // Get error message from URL if it exists
+    if ($error == "mismatched_passwords") {
+        echo "<script>alert('The input passwords did not match. Please try again');</script>";
+    } 
+?>
+
 <body>
 <?php include('header.php');?>
 <?php include('navigation.php');?>

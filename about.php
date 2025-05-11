@@ -49,34 +49,42 @@
 
                     <div class="column_12" id="container_title"><h1>Creators</h1></div>
 
-                    <div class="column_2" id="text_container">
-                        <p>Davide Castro</p>
-                        <img style ="width : 100px; height : 100px; " src = "images/davidepic.jpg">
-                        <p> Hi, I am Davide, full time tech nerd and professional spaghetti lover(italian of course).
-                             I hope you like this website,but mostly my profile picture (sorry for the absence of pineapple lol).</p>
-                         <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>
 
+                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                        <div id = "input_title_container">
+                            <p>Davide Castro</p>
+                            <img style ="width : 100px; height : 100px; " src = "images/davidepic.jpg">
+                            <p> Hi, I am Davide, full time tech nerd and professional spaghetti lover (Italian of course).
+                                I hope you like this website, but mostly my profile picture (sorry for the absence of pineapple lol).</p>
+                            <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>
+                        </div>
                     </div>
 
-                    <div class="column_2" id="text_container">
-                        <p>Ezme Clark</p>
-                        <img style = "width: 100px; height : 100px; " src = "images/ezmepic.jpg"> 
-                        <p> Hi everyone, I am Ezme ,my brain thinks really fast and i type faster than i think. Japan lover, obsessed with pink and meme artist by nature. Simple and chaotic(pink) hurricane.</p>
-                         <a target= "_blank" href = "https://www.linkedin.com/in/ezme-clark-179803230/ " > <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>
+                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                        <div id = "input_title_container">
+                            <p>Ezme Clark</p>
+                            <img style = "width: 100px; height : 100px; " src = "images/ezmepic.jpg"> 
+                            <p> Hi everyone, I am Ezme, my brain thinks really slow bit I get there eventually. Too many interests and hobbies to count. Simple and mismanaged mess who will get things done when threatened.</p>
+                            <a target= "_blank" href = "https://www.linkedin.com/in/ezme-clark-179803230/ " > <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>
+                        </div>
                     </div>
 
-                    <div class="column_2" id="text_container">
-                        <p>Yurii Filin</p>
-                        <img style = "width: 100px; height : 100px; " src = "images/yuriipic.jpg">
-                        <p> Hello people, Yurii's here, red is my color and cars are my passion . I am a never-stopping worker and always up for a new challenge. Sleeping is optional, curiosity is mandatory!</p>
-                         <a target= "_blank" href = "https://www.linkedin.com/in/yurii-filin/ " > <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>   
+                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                        <div id = "input_title_container">
+                            <p>Yurii Filin</p>
+                            <img style = "width: 100px; height : 100px; " src = "images/yuriipic.jpg">
+                            <p> Hello people, Yurii's here, red is my color and cars are my passion. I am a never-stopping worker and always up for a new challenge. Sleeping is optional, curiosity is mandatory!</p>
+                            <a target= "_blank" href = "https://www.linkedin.com/in/yurii-filin/ " > <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>   
+                        </div>
                     </div>
 
-                    <div class="column_2" id="text_container">
-                        <p>Craig Lewis</p>
-                        <img style = "width: 100px; height : 100px; " src = "images/craigpic.jpg">
-                        <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac .I love to store any possible source of information, whether it's history,tech,finance or science,i'm on it.</p>
-                         <a target= "_blank" href = "https://www.linkedin.com/in/craigantlewis/" > <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>   
+                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                        <div id = "input_title_container">
+                            <p>Craig Lewis</p>
+                            <img style = "width: 100px; height : 100px; " src = "images/craigpic.jpg">
+                            <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac. I love to store any possible source of information, whether it's history, tech, finance or science, I'm on it.</p>
+                            <a target= "_blank" href = "https://www.linkedin.com/in/craigantlewis/" > <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>   
+                        </div>
                     </div>
                 </div>
             </div>

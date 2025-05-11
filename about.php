@@ -51,14 +51,16 @@
 
                     <div class="column_2" id="text_container">
                         <p>Davide Lo Castro</p>
-                        <img style ="width : 100px; height : auto; " src = "images/person1.jpg">
-                        <p>description of the person 1</p>
+                        <img style ="width : 100px; height : auto; " src = "images/davidepic.jpg">
+                        <p> Hi, I am Davide, part-time casino inspector, full time tech nerd, and professional spaghetti lover(italian of course).
+                             I hope you like this website,but mostly my profile picture (sorry for the absence of pineapple lol).</p>
                          <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>
 
                     </div>
 
                     <div class="column_2" id="text_container">
-                        <p>Person 2</p>
+                        <p>Ezme Clark</p>
+                        <img style = "width : 
                     </div>
 
                     <div class="column_2" id="text_container">

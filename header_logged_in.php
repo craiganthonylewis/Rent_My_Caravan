@@ -10,7 +10,18 @@
   <meta charset="UTF-8">
 </head>
 
-
+<?php
+  require_once 'database_connection.php';
+  // if session cookie 'username' is set, save to variable. else, set variable to 'User'
+  $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
+  $user_id = $_SESSION['user_id'];                  
+  $pfp_url_query = $conn->prepare("SELECT pfp_url FROM users WHERE user_ID = ?");
+  $pfp_url_query->bind_param("i", $user_id);
+  $pfp_url_query->execute();
+  $pfp_url_query->bind_result($pfp_url);
+  $pfp_url_query->fetch();
+  $pfp_url_query->close();
+?>
 
 <body>
 <header>
@@ -40,17 +51,24 @@
               
                 <li><a href="dashboard.php" id="user">
                   <?php 
-                    // if session cookie 'username' is set, save to variable. else, set variable to 'User'
-                    $username = isset($_SESSION['username'])?$_SESSION['username'] : 'User'; // Catch blank username
                     echo $username;                
                   ?>
                 </a></li>
                 <li>|</li>
-            <li><a href="session_delete.php">Log out</a></li>
+            <li><a href="session_delete.php">Log out  </a></li>
             </ul>
 
             <a href="index.php">
-              <div id="account_image"></div>
+              <?php
+                if ($pfp_url == null) {
+                  // display default profile picture
+                  echo '<img src="images/default_pfp.jpg" alt="Avatar"  style = "width: 40px; height: 40px;">';
+                } else {
+                  // display uploaded profile picture
+                  echo '<img src="uploaded_images'.DIRECTORY_SEPARATOR.$pfp_url.'" alt="Avatar"  style = "border-radius : 50%; width: 40px; height: 40px;">';
+                 }
+               ?>
+
             </a>
           </div>
         </div>

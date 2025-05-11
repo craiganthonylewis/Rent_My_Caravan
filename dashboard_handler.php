@@ -27,9 +27,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // THIS IS NOT WORKING ON UNIX-Like 
         exit();
     } else { // this is the CORE problem on Unix systems for some reason /-_-/
         if (move_uploaded_file($temp_name, $folder)){
-            if ($old_pfp_url != "default_pfp.jpg") { // if the user has a profile picture, delete it
-                unlink($old_pfp); // deletes old profile picture from folder
-            }
             $add_query = $conn->prepare("UPDATE users SET pfp_url = ? WHERE user_ID = ?;");
             $add_query -> bind_param("si", $new_img_name, $user_id);
             $result = $add_query->execute();

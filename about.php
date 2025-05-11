@@ -50,8 +50,8 @@
                     <div class="column_12" id="container_title"><h1>Creators</h1></div>
 
                     <div class="column_2" id="text_container">
-                        <p>Davide Lo Castro</p>
-                        <img style ="width : 100px; height : auto; " src = "images/davidepic.jpg">
+                        <p>Davide Castro</p>
+                        <img style ="width : 100px; height : 100px; " src = "images/davidepic.jpg">
                         <p> Hi, I am Davide, full time tech nerd and professional spaghetti lover(italian of course).
                              I hope you like this website,but mostly my profile picture (sorry for the absence of pineapple lol).</p>
                          <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>
@@ -60,18 +60,21 @@
 
                     <div class="column_2" id="text_container">
                         <p>Ezme Clark</p>
-                        <img style = "width: 100px; height : auto; " src = "images/ezmepic.jpg"> 
-                        <p> Hi everyone, i am Ezme ,my brain thinks really fast and i type faster than i think. Japan lover, obsessed with pink and meme artist by nature. Simple and chaotic(pink) hurricane.</p>
+                        <img style = "width: 100px; height : 100px; " src = "images/ezmepic.jpg"> 
+                        <p> Hi everyone, I am Ezme ,my brain thinks really fast and i type faster than i think. Japan lover, obsessed with pink and meme artist by nature. Simple and chaotic(pink) hurricane.</p>
                          <a target= "_blank" href = "https://www.linkedin.com/in/ezme-clark-179803230/ " > <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>
                     </div>
 
                     <div class="column_2" id="text_container">
                         <p>Yurii Filin</p>
-                        <img style = "width: 100px; height : auto; " src = "
+                        <img style = "width: 100px; height : 100px; " src = "images/yuriipic.jpg">
+                        <p> Hello people, Yurii's here, red is my color and cars are my passion . I am a never-stopping worker and always up for a new challenge. Sleeping is optional, curiosity is mandatory!</p>
+                         <a target= "_blank" href = "https://www.linkedin.com/in/yurii-filin/ " > <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>   
                     </div>
 
                     <div class="column_2" id="text_container">
-                        <p >Person 4</p>
+                        <p >Craig Lewis</p>
+                        <img style = "width: 100px; height : 100px; " src = "images
                     </div>
                 </div>
             </div>

@@ -49,7 +49,11 @@
                     <div class="column_12" id="container_title"><h1>Creators</h1></div>
 
                     <div class="column_2" id="text_container">
-                        <p>Person 1</p>
+                        <p>Davide Lo Castro</p>
+                        <img style ="width : 100px; height : auto; " src = "images/person1.jpg">
+                        <p>description of the person 1</p>
+                         <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>
+
                     </div>
 
                     <div class="column_2" id="text_container">

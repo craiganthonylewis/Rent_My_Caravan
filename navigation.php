@@ -2,7 +2,6 @@
 <!-- Coded by Craig Lewis ST20317192-->
 <html lang="en">
 <head>
-
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/media_queries.css">
     <link rel="stylesheet" href="css/navigation.css">
@@ -15,7 +14,6 @@
     <nav>
         <div class="container_960">
             <div class="column_12" id="navigation_container">
-
                 <div class="column_4" id="search_bar_nav">
                     <div id="search_bar_nav_icon"></div>
                     <label>
@@ -23,7 +21,7 @@
                     </label>
                 </div>
 
-                <button id="search_button_nav"></button>
+                <a href = "caravan_list_view.php"><button id="search_button_nav"></button></a>
 
                 <div class = "column_6" id = "nav_links">
                     <ul>

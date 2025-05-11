@@ -19,6 +19,8 @@
 
   <meta charset="UTF-8">
   <title>Add | RMC</title>
+  <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 
@@ -43,13 +45,13 @@ if (isset($_SESSION["user_id"]) === false) {
             <div class = "column_12" id="container_background">
                 <div class = "column_12" id = "container_title"><h1>Add Caravan</h1></div>
 
-                <form class= "column_12" id = "input_title_container" action = "caravan_add_handler.php" method = "post">
+                <form class= "column_12" id = "input_title_container" action = "caravan_add_handler.php" method = "post" enctype="multipart/form-data">
                     <div class = "column_12">
                         <label id = "input_bar"><input type = "text" name = "title" placeholder = "Caravan Title" required></label>
 
                         <div class = "column_4" id = "text_container"> 
                             <p>Image placeholder</p>
-                            <label><input type = "file" name = "image" multiple></label>
+                            <label><input type = "file" name = "image"></label>
                         </div>
 
                         <div class = "column_8" id = "text_container">

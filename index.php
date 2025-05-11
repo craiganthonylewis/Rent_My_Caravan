@@ -17,6 +17,7 @@
 
     <meta charset="UTF-8">
     <title>Home | RMC</title>
+    <link rel="icon" type="image/png" href="images/rmc_logo.png">
 </head>
 
 <body>
@@ -46,7 +47,7 @@ include('home_navigation.php');
                 // if not, show sign up button.
                     if (isset($_SESSION["user_id"]) == false ){
                         echo ("<div class='column_6' id='signup_button_container'>
-                <button onclick='location.href='signup.php''>Sign up <br> for free</button>
+                <a style = 'text-decoration : none;' href='signup.php'><button><p>Sign up <br> for free</p></button></a>
                 </div>");
                         }
                 ?>
@@ -58,7 +59,7 @@ include('home_navigation.php');
                                 <input type="search" placeholder="Search here...">
                             </label>
                         </div>
-                    <button id = "search_button"></button>
+                        <a href = "caravan_list_view.php"><button id = "search_button"></button></a>
                 </div>
             </div>
         </div>

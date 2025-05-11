@@ -19,6 +19,8 @@
 
   <meta charset="UTF-8">
   <title>Caravans | RMC</title>
+  <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 
@@ -42,7 +44,6 @@ include('navigation.php');// always show same nav
             <div class = "column_12" id="container_background">
                 <!-- fix centering-->
                 <div class="column_5" id="container_title">
-                    <select id="green_button" name="filters"></select>
                     <select id="green_button" name="order" onChange ="refreshSort(this.value)">
                         <option value = "price ASC" >Price: Low to High</option>
                         <option value = "price DESC">Price: High to Low</option>
@@ -86,12 +87,17 @@ include('navigation.php');// always show same nav
 
                             // echo html for each item card, with 
                             // details filled from the db
-                            echo "
+                            if ($image == "") {
+                                $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px; mad-height: 300px' src = 'caravan_images/default_caravan.png' alt = 'No Caravan Image'>";
+                                } else {
+                                    $img_html = "<img style = 'border-radius: 10%; width: 100%; height: auto; max-width: 300px; max-height: 300px' src = 'caravan_images/$image' alt = 'Caravan Image'>";
+                                }
+                            echo ("
                                 <div class='column_12' id='container_title' style = 'display:flex;flex-wrap: wrap;'>
                                 <div class = 'column_12' id = 'container_background'>
 
                                 <div class = 'column_4' id = 'text_container'> 
-                                    <p>Image placeholder</p>
+                                    ". $img_html."
                                 </div>
                                 
                                 <div class = 'column_8' style='margin-right:auto;'>
@@ -116,7 +122,7 @@ include('navigation.php');// always show same nav
                                 
                                 </div>
                                 </div>
-                            ";
+                            ");
                         }
                     } else {
                         echo "<p> No caravans found </p>";

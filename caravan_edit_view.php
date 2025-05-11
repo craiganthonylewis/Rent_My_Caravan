@@ -19,6 +19,8 @@
 
   <meta charset="UTF-8">
   <title>Edit | RMCn</title>
+  <link rel="icon" type="image/png" href="images/rmc_logo.png">
+
 </head>
 
 
@@ -44,17 +46,17 @@ $detail_query->close();
             <div class = "column_12" id="container_background">
             <div class = "column_12" id = "container_title"><h1>Edit Caravan</h1></div>
 
-            <form class= "column_12" id = "input_title_container" action = "caravan_edit_handler.php?caravan_id=<?php echo $caravan_id ?>" method = "post">
+            <form class= "column_12" id = "input_title_container" action = "caravan_edit_handler.php?caravan_id=<?php echo $caravan_id ?>" method = "post" enctype="multipart/form-data">
                 <div class = "column_12">
                     <label id = "input_bar"><input type = "text" name = "title" value = "<?php echo $title ?>" required></label>
 
                     <div class = "column_4" id = "text_container"> 
                         <p>Image placeholder</p>
-                        <label><input type = "file" value = "image.png" multiple></label>
+                        <label><input type = "file" name = "image"></label>
                     </div>
 
                     <div class = "column_8" id = "text_container">
-                        <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" value = "<?php echo $description ?>" required></textarea></label>
+                        <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" required><?php echo $description ?></textarea></label>
                         <label id = "input_bar"><input type = "text" name = "location" value = "<?php echo $location ?>" required></label>
                     </div>
 

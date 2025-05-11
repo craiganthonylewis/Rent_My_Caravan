@@ -3,13 +3,10 @@
 <!-- Link capitalisation by Ezme Clark ST20261632-->
 <html lang="en">
 <head>
-
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/media_queries.css">
     <link rel="stylesheet" href="css/home_navigation.css">
     <link rel="stylesheet" href="css/font.css">
-
-
 
     <meta charset="UTF-8">
 </head>

@@ -9,18 +9,17 @@ require_once "database_connection.php";
 require_once "user_session.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     // Get values from form
     $username = trim($_POST['username']);
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
     $confirm_password = trim($_POST["conf_passwd"]);
-    $password_hash = password_hash($password, PASSWORD_BCRYPT);
+    $password_hash = md5($password);
 
     // Prepare query to check email
     $query = $conn->prepare("SELECT * FROM users WHERE email = ?");
 
-    // Bind parameters (s = string, i = int, b = blob, etc)
+    // bind parameters (s = string, i = int, b = blob, etc)
 	$query->bind_param('s', $email);
 	$query->execute();
     echo'  checking email  ';
@@ -31,25 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($query->num_rows > 0) {
             //If the input email adress already exists
             //in the database, redirect to login
-            echo'email found already';
             header('Location: login.php');
-            die();
+            exit();
         }else{
             
             if (empty($error) ) {
-                echo '  adding to db  ';
-
-                $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email) VALUES (?, ?, ?);");
-                $insertQuery->bind_param("sss", $username, $password, $email);
-                
-                var_dump($username, $password, $email, $pfp_url);//check values 
-
-
+                $insertQuery = $conn->prepare("INSERT INTO users ( username, password, email, pfp_url) VALUES (?, ?, ?, ?);");
+                $pfp_url = 'default_pfp.jpg'; 
+                $insertQuery->bind_param("ssss", $username, $password_hash, $email, $pfp_url);
                 $result = $insertQuery->execute();
                 if ($result) {
                     echo'  everything went well  ';
                     // create session cookie with user id
-                    $getIdQuery = $conn->prepare("SELECT user_id FROM users WHERE email = ?;");
+                    $getIdQuery = $conn->prepare("SELECT user_ID FROM users WHERE email = ?;");
                     $getIdQuery->bind_param("s", $email);
                     $getIdQuery->execute();
 
@@ -62,15 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     // Redirect to front page
                     header('location: index.php');
+                    exit();
                 } else {
-                    echo '  something went wrong  ';
                     // Refresh page if error
                     header ('location: signup.php');
+                    exit();
                 }
             }
         }
-        
-    
     $query->close();
     $insertQuery->close();
 }

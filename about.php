@@ -36,9 +36,10 @@
                     
                     <div class = "column_10" id = "text_container">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Italy,Wales,Englang and Ukraine. Four countries, four minds, different hobbies and cultures, but one shared passion: travel the world on the road.
+                            Our first met happened in a coastal town somewhere next to France. 
+                            We just needed few conversations (and a couple of drinks lol) to realise that we had the same vision and objective: to make travel more accessible, immersive and unforgettable for everyone.
+                            
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -82,7 +83,7 @@
                         <div id = "input_title_container">
                             <p>Craig Lewis</p>
                             <img style = "width: 100px; height : 100px; " src = "images/craigpic.jpg">
-                            <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac. I love to store any possible source of information, whether it's history, tech, finance or science, I'm on it.</p>
+                            <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac. I love to store any possible source of information, whether it's history, tech, finance or science, I'm on it.My superpower?Knowledge</p>
                             <a target= "_blank" href = "https://www.linkedin.com/in/craigantlewis/" > <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>   
                         </div>
                     </div>

@@ -73,8 +73,10 @@
                     </div>
 
                     <div class="column_2" id="text_container">
-                        <p >Craig Lewis</p>
-                        <img style = "width: 100px; height : 100px; " src = "images
+                        <p>Craig Lewis</p>
+                        <img style = "width: 100px; height : 100px; " src = "images/craigpic.jpg">
+                        <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac .I love to store any possible source of information, whether it's history,tech,finance or science,i'm on it.</p>
+                         <a target= "_blank" href = "https://www.linkedin.com/in/craigantlewis/" > <img style = "width : 50px; height : auto ; "src = "images/linkedin_logo.png"></a>   
                     </div>
                 </div>
             </div>

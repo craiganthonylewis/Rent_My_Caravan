@@ -43,7 +43,12 @@
                         </p>
                         <p>
                             We are pleased to welcome you on RentMyCaravan, a website built for travellers, by travellers!
-                             
+                             Do you want to share your caravan with the other people, or you are looking for the perfect ride to start your next adventure? 
+                             Whether your choice is one or the other, this is the right place for you.
+                             Located in Cardiff,Wales, we also believe in comfort, sustainability and spirit of adventure, packed all in one solution!
+                             What are you waiting for? Your road trips start with us! 
+                             The RentMyCaravan Team
+                            
                         </p>
                     </div>
 

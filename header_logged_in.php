@@ -56,6 +56,7 @@
                 </a></li>
                 <li>|</li>
             <li><a href="session_delete.php">Log out  </a></li>
+            <li></li> <!-- prevents pfp from touching text -->
             </ul>
 
             <a href="index.php">

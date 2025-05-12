@@ -35,21 +35,27 @@
                     <div class="column_12" id="container_title"><h1>About</h1></div>
                     
                     <div class = "column_10" id = "text_container">
+                        <div class = "column_12" id = "input_title_container">
+                        <br><br>
                         <p>
-                            Italy, Wales, Englang and Ukraine. Four countries, four minds, different hobbies and cultures, but one shared passion: travel the world on the road.
-                            Our first met happened in a coastal town somewhere next to France. 
-                            We just needed few conversations (and a couple of drinks lol) to realise that we had the same vision and objective: to make travel more accessible, immersive and unforgettable for everyone.
+                            Italy, Wales, England and Ukraine. Four countries, four minds, four hobbies and cultures, but one shared passion: travel the world on the road.
+                            Our first meet happened in a coastal town somewhere next to France. 
+                            We just needed few conversations (and a couple of drinks) to realise that we had the same vision and objective: to make travel more accessible, immersive and unforgettable for everyone.
                             This was the beginning of our friendship, and then of course is the birth of our website. 
                         </p>
+                        <br>
                         <p>
-                            We are pleased to welcome you on RentMyCaravan, a website built for travellers, by travellers!
+                            We are pleased to welcome you to RentMyCaravan, a website built for travellers, by travellers!
                              Do you want to share your caravan with the other people, or you are looking for the perfect ride to start your next adventure? 
                              Whether your choice is one or the other, this is the right place for you.
-                             Located in Cardiff,Wales, we also believe in comfort, sustainability and spirit of adventure, packed all in one solution!
+                             Located in Cardiff, Wales, we also believe in comfort, sustainability and the spirit of adventure, packed all in one solution!
                              What are you waiting for? Your road trips start with us! 
-                             The RentMyCaravan Team
-                            
+                             
                         </p>
+                        <p>
+                            - The RentMyCaravan Team
+                        </p>
+                        </div>
                     </div>
 
                     <div class="column_12" id="container_title"><h1>Creators</h1></div>
@@ -59,7 +65,7 @@
                         <div id = "input_title_container">
                             <p>Davide Lo Castro</p>
                             <img style ="width : 100px; height : 100px; " src = "images/davidepic.jpg">
-                            <p> Hi, I am Davide,part-time casino inspector, full time tech nerd and professional spaghetti lover (Italian of course).
+                            <p> Hi, I am Davide, part-time casino inspector, full time tech nerd and professional spaghetti lover (Italian of course).
                                 I hope you will like our website, but mostly my profile picture (sorry for the absence of pineapple lol).</p>
                             <a target= "_blank" href = "https://www.linkedin.com/in/davide-lo-castro-aabb451b8/">  <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>
                         </div>
@@ -87,7 +93,7 @@
                         <div id = "input_title_container">
                             <p>Craig Lewis</p>
                             <img style = "width: 100px; height : 100px; " src = "images/craigpic.jpg">
-                            <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac. I love to store any possible source of information, whether it's history, tech, finance or science, I'm on it.My superpower?Knowledge</p>
+                            <p> What's happening guys? My name is Craig, your friendly neighbourhood brainiac. I love to store any possible source of information, whether it's history, tech, finance or science, I'm on it.My superpower? Knowledge</p>
                             <a target= "_blank" href = "https://www.linkedin.com/in/craigantlewis/" > <img style = "width : 50px; height : 50px ; "src = "images/linkedin_logo.png"></a>   
                         </div>
                     </div>

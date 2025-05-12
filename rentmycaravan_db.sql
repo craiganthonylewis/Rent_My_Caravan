@@ -58,7 +58,7 @@ CREATE TABLE `users` (
 --
 ALTER TABLE `caravans`
   ADD PRIMARY KEY (`caravan_ID`),
-  ADD UNIQUE KEY `user_ID` (`user_ID`);
+  ADD KEY `user_ID` (`user_ID`) USING BTREE;
 
 
 --
@@ -86,10 +86,10 @@ ALTER TABLE `users`
 -- Constraints for table `caravans`
 --
 ALTER TABLE `caravans`
-  ADD CONSTRAINT `caravans_ibfk_1` FOREIGN KEY (`user_ID`) REFERENCES `users` (`user_ID`);
+  ADD CONSTRAINT `caravans_ibfk_1` FOREIGN KEY (`user_ID`) REFERENCES `users` (`user_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  COMMIT;
 
 
-ALTER TABLE `caravans` DROP INDEX `user_ID`;
 
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

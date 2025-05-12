@@ -85,7 +85,7 @@ $user_id = $_SESSION['user_id']?? 'none';
                     </div> 
                     <!-- Listing description + location -->
                     <div class = "column_8" >
-                        <div class = "column_8" id = "text_container">
+                        <div class = "column_8" id = "text_container" >
                             <p><?php echo $description ?></p>
                         </div>
                         <div class = "column_8" id = "text_container">
@@ -95,7 +95,7 @@ $user_id = $_SESSION['user_id']?? 'none';
                     <!-- Listing price -->
                     <div class = "column_8">
                         <div class = "column_3" id = "text_container" style="text-align: center;">
-                            <p><?php echo '£ ' . $price ?></p>
+                            <p><?php echo '£ ' . $price . ' per night'?> </p>
                         </div>
                     </div>
 

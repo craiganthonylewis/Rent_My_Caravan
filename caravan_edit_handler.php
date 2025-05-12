@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = $edit_query->execute();
 
         if ($result) {
-            if ($uploaded_image){
+            if ($uploaded_image != NULL){
                 $image = $caravan_id . "photo." . (pathinfo($uploaded_image, PATHINFO_EXTENSION) ?? "jpg");
                 $full_path = "caravan_images" . DIRECTORY_SEPARATOR . $image;
 

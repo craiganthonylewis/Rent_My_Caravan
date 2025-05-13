@@ -1,7 +1,7 @@
 /* Coded by Craig Lewis ST20317192*/
 
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(show_Position);
+    navigator.geolocation.getCurrentPosition(show_Position, error_Message);
 } else {
     console.log("Geolocation is not supported by this browser.");
 }
@@ -39,8 +39,28 @@ function show_Position(position) {
                 document.getElementById("user_Location").innerHTML = "Location unavailable";
             }
         })
+
+        //Display Error
         .catch(error => {
             console.error("Error fetching location name: ", error);
             document.getElementById("user_Location").innerHTML = `Location error`;
         });
+}
+
+//error handling
+function error_Message(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            document.getElementById("user_Location").innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            document.getElementById("user_Location").innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            document.getElementById("user_Location").innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            document.getElementById("user_Location").innerHTML = "An unknown error occurred."
+            break;
+    }
 }

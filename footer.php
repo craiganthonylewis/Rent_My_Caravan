@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div>© CST TEAM,  2025. ALL RIGHTS RESERVED</div>
+  <div id = "copyright"><h1>© CST Team,  2025. All Rights Reserved</h1></div>
 
 </footer>
 

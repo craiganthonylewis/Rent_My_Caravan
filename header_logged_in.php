@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/font.css">
 
+    <script src="js/geolocator.js"></script>
+
   <meta charset="UTF-8">
 </head>
 

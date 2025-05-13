@@ -1,7 +1,5 @@
 /* Coded by Craig Lewis ST20317192*/
 
-
-// Checks for function conditonally
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(show_Position);
 } else {
@@ -14,7 +12,7 @@ function show_Position(position) {
     console.log("Longitude: " + position.coords.longitude);
     document.getElementById("user_Location").innerHTML = position.coords.latitude;
 
-    //API Key
+    //API key
     const api_Key = "b81aec273adc4925ad1a59471f8b4c26";
     const URL = `https://api.opencagedata.com/geocode/v1/json?q=${position.coords.latitude}+${position.coords.longitude}&key=${api_Key}`;
 
@@ -23,15 +21,27 @@ function show_Position(position) {
         .then(response => response.json())
         .then(data => {
             if (data.results.length > 0) {
-                const location_Name = data.results[0].formatted;
-                document.getElementById("user_Location").innerHTML = location_Name;
+
+                //Access index
+                const components = data.results[0].components;
+
+                //Geographic Credentials
+                const city = components.town || components.city || components.village || components.hamlet || "Unknown town";
+                const state = components.state || "Unknown State";
+                const country = components.country || "Unknown country";
+
+                //Combined Variables
+                const location_combined = `${city}, ${state}, ${country}`;
+
+                //Display Combined String
+                document.getElementById("user_Location").innerHTML = location_combined;
             } else {
                 document.getElementById("user_Location").innerHTML = "Location unavailable";
             }
         })
         .catch(error => {
             console.error("Error fetching location name: ", error);
-            document.getElementById("user_Location").innerHTML = "Location error";
+            document.getElementById("user_Location").innerHTML = `Location error`;
         });
 }
 

@@ -31,7 +31,7 @@ CREATE TABLE `caravans` (
   `caravan_ID` int(12) NOT NULL,
   `user_ID` int(12) NOT NULL,
   `title` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `description` varchar(350) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  `description` varchar(1000) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `price` float NOT NULL,
   `location` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `image_url` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL

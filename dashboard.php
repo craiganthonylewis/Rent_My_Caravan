@@ -2,15 +2,7 @@
 <!-- Coded by Ezme Clark ST20261632 and Yurii Filin ST20302767-->
 <html lang="en">
 
-<?php 
-    session_start();
-    //required. It shows a different header if logged in
-    require_once "database_connection.php";
-    // connect a header handler
-    include('header_handler.php');
-    // always show same nav
-    include('home_navigation.php');
-?>
+
 
 <head>
     <!-- CSS -->
@@ -36,8 +28,15 @@
     <link rel="icon" type="image/png" href="images/rmc_logo.png">
 
 </head>
+<?php 
+    session_start();
+    //required. It shows a different header if logged in
+    require_once "database_connection.php";
+    // connect a header handler
+    include('header_handler.php');
+    // always show same nav
+    include('home_navigation.php');
 
-<?php
     if ($user_id == null) {
         header("Location: login.php?error=not_logged_in");
         exit();

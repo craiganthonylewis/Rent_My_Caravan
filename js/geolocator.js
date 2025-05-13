@@ -30,10 +30,10 @@ function show_Position(position) {
                 const state = components.state || "Unknown State";
                 const country = components.country || "Unknown country";
 
-                //Combined Variables
+                //Combines Variables
                 const location_combined = `${city}, ${state}, ${country}`;
 
-                //Display Combined String
+                //Displays Combined String
                 document.getElementById("user_Location").innerHTML = location_combined;
             } else {
                 document.getElementById("user_Location").innerHTML = "Location unavailable";

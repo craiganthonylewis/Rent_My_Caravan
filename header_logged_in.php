@@ -34,7 +34,7 @@
 
         <div class = "column_7" id = "accessibility_links">
           <ul>
-            <li><a href="index.php">Location: Cardiff, Wales</a></li>
+            <li><a href="index.php" id="user_Location">Location: Locating...</a></li>
           </ul>
 
           <label for="dropdown">Language:</label>

@@ -44,5 +44,3 @@ function show_Position(position) {
             document.getElementById("user_Location").innerHTML = `Location error`;
         });
 }
-
-//Error Checking

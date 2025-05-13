@@ -12,7 +12,7 @@ function show_Position(position) {
     console.log("Longitude: " + position.coords.longitude);
     document.getElementById("user_Location").innerHTML = position.coords.latitude;
 
-    //API key
+    //API key = Security Risk: API Key is exposed, it needs storing.
     const api_Key = "b81aec273adc4925ad1a59471f8b4c26";
     const URL = `https://api.opencagedata.com/geocode/v1/json?q=${position.coords.latitude}+${position.coords.longitude}&key=${api_Key}`;
 

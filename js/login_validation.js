@@ -6,12 +6,11 @@ $(document).ready(function() {
 
         $('.validation').text("");
 
+        //Variables
         let email = $('input[name="email"]').val().trim();
         let password = $('input[name="password"]').val();
-        let email_Pattern = /^[^ ]+@[^ ]+\.[a-z]{3,}$/;
+        let email_Pattern = /^[^ ]+@[^ ]+\.(?:[a-z]{3,}|[a-z]{2,}\.[a-z]{2,})$/;
         let password_Pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
-
-
         let hasError = false;
 
 
@@ -48,4 +47,11 @@ $(document).ready(function() {
                 .removeClass("validation_False");
         }
     });
+
+    $('form_').on('submit', function() {
+
+
+
+    })
+
 });

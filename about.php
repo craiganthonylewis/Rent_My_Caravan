@@ -104,5 +104,12 @@
         </section>
     </main>
     <?php include('footer.php');?>
+
+    <script>
+      let counterElement = document.getElementById("km-counter");
+      let km = 112200;
+
+      
+    </script>
 </body>
 </html>

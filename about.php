@@ -52,8 +52,10 @@
                              What are you waiting for? Your road trips start with us! 
                              
                         </p>
-                        <p>
-                            - The RentMyCaravan Team 
+                        <p> - The RentMyCaravan Team</p> 
+                           
+                        </p style="text-align: center;">
+                        <strong>🚐 Total kilometres travelled by our community campers: <span id="km-counter">112,200</span> km</strong>
                         </p>
                         </div>
                     </div>

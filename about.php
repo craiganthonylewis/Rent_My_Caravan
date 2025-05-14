@@ -109,7 +109,10 @@
       let counterElement = document.getElementById("km-counter");
       let km = 112200;
 
-      
+      setInterval(() => {
+        km += Math.floor(Math.random() * 5); // Add 0-4 km every 5 sec
+        counterElement.textContent = km.toLocaleString(); // shows with dot like 154,205
+      }, 500);
     </script>
 </body>
 </html>

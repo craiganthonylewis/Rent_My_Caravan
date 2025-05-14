@@ -47,21 +47,23 @@ if (isset($_SESSION["user_id"]) === false) {
 
                 <form class= "column_12" id = "input_title_container" action = "caravan_add_handler.php" method = "post" enctype="multipart/form-data">
                     <div class = "column_12">
-                        <label id = "input_bar"><input type = "text" name = "title" placeholder = "Caravan Title" required></label>
+                        <label id = "input_bar"><input  type = "text" name = "title" placeholder = "Caravan Title" required></label>
 
                         <div class = "column_4" id = "text_container"> 
-                            <p>Image placeholder</p>
-                            <label><input type = "file" name = "image"></label>
+                            <p style = "width:100%">Image Upload</p>
+                            <label style = "width:100%"><input type = "file" name = "image"></label>
                         </div>
 
                         <div class = "column_8" id = "text_container">
-                            <label id = "input_bar"><textarea name = "description" rows = "4" cols = "100" placeholder="Caravan Description" required></textarea></label>
-                            <label id = "input_bar"><input type = "text" name = "location" placeholder = "Location" required></label>
+                            <label id = "input_bar"><textarea style ="width:90%; resize:vertical;" name = "description" rows = "4" cols = "100" placeholder="Caravan Description" required></textarea></label>
+                            <div class = "column_12"></div>
+                            <label style="width:100%" id = "input_bar"><input type = "text" name = "location" placeholder = "Location" required></label>
                         </div>
 
-                        <div class = "column_8">
+                        <div class = "column_8" >
                             <div class = "column_3" id = "text_container">
-                                    <label><input name = "price" type = "number" placeholder = "0"></label>
+                                    <label style="width:100%"><p>Price per night</p></label>
+                                    <label style="width:100%" id = "input_bar"><input name = "price" type = "number" placeholder = "0"></label>
                             </div>
                         </div>
                     </div>

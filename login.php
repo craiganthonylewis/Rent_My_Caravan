@@ -23,7 +23,6 @@ require_once "user_session.php";
     <!-- Javascript -->
     <script src="js/title_animation.js"></script>
     <script src="js/login_validation.js"></script>
-    <script src="js/login_submit.js"></script>
 
 
     <meta charset="UTF-8">

@@ -47,7 +47,7 @@ function show_Position(position) {
         });
 }
 
-//error handling
+//Error handling
 function error_Message(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:

@@ -36,7 +36,7 @@
                     
                     <div class = "column_10" id = "text_container">
                         <div class = "column_12" id = "input_title_container">
-                        <br><br>
+                        <h1>Origins...</h1>
                         <p>
                             Italy, Wales, England and Ukraine. Four countries, four minds, four hobbies and cultures, but one shared passion: travel the world on the road.
                             Our first meet happened in a coastal town somewhere next to France. 

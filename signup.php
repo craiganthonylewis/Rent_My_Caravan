@@ -31,7 +31,9 @@ require_once "user_session.php";
     $error = $_GET['error'] ?? null; // Get error message from URL if it exists
     if ($error == "mismatched_passwords") {
         echo "<script>alert('The input passwords did not match. Please try again');</script>";
-    } 
+    } elseif ($error == "wrong_password") {
+        echo "<script>alert('Please use an upper and lower case letter and one number minimum. Length must be over 8 characters.');</script>";
+    }
 ?>
 
 <body>

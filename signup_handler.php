@@ -15,7 +15,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = trim($_POST['password']);
     $confirm_password = trim($_POST["conf_passwd"]);
     $password_hash = md5($password);
+    // check passwords match
     if ($password == $confirm_password){
+        // check if password matches requirements
+        // (minimum 8 characters with one upper/ lower case and one number)
+        if (strlen($password) < 8 || !preg_match('/[A-Z]/', $password) || !preg_match('/[a-z]/', $password) || !preg_match('/[0-9]/', $password)) {
+            header('Location: signup.php?error=wrong_password');
+            exit();
+        }
+
         // Prepare query to check email
         $query = $conn->prepare("SELECT * FROM users WHERE email = ?");
 

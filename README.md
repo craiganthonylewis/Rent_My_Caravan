@@ -8,7 +8,7 @@ Another unfortunate effect is the <b>inability to upload images to the database<
 upload failure, but other than that, caravan addition and editing should function normally.<br><br>
 <h3>Finding PHPMyAdmin</h3>
 Once XAMPP is set up and both the <b>Apache and MySQL</b> servers are on, open your browser and go to localhost/phpmyadmin/
-<h3>Finding the RMC site</3>
+<h3>Finding the RMC site</h3>
 In your browser, go to localhost/rent_my_caravan/index.php<br>
 The /rent_my_caravan/ portion is whatever you have the file in XAMPP stored as. If it does not open, please check the folder is correctly copied into XAMPP/htdocs/ and that you use the correct uppercase/lowercase letters. 
 <br><br>

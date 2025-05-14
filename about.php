@@ -63,7 +63,7 @@
                     <div class="column_12" id="container_title"><h1>Creators</h1></div>
 
 
-                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                    <div class="column_5" id="text_container" style = "overflow-x: hidden;">
                         <div id = "input_title_container">
                             <p>Davide Lo Castro</p>
                             <img style ="width : 100px; height : 100px; " src = "images/davidepic.jpg">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
 
-                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                    <div class="column_5" id="text_container" style = "overflow-x: hidden;">
                         <div id = "input_title_container">
                             <p>Ezme Clark</p>
                             <img style = "width: 100px; height : 100px; " src = "images/ezmepic.jpg"> 
@@ -82,7 +82,7 @@
                         </div>
                     </div>
 
-                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                    <div class="column_5" id="text_container" style = "overflow-x: hidden;">
                         <div id = "input_title_container">
                             <p>Yurii Filin</p>
                             <img style = "width: 100px; height : 100px; " src = "images/yuriipic.jpg">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="column_2" id="text_container" style = "overflow-x: hidden;">
+                    <div class="column_5" id="text_container" style = "overflow-x: hidden;">
                         <div id = "input_title_container">
                             <p>Craig Lewis</p>
                             <img style = "width: 100px; height : 100px; " src = "images/craigpic.jpg">

@@ -1,6 +1,6 @@
 /* Coded by Craig Lewis ST20317192*/
 $(document).ready(function() {
-    $('form').on('keyup', function(){
+    $('form').on('keyup', function() {
 
         $('.validation').text("");
 
@@ -14,7 +14,9 @@ $(document).ready(function() {
 
         $('#email_Validation').removeClass("validation_True validation_False");
 
-        if (!email.match(email_Pattern)) {
+        if (!email) {
+            $('#email_Validation').text("");
+        } else if (!email.match(email_Pattern)) {
             $('#email_Validation')
                 .text("Please enter a valid email address.")
                 .addClass("validation_False");
@@ -27,7 +29,9 @@ $(document).ready(function() {
 
         $('#password_Validation').removeClass("validation_True validation_False");
 
-        if (!password.match(password_Pattern)) {
+        if (!password) {
+            $('#password_Validation').text("");
+        } else if (!password.match(password_Pattern)) {
             $('#password_Validation')
                 .text("Please enter a valid password.")
                 .addClass("validation_False");

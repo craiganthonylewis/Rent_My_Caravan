@@ -20,7 +20,8 @@ require_once "user_session.php";
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <!-- Javascript -->
-    <script src="js/title_animation.js"></script>
+    <script src="js/login_validation.js"></script>
+
     <meta charset="UTF-8">
     <title>Sign Up | RMC</title>
     <link rel="icon" type="image/png" href="images/rmc_logo.png">
@@ -50,7 +51,7 @@ require_once "user_session.php";
                     <form action="signup_handler.php" method="post">
                         <!-- Input email -->
                         <div id = "input_title">
-                            <p>Enter your Email Address:</p><br>
+                            <p>Enter your Email Address:</p><div class="validation" id="email_Validation"></div><br>
                         </div>
                         <div id = "input_bar">
                             <label><input type="email" name="email" placeholder="Email Address" required></label>
@@ -64,7 +65,7 @@ require_once "user_session.php";
                         </div>
                         <!-- Input password -->
                         <div id = "input_title">
-                            <p>Enter your Password:</p><br>
+                            <p>Enter your Password:</p><div class="validation" id="password_Validation"></div><br>
                         </div>
                         <div id = "input_bar">
                             <label><input type="password" name="password" placeholder="Enter Password" required></label>

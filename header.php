@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/font.css">
 
 <script src="js/geolocator.js"></script>
-    <script src="js/translate.js"></script>
 
   <meta charset="UTF-8">
 

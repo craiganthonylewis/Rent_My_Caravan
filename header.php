@@ -8,12 +8,14 @@
   <link rel="stylesheet" href="css/font.css">
 
 <script src="js/geolocator.js"></script>
+    <script src="js/translate.js"></script>
 
   <meta charset="UTF-8">
 
 </head>
 
 <body>
+
   <header>
     <div id ="header_bg_container">
       <nav>
@@ -26,13 +28,14 @@
             </ul>
 
             <label for="dropdown">Language:</label>
-            <select id="dropdown">
-              <option value="English">English</option>
-              <option value="Welsh">Welsh</option>
-              <option value="Ukrainian">Ukrainian</option>
-              <option value="Italian">Italian</option>
-              <option value="Japanese">Japanese</option>
+            <select id="dropdown" onchange="translate()">
+              <option value="en">English</option>
+              <option value="cy">Welsh</option>
+              <option value="uk">Ukrainian</option>
+              <option value="it">Italian</option>
+              <option value="ja">Japanese</option>
             </select>
+
           </div>
 
           <div class = "column_3" id = "login_links_button">

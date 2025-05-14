@@ -113,5 +113,16 @@
     text-decoration: none;
 }
 
+.validation_False{
+    width: 100%;
+    height: auto;
+    color: red;
+    text-align: center;
+}
+
+.validation_True{
+    color: green;
+}
+
 
 

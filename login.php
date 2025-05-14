@@ -15,12 +15,15 @@ require_once "user_session.php";
     <link rel="stylesheet" href="css/media_queries.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <!--JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Javascript -->
     <script src="js/title_animation.js"></script>
+    <script src="js/login_validation.js"></script>
+
 
     <meta charset="UTF-8">
     <title>Log In | RMC</title>
@@ -32,10 +35,11 @@ require_once "user_session.php";
 <?php include('header.php');?>
 <?php include('navigation.php');?>
 
+<!--server side validation -->
 <?php
     $error = $_GET['error'] ?? null; // Get error message from URL if it exists
     if ($error == "not_logged_in") {
-        echo "<script>alert('You must be logged in to access this page/ feature.');</script>";
+        echo "<script>alert('You must be logged in to access this page/feature.');</script>";
     } elseif ($error == "login_failed") {
         $password = $_GET['password'] ?? null; // Get password from URL if it exists
         echo "<script>alert('Login failed. Please check your email and password or create an account.');</script>";
@@ -54,7 +58,9 @@ require_once "user_session.php";
                     <form method = "POST" action = "login_handler.php">
                         <!-- Email input -->
                         <div class="column_12" id="input_title_container">
-                            <div id="input_title"><p>Enter your Email Address:</p><br></div>
+                            <div id="input_title"><p>Enter your Email Address:</p>
+                                <!--form email validation -->
+                                <div class="validation" id="email_Validation"></div><br></div>
                             <div id="input_bar">
                                 <label><input type="text" name="email" placeholder="Email Address" required></label>
                             </div>
@@ -62,7 +68,9 @@ require_once "user_session.php";
 
                         <!-- Password input -->
                         <div class="column_12" id="input_title_container">
-                            <div id="input_title"><p>Enter your Password:</p><br></div>
+                            <div id="input_title"><p>Enter your Password:</p>
+                                <!--form password validation -->
+                                <div class="validation" id="password_Validation"></div><br></div>
                             <div id="input_bar">
                                 <label><input type="password" name="password" placeholder="Password" required></label>
                             </div>

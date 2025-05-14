@@ -53,7 +53,7 @@
                              
                         </p>
                         <p>
-                            - The RentMyCaravan Team
+                            - The RentMyCaravan Team 
                         </p>
                         </div>
                     </div>

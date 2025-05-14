@@ -2,15 +2,15 @@
 $(document).ready(function() {
 
     //Live Feedback Validation function
-    $('form').on('keyup', function() {
+    $('form').on('submit', function() {
 
         $('.validation').text("");
 
         //Variables
         let email = $('input[name="email"]').val().trim();
         let password = $('input[name="password"]').val();
-        let email_Pattern = /^[^ ]+@[^ ]+\.(?:[a-z]{3,}|[a-z]{2,}\.[a-z]{2,})$/;
-        let password_Pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+        let email_Pattern = /^[^ ]+@[^ ]+\.(?:[a-z]{3,}|[a-z]{2,}\.[a-z]{2,})$/; //Regex
+        let password_Pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/; //Regex
         let hasError = false;
 
 

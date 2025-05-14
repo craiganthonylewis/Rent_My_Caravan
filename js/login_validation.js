@@ -1,5 +1,7 @@
 /* Coded by Craig Lewis ST20317192*/
 $(document).ready(function() {
+
+    //Live Feedback Validation
     $('form').on('keyup', function() {
 
         $('.validation').text("");
@@ -12,6 +14,8 @@ $(document).ready(function() {
 
         let hasError = false;
 
+
+        //Validates Email
         $('#email_Validation').removeClass("validation_True validation_False");
 
         if (!email) {
@@ -27,6 +31,7 @@ $(document).ready(function() {
                 .addClass("validation_True");
         }
 
+        //Validates Password
         $('#password_Validation').removeClass("validation_True validation_False");
 
         if (!password) {

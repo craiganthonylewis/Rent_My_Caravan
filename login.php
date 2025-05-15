@@ -41,7 +41,6 @@ require_once "user_session.php";
     if ($error == "not_logged_in") {
         echo "<script>alert('You must be logged in to access this page/feature.');</script>";
     } elseif ($error == "login_failed") {
-        $password = $_GET['password'] ?? null; // Get password from URL if it exists
         echo "<script>alert('Login failed. Please check your email and password or create an account.');</script>";
     }
 ?>
